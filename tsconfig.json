@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es5",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [
+      "es2015",
+      "es2015.promise",
+      "dom",
+      "es5",
+      "es2015.iterable",
+      "es2015.core"
+    ]
+  },
+  "typedocOptions": {
+    "entryPoints": ["../engine/src/framework/application.ts"],
+    "out": "./api-docs",
+    "excludePrivate": true,
+    "sort": ["instance-first", "static-first", "alphabetical"]
+  },
+  "exclude": ["node_modules", "./api-docs"],
+  "include": ["../engine/src/**/*", "typings.d.ts"]
+}

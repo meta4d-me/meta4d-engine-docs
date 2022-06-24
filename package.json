@@ -1,0 +1,18 @@
+{
+  "name": "@meta4d/engine-docs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf api-docs",
+    "build": "typedoc --plugin typedoc-plugin-markdown"
+  },
+  "author": "MetaYoyo",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "typedoc": "^0.22.17",
+    "typedoc-plugin-markdown": "^3.12.1"
+  }
+}
