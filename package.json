@@ -2,9 +2,6 @@
   "name": "@meta4d/engine-docs",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf api-docs",
     "build": "typedoc --plugin typedoc-plugin-markdown"
