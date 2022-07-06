@@ -1,192 +1,194 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14AttTimeLine
+# m4m.framework.F14AttTimeLine
 
-# Class: F14AttTimeLine
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14AttTimeLine
+
+## Class: F14AttTimeLine
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).F14AttTimeLine
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [addNode](m4m.framework.F14AttTimeLine.md#addnode)
+* [getValue](m4m.framework.F14AttTimeLine.md#getvalue)
+* [remove](m4m.framework.F14AttTimeLine.md#remove)
+
+#### Properties
+
+* [cloneFunc](m4m.framework.F14AttTimeLine.md#clonefunc)
+* [frameList](m4m.framework.F14AttTimeLine.md#framelist)
+* [lerpFunc](m4m.framework.F14AttTimeLine.md#lerpfunc)
+* [line](m4m.framework.F14AttTimeLine.md#line)
+* [name](m4m.framework.F14AttTimeLine.md#name)
+
+#### Constructors
+
+* [constructor](m4m.framework.F14AttTimeLine.md#constructor)
 
 ### Methods
 
-- [addNode](m4m.framework.F14AttTimeLine.md#addnode)
-- [getValue](m4m.framework.F14AttTimeLine.md#getvalue)
-- [remove](m4m.framework.F14AttTimeLine.md#remove)
-
-### Properties
-
-- [cloneFunc](m4m.framework.F14AttTimeLine.md#clonefunc)
-- [frameList](m4m.framework.F14AttTimeLine.md#framelist)
-- [lerpFunc](m4m.framework.F14AttTimeLine.md#lerpfunc)
-- [line](m4m.framework.F14AttTimeLine.md#line)
-- [name](m4m.framework.F14AttTimeLine.md#name)
-
-### Constructors
-
-- [constructor](m4m.framework.F14AttTimeLine.md#constructor)
-
-## Methods
-
-### addNode
+#### addNode
 
 ▸ **addNode**(`frame`, `value`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `frame` | `number` |
-| `value` | `any` |
+| `value` | `any`    |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:157](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L157)
 
-___
+***
 
-### getValue
+#### getValue
 
 ▸ **getValue**(`frame`, `basedate`, `out`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `frame` | `number` |
+| Name       | Type                                                              |
+| ---------- | ----------------------------------------------------------------- |
+| `frame`    | `number`                                                          |
 | `basedate` | [`F14SingleMeshBaseData`](m4m.framework.F14SingleMeshBaseData.md) |
-| `out` | `any` |
+| `out`      | `any`                                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:178](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L178)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(`frame`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `frame` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:167](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L167)
 
-## Properties
+### Properties
 
-### cloneFunc
+#### cloneFunc
 
 • **cloneFunc**: (`from`: `any`, `to`: `any`) => `void`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (`from`, `to`): `void`
 
-##### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type  |
+| ------ | ----- |
 | `from` | `any` |
-| `to` | `any` |
+| `to`   | `any` |
 
-##### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:145](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L145)
 
-___
+***
 
-### frameList
+#### frameList
 
-• **frameList**: `number`[] = `[]`
+• **frameList**: `number`\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:153](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L153)
 
-___
+***
 
-### lerpFunc
+#### lerpFunc
 
 • **lerpFunc**: (`from`: `any`, `to`: `any`, `lerp`: `any`, `out`: `any`) => `void`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (`from`, `to`, `lerp`, `out`): `void`
 
-##### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type  |
+| ------ | ----- |
 | `from` | `any` |
-| `to` | `any` |
+| `to`   | `any` |
 | `lerp` | `any` |
-| `out` | `any` |
+| `out`  | `any` |
 
-##### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:144](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L144)
 
-___
+***
 
-### line
+#### line
 
 • **line**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [index: `number`]: `any`
+▪ \[index: `number`]: `any`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:154](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L154)
 
-___
+***
 
-### name
+#### name
 
 • **name**: `string`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:143](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L143)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new F14AttTimeLine**(`name`, `lerpfunc`, `clonefunc`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `lerpfunc` | (`from`: `any`, `to`: `any`, `lerp`: `any`, `out`: `any`) => `void` |
-| `clonefunc` | (`from`: `any`, `to`: `any`) => `void` |
+| Name        | Type                                                                |
+| ----------- | ------------------------------------------------------------------- |
+| `name`      | `string`                                                            |
+| `lerpfunc`  | (`from`: `any`, `to`: `any`, `lerp`: `any`, `out`: `any`) => `void` |
+| `clonefunc` | (`from`: `any`, `to`: `any`) => `void`                              |
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:146](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L146)

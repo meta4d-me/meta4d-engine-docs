@@ -1,47 +1,48 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / I2DPointListener
+# m4m.framework.I2DPointListener
 
-# Interface: I2DPointListener
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / I2DPointListener
+
+## Interface: I2DPointListener
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).I2DPointListener
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-2d Point事件流接口
+**`classdesc`** 2d Point事件流接口
 
 **`version`** m4m 1.0
 
-## Implemented by
+### Implemented by
 
-- [`button`](../classes/m4m.framework.button.md)
-- [`inputField`](../classes/m4m.framework.inputField.md)
-- [`scrollRect`](../classes/m4m.framework.scrollRect.md)
-- [`slideArea`](../classes/m4m.framework.slideArea.md)
+* [`button`](../classes/m4m.framework.button.md)
+* [`inputField`](../classes/m4m.framework.inputField.md)
+* [`scrollRect`](../classes/m4m.framework.scrollRect.md)
+* [`slideArea`](../classes/m4m.framework.slideArea.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [onPointEvent](m4m.framework.I2DPointListener.md#onpointevent)
 
 ### Methods
 
-- [onPointEvent](m4m.framework.I2DPointListener.md#onpointevent)
-
-## Methods
-
-### onPointEvent
+#### onPointEvent
 
 ▸ **onPointEvent**(`canvas`, `ev`, `oncap`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                           |
+| -------- | ---------------------------------------------- |
 | `canvas` | [`canvas`](../classes/m4m.framework.canvas.md) |
-| `ev` | `PointEvent` |
-| `oncap` | `boolean` |
+| `ev`     | `PointEvent`                                   |
+| `oncap`  | `boolean`                                      |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L32)

@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_GLTF
+# m4m.framework.AssetFactory\_GLTF
 
-# Class: AssetFactory\_GLTF
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_GLTF
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_GLTF
+## Class: AssetFactory\_GLTF
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_GLTF
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_GLTF.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_GLTF.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_GLTF.md#constructor)
+#### constructor
+
+• **new AssetFactory\_GLTF**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_GLTF.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_GLTF**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `filename`, `txt`): [`gltf`](m4m.framework.gltf.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `filename` | `string` |
-| `txt` | `string` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `filename` | `string`                                      |
+| `txt`      | `string`                                      |
 
-#### Returns
+**Returns**
 
 [`gltf`](m4m.framework.gltf.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_gltf.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_gltf.ts#L6)
+[framework/asset/factorys/assetfactory\_gltf.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_gltf.ts#L6)

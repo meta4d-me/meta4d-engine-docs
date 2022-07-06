@@ -1,88 +1,89 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleEmissionBurst
+# m4m.framework.ParticleEmissionBurst
 
-# Class: ParticleEmissionBurst
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleEmissionBurst
+
+## Class: ParticleEmissionBurst
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ParticleEmissionBurst
 
 **`author`** feng3d
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_\_class\_\_](m4m.framework.ParticleEmissionBurst.md#\_\_class\_\_)
+* [count](m4m.framework.ParticleEmissionBurst.md#count)
+* [cycleCount](m4m.framework.ParticleEmissionBurst.md#cyclecount)
+* [probability](m4m.framework.ParticleEmissionBurst.md#probability)
+* [repeatInterval](m4m.framework.ParticleEmissionBurst.md#repeatinterval)
+* [time](m4m.framework.ParticleEmissionBurst.md#time)
+
+#### Methods
+
+* [calculateProbability](m4m.framework.ParticleEmissionBurst.md#calculateprobability)
+
+#### Constructors
+
+* [constructor](m4m.framework.ParticleEmissionBurst.md#constructor)
+
+#### Accessors
+
+* [isProbability](m4m.framework.ParticleEmissionBurst.md#isprobability)
+* [maxCount](m4m.framework.ParticleEmissionBurst.md#maxcount)
+* [minCount](m4m.framework.ParticleEmissionBurst.md#mincount)
 
 ### Properties
 
-- [\_\_class\_\_](m4m.framework.ParticleEmissionBurst.md#__class__)
-- [count](m4m.framework.ParticleEmissionBurst.md#count)
-- [cycleCount](m4m.framework.ParticleEmissionBurst.md#cyclecount)
-- [probability](m4m.framework.ParticleEmissionBurst.md#probability)
-- [repeatInterval](m4m.framework.ParticleEmissionBurst.md#repeatinterval)
-- [time](m4m.framework.ParticleEmissionBurst.md#time)
+#### \_\_class\_\_
 
-### Methods
+• **\_\_class\_\_**: `"m4m.framework.ParticleEmissionBurst"`
 
-- [calculateProbability](m4m.framework.ParticleEmissionBurst.md#calculateprobability)
-
-### Constructors
-
-- [constructor](m4m.framework.ParticleEmissionBurst.md#constructor)
-
-### Accessors
-
-- [isProbability](m4m.framework.ParticleEmissionBurst.md#isprobability)
-- [maxCount](m4m.framework.ParticleEmissionBurst.md#maxcount)
-- [minCount](m4m.framework.ParticleEmissionBurst.md#mincount)
-
-## Properties
-
-### \_\_class\_\_
-
-• **\_\_class\_\_**: ``"m4m.framework.ParticleEmissionBurst"``
-
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L8)
 
-___
+***
 
-### count
+#### count
 
 • **count**: [`MinMaxCurve`](m4m.framework.MinMaxCurve.md)
 
 要发射的粒子数。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:21](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L21)
 
-___
+***
 
-### cycleCount
+#### cycleCount
 
 • **cycleCount**: `number` = `1`
 
-How many times to play the burst. (0 means infinitely).
-爆发次数。(0意味着无限)。
+How many times to play the burst. (0 means infinitely). 爆发次数。(0意味着无限)。
 
 **`todo`**
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:59](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L59)
 
-___
+***
 
-### probability
+#### probability
 
 • **probability**: `number` = `1.0`
 
 喷发被触发的几率。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:75](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L75)
 
-___
+***
 
-### repeatInterval
+#### repeatInterval
 
 • **repeatInterval**: `number` = `0.01`
 
@@ -92,64 +93,63 @@ How often to repeat the burst, in seconds.
 
 **`todo`**
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:69](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L69)
 
-___
+***
 
-### time
+#### time
 
 • **time**: `number` = `0`
 
-The time that each burst occurs.
-每次爆炸发生的时间。
+The time that each burst occurs. 每次爆炸发生的时间。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L15)
 
-## Methods
+### Methods
 
-### calculateProbability
+#### calculateProbability
 
 ▸ **calculateProbability**(): `boolean`
 
 通过触发的几率计算是否喷发。
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:90](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L90)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new ParticleEmissionBurst**()
 
-## Accessors
+### Accessors
 
-### isProbability
+#### isProbability
 
 • `get` **isProbability**(): `boolean`
 
 是否喷发
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:80](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L80)
 
-___
+***
 
-### maxCount
+#### maxCount
 
 • `get` **maxCount**(): `number`
 
@@ -157,11 +157,11 @@ Maximum number of bursts to be emitted.
 
 要发射的最大爆发数量。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:42](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L42)
 
@@ -171,52 +171,50 @@ Maximum number of bursts to be emitted.
 
 要发射的最大爆发数量。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:47](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L47)
 
-___
+***
 
-### minCount
+#### minCount
 
 • `get` **minCount**(): `number`
 
-Minimum number of bursts to be emitted.
-要发射的最小爆发数量。
+Minimum number of bursts to be emitted. 要发射的最小爆发数量。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:27](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L27)
 
 • `set` **minCount**(`v`): `void`
 
-Minimum number of bursts to be emitted.
-要发射的最小爆发数量。
+Minimum number of bursts to be emitted. 要发射的最小爆发数量。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/others/ParticleEmissionBurst.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/others/ParticleEmissionBurst.ts#L32)

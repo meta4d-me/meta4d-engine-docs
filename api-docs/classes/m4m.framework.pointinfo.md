@@ -1,82 +1,83 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / pointinfo
+# m4m.framework.pointinfo
 
-# Class: pointinfo
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / pointinfo
+
+## Class: pointinfo
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).pointinfo
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-鼠标(触屏)点击信息
+**`classdesc`** 鼠标(触屏)点击信息
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.pointinfo.md#constructor)
+
+#### Properties
+
+* [id](m4m.framework.pointinfo.md#id)
+* [multiTouch](m4m.framework.pointinfo.md#multitouch)
+* [touch](m4m.framework.pointinfo.md#touch)
+* [x](m4m.framework.pointinfo.md#x)
+* [y](m4m.framework.pointinfo.md#y)
 
 ### Constructors
 
-- [constructor](m4m.framework.pointinfo.md#constructor)
-
-### Properties
-
-- [id](m4m.framework.pointinfo.md#id)
-- [multiTouch](m4m.framework.pointinfo.md#multitouch)
-- [touch](m4m.framework.pointinfo.md#touch)
-- [x](m4m.framework.pointinfo.md#x)
-- [y](m4m.framework.pointinfo.md#y)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new pointinfo**()
 
-## Properties
+### Properties
 
-### id
+#### id
 
 • **id**: `number` = `-1`
 
-#### Defined in
+**Defined in**
 
 [framework/input/inputmgr.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/input/inputmgr.ts#L11)
 
-___
+***
 
-### multiTouch
+#### multiTouch
 
 • **multiTouch**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/input/inputmgr.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/input/inputmgr.ts#L13)
 
-___
+***
 
-### touch
+#### touch
 
 • **touch**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/input/inputmgr.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/input/inputmgr.ts#L12)
 
-___
+***
 
-### x
+#### x
 
 • **x**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/input/inputmgr.ts:14](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/input/inputmgr.ts#L14)
 
-___
+***
 
-### y
+#### y
 
 • **y**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/input/inputmgr.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/input/inputmgr.ts#L15)

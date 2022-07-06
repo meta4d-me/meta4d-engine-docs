@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemShapeSphere
+# m4m.framework.ParticleSystemShapeSphere
 
-# Class: ParticleSystemShapeSphere
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemShapeSphere
+
+## Class: ParticleSystemShapeSphere
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ParticleSystemShapeSphere
 
@@ -8,118 +10,118 @@
 
 **`author`** feng3d
 
-## Hierarchy
+### Hierarchy
 
-- [`ParticleSystemShapeBase`](m4m.framework.ParticleSystemShapeBase.md)
+*   [`ParticleSystemShapeBase`](m4m.framework.ParticleSystemShapeBase.md)
 
-  ↳ **`ParticleSystemShapeSphere`**
+    ↳ **`ParticleSystemShapeSphere`**
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_module](m4m.framework.ParticleSystemShapeSphere.md#\_module)
+* [emitFromShell](m4m.framework.ParticleSystemShapeSphere.md#emitfromshell)
+
+#### Methods
+
+* [calcParticlePosDir](m4m.framework.ParticleSystemShapeSphere.md#calcparticleposdir)
+
+#### Constructors
+
+* [constructor](m4m.framework.ParticleSystemShapeSphere.md#constructor)
+
+#### Accessors
+
+* [radius](m4m.framework.ParticleSystemShapeSphere.md#radius)
 
 ### Properties
 
-- [\_module](m4m.framework.ParticleSystemShapeSphere.md#_module)
-- [emitFromShell](m4m.framework.ParticleSystemShapeSphere.md#emitfromshell)
-
-### Methods
-
-- [calcParticlePosDir](m4m.framework.ParticleSystemShapeSphere.md#calcparticleposdir)
-
-### Constructors
-
-- [constructor](m4m.framework.ParticleSystemShapeSphere.md#constructor)
-
-### Accessors
-
-- [radius](m4m.framework.ParticleSystemShapeSphere.md#radius)
-
-## Properties
-
-### \_module
+#### \_module
 
 • `Protected` **\_module**: [`ParticleShapeModule`](m4m.framework.ParticleShapeModule.md)
 
-#### Inherited from
+**Inherited from**
 
-[ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[_module](m4m.framework.ParticleSystemShapeBase.md#_module)
+[ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[\_module](m4m.framework.ParticleSystemShapeBase.md#\_module)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeBase.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeBase.ts#L10)
 
-___
+***
 
-### emitFromShell
+#### emitFromShell
 
 • **emitFromShell**: `boolean` = `false`
 
 是否从球面发射
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeSphere.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeSphere.ts#L26)
 
-## Methods
+### Methods
 
-### calcParticlePosDir
+#### calcParticlePosDir
 
 ▸ **calcParticlePosDir**(`particle`, `position`, `dir`): `void`
 
 计算粒子的发射位置与方向
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                      |
+| ---------- | ----------------------------------------- |
 | `particle` | [`Particle1`](m4m.framework.Particle1.md) |
-| `position` | `vector3` |
-| `dir` | `vector3` |
+| `position` | `vector3`                                 |
+| `dir`      | `vector3`                                 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[calcParticlePosDir](m4m.framework.ParticleSystemShapeBase.md#calcparticleposdir)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeSphere.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeSphere.ts#L35)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new ParticleSystemShapeSphere**(`module`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                                          |
+| -------- | ------------------------------------------------------------- |
 | `module` | [`ParticleShapeModule`](m4m.framework.ParticleShapeModule.md) |
 
-#### Inherited from
+**Inherited from**
 
 [ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[constructor](m4m.framework.ParticleSystemShapeBase.md#constructor)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeBase.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeBase.ts#L12)
 
-## Accessors
+### Accessors
 
-### radius
+#### radius
 
 • `get` **radius**(): `number`
 
 球体半径
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeSphere.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeSphere.ts#L13)
 
@@ -127,16 +129,16 @@ ___
 
 球体半径
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeSphere.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeSphere.ts#L18)

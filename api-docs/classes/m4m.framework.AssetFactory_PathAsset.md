@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_PathAsset
+# m4m.framework.AssetFactory\_PathAsset
 
-# Class: AssetFactory\_PathAsset
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_PathAsset
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_PathAsset
+## Class: AssetFactory\_PathAsset
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_PathAsset
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_PathAsset.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_PathAsset.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_PathAsset.md#constructor)
+#### constructor
+
+• **new AssetFactory\_PathAsset**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_PathAsset.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_PathAsset**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `name`, `txt`): [`pathasset`](m4m.framework.pathasset.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `name` | `string` |
-| `txt` | `string` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `name`     | `string`                                      |
+| `txt`      | `string`                                      |
 
-#### Returns
+**Returns**
 
 [`pathasset`](m4m.framework.pathasset.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_pathasset.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_pathasset.ts#L63)
+[framework/asset/factorys/assetfactory\_pathasset.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_pathasset.ts#L63)

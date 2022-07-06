@@ -1,74 +1,75 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IUserCode
+# m4m.framework.IUserCode
 
-# Interface: IUserCode
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IUserCode
+
+## Interface: IUserCode
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IUserCode
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-usercode接口
+**`classdesc`** usercode接口
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [isClosed](m4m.framework.IUserCode.md#isclosed)
+* [onStart](m4m.framework.IUserCode.md#onstart)
+* [onUpdate](m4m.framework.IUserCode.md#onupdate)
 
 ### Methods
 
-- [isClosed](m4m.framework.IUserCode.md#isclosed)
-- [onStart](m4m.framework.IUserCode.md#onstart)
-- [onUpdate](m4m.framework.IUserCode.md#onupdate)
-
-## Methods
-
-### isClosed
+#### isClosed
 
 ▸ **isClosed**(): `boolean`
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:967](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L967)
 
-___
+***
 
-### onStart
+#### onStart
 
 ▸ **onStart**(`app`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                                     |
+| ----- | -------------------------------------------------------- |
 | `app` | [`application`](../classes/m4m.framework.application.md) |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:964](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L964)
 
-___
+***
 
-### onUpdate
+#### onUpdate
 
 ▸ **onUpdate**(`delta`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:966](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L966)

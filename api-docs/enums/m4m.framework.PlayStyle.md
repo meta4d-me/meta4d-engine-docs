@@ -1,43 +1,45 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / PlayStyle
+# m4m.framework.PlayStyle
 
-# Enumeration: PlayStyle
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / PlayStyle
+
+## Enumeration: PlayStyle
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).PlayStyle
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [FramePlay](m4m.framework.PlayStyle.md#frameplay)
+* [NormalPlay](m4m.framework.PlayStyle.md#normalplay)
+* [PingPang](m4m.framework.PlayStyle.md#pingpang)
 
 ### Enumeration Members
 
-- [FramePlay](m4m.framework.PlayStyle.md#frameplay)
-- [NormalPlay](m4m.framework.PlayStyle.md#normalplay)
-- [PingPang](m4m.framework.PlayStyle.md#pingpang)
-
-## Enumeration Members
-
-### FramePlay
+#### FramePlay
 
 • **FramePlay**
 
-#### Defined in
+**Defined in**
 
-[framework/component/aniplayer_old.ts:770](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer_old.ts#L770)
+[framework/component/aniplayer\_old.ts:770](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer\_old.ts#L770)
 
-___
+***
 
-### NormalPlay
+#### NormalPlay
 
 • **NormalPlay**
 
-#### Defined in
+**Defined in**
 
-[framework/component/aniplayer_old.ts:769](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer_old.ts#L769)
+[framework/component/aniplayer\_old.ts:769](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer\_old.ts#L769)
 
-___
+***
 
-### PingPang
+#### PingPang
 
 • **PingPang**
 
-#### Defined in
+**Defined in**
 
-[framework/component/aniplayer_old.ts:771](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer_old.ts#L771)
+[framework/component/aniplayer\_old.ts:771](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/aniplayer\_old.ts#L771)

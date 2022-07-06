@@ -1,377 +1,365 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / animationClip
+# m4m.framework.animationClip
 
-# Class: animationClip
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / animationClip
+
+## Class: animationClip
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).animationClip
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-动画片段资源
+**`classdesc`** 动画片段资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Parse](m4m.framework.animationClip.md#parse)
+* [caclByteLength](m4m.framework.animationClip.md#caclbytelength)
+* [dispose](m4m.framework.animationClip.md#dispose)
+* [getGUID](m4m.framework.animationClip.md#getguid)
+* [getName](m4m.framework.animationClip.md#getname)
+* [unuse](m4m.framework.animationClip.md#unuse)
+* [use](m4m.framework.animationClip.md#use)
+
+#### Properties
+
+* [boneCount](m4m.framework.animationClip.md#bonecount)
+* [defaultAsset](m4m.framework.animationClip.md#defaultasset)
+* [fps](m4m.framework.animationClip.md#fps)
+* [hasScaled](m4m.framework.animationClip.md#hasscaled)
+* [indexDic](m4m.framework.animationClip.md#indexdic)
+* [loop](m4m.framework.animationClip.md#loop)
+* [ClassName](m4m.framework.animationClip.md#classname)
+
+#### Constructors
+
+* [constructor](m4m.framework.animationClip.md#constructor)
+
+#### Accessors
+
+* [time](m4m.framework.animationClip.md#time)
 
 ### Methods
 
-- [Parse](m4m.framework.animationClip.md#parse)
-- [caclByteLength](m4m.framework.animationClip.md#caclbytelength)
-- [dispose](m4m.framework.animationClip.md#dispose)
-- [getGUID](m4m.framework.animationClip.md#getguid)
-- [getName](m4m.framework.animationClip.md#getname)
-- [unuse](m4m.framework.animationClip.md#unuse)
-- [use](m4m.framework.animationClip.md#use)
+#### Parse
 
-### Properties
+▸ **Parse**(`buf`): `Promise`<[`animationClip`](m4m.framework.animationClip.md)>
 
-- [boneCount](m4m.framework.animationClip.md#bonecount)
-- [defaultAsset](m4m.framework.animationClip.md#defaultasset)
-- [fps](m4m.framework.animationClip.md#fps)
-- [hasScaled](m4m.framework.animationClip.md#hasscaled)
-- [indexDic](m4m.framework.animationClip.md#indexdic)
-- [loop](m4m.framework.animationClip.md#loop)
-- [ClassName](m4m.framework.animationClip.md#classname)
+**`language`** zh\_CN
 
-### Constructors
-
-- [constructor](m4m.framework.animationClip.md#constructor)
-
-### Accessors
-
-- [time](m4m.framework.animationClip.md#time)
-
-## Methods
-
-### Parse
-
-▸ **Parse**(`buf`): `Promise`<[`animationClip`](m4m.framework.animationClip.md)\>
-
-**`language`** zh_CN
-
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `buf` | `ArrayBuffer` | buffer数组 |
+| Name  | Type          | Description |
+| ----- | ------------- | ----------- |
+| `buf` | `ArrayBuffer` | buffer数组    |
 
-#### Returns
+**Returns**
 
-`Promise`<[`animationClip`](m4m.framework.animationClip.md)\>
+`Promise`<[`animationClip`](m4m.framework.animationClip.md)>
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:129](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L129)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:101](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L101)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:87](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L87)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L54)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:43](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L43)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:76](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L76)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:65](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L65)
 
-## Properties
+### Properties
 
-### boneCount
+#### boneCount
 
 • **boneCount**: `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-骨骼数量
+**`classdesc`** 骨骼数量
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:356](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L356)
 
-___
+***
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean` = `false`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否为默认资源
+**`classdesc`** 是否为默认资源
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:27](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L27)
 
-___
+***
 
-### fps
+#### fps
 
 • **fps**: `number`
 
-**`language`** zh_CN
-动画片段的帧率
+**`language`** zh\_CN 动画片段的帧率
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:316](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L316)
 
-___
+***
 
-### hasScaled
+#### hasScaled
 
 • **hasScaled**: `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否含有缩放
+**`classdesc`** 是否含有缩放
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:334](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L334)
 
-___
+***
 
-### indexDic
+#### indexDic
 
 • **indexDic**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [boneName: `string`]: `number`
+▪ \[boneName: `string`]: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:362](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L362)
 
-___
+***
 
-### loop
+#### loop
 
 • **loop**: `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否循环
+**`classdesc`** 是否循环
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:325](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L325)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"animationClip"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L15)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new animationClip**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L28)
 
-## Accessors
+### Accessors
 
-### time
+#### time
 
 • `get` **time**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-播放时长
+**`classdesc`** 播放时长
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/animationclip.ts:343](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/animationclip.ts#L343)

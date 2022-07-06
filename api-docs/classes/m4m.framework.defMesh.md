@@ -1,143 +1,145 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / defMesh
+# m4m.framework.defMesh
 
-# Class: defMesh
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / defMesh
+
+## Class: defMesh
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).defMesh
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.defMesh.md#constructor)
+
+#### Properties
+
+* [circleline](m4m.framework.defMesh.md#circleline)
+* [cube](m4m.framework.defMesh.md#cube)
+* [cylinder](m4m.framework.defMesh.md#cylinder)
+* [plane](m4m.framework.defMesh.md#plane)
+* [pyramid](m4m.framework.defMesh.md#pyramid)
+* [quad](m4m.framework.defMesh.md#quad)
+* [quad\_particle](m4m.framework.defMesh.md#quad\_particle)
+* [sphere](m4m.framework.defMesh.md#sphere)
+* [sphere\_quality](m4m.framework.defMesh.md#sphere\_quality)
+
+#### Methods
+
+* [initDefaultMesh](m4m.framework.defMesh.md#initdefaultmesh)
 
 ### Constructors
 
-- [constructor](m4m.framework.defMesh.md#constructor)
-
-### Properties
-
-- [circleline](m4m.framework.defMesh.md#circleline)
-- [cube](m4m.framework.defMesh.md#cube)
-- [cylinder](m4m.framework.defMesh.md#cylinder)
-- [plane](m4m.framework.defMesh.md#plane)
-- [pyramid](m4m.framework.defMesh.md#pyramid)
-- [quad](m4m.framework.defMesh.md#quad)
-- [quad\_particle](m4m.framework.defMesh.md#quad_particle)
-- [sphere](m4m.framework.defMesh.md#sphere)
-- [sphere\_quality](m4m.framework.defMesh.md#sphere_quality)
-
-### Methods
-
-- [initDefaultMesh](m4m.framework.defMesh.md#initdefaultmesh)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new defMesh**()
 
-## Properties
+### Properties
 
-### circleline
+#### circleline
 
-▪ `Static` `Readonly` **circleline**: ``"circleline"``
+▪ `Static` `Readonly` **circleline**: `"circleline"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L13)
 
-___
+***
 
-### cube
+#### cube
 
-▪ `Static` `Readonly` **cube**: ``"cube"``
+▪ `Static` `Readonly` **cube**: `"cube"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L5)
 
-___
+***
 
-### cylinder
+#### cylinder
 
-▪ `Static` `Readonly` **cylinder**: ``"cylinder"``
+▪ `Static` `Readonly` **cylinder**: `"cylinder"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L12)
 
-___
+***
 
-### plane
+#### plane
 
-▪ `Static` `Readonly` **plane**: ``"plane"``
+▪ `Static` `Readonly` **plane**: `"plane"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L8)
 
-___
+***
 
-### pyramid
+#### pyramid
 
-▪ `Static` `Readonly` **pyramid**: ``"pyramid"``
+▪ `Static` `Readonly` **pyramid**: `"pyramid"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L11)
 
-___
+***
 
-### quad
+#### quad
 
-▪ `Static` `Readonly` **quad**: ``"quad"``
+▪ `Static` `Readonly` **quad**: `"quad"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L6)
 
-___
+***
 
-### quad\_particle
+#### quad\_particle
 
-▪ `Static` `Readonly` **quad\_particle**: ``"quad_particle"``
+▪ `Static` `Readonly` **quad\_particle**: `"quad_particle"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L7)
 
-___
+***
 
-### sphere
+#### sphere
 
-▪ `Static` `Readonly` **sphere**: ``"sphere"``
+▪ `Static` `Readonly` **sphere**: `"sphere"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L9)
 
-___
+***
 
-### sphere\_quality
+#### sphere\_quality
 
-▪ `Static` `Readonly` **sphere\_quality**: ``"sphere_quality"``
+▪ `Static` `Readonly` **sphere\_quality**: `"sphere_quality"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L10)
 
-## Methods
+### Methods
 
-### initDefaultMesh
+#### initDefaultMesh
 
 ▸ `Static` **initDefaultMesh**(`assetmgr`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                    |
+| ---------- | --------------------------------------- |
 | `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/defmesh.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/defmesh.ts#L15)

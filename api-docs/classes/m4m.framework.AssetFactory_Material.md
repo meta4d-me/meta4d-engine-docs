@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Material
+# m4m.framework.AssetFactory\_Material
 
-# Class: AssetFactory\_Material
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Material
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_Material
+## Class: AssetFactory\_Material
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_Material
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_Material.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_Material.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_Material.md#constructor)
+#### constructor
+
+• **new AssetFactory\_Material**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_Material.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_Material**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `name`, `txt`): [`material`](m4m.framework.material.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `name` | `string` |
-| `txt` | `string` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `name`     | `string`                                      |
+| `txt`      | `string`                                      |
 
-#### Returns
+**Returns**
 
 [`material`](m4m.framework.material.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_material.ts:64](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_material.ts#L64)
+[framework/asset/factorys/assetfactory\_material.ts:64](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_material.ts#L64)

@@ -1,416 +1,408 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / font
+# m4m.framework.font
 
-# Class: font
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / font
+
+## Class: font
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).font
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-字体资源
+**`classdesc`** 字体资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Parse](m4m.framework.font.md#parse)
+* [caclByteLength](m4m.framework.font.md#caclbytelength)
+* [dispose](m4m.framework.font.md#dispose)
+* [getGUID](m4m.framework.font.md#getguid)
+* [getName](m4m.framework.font.md#getname)
+* [unuse](m4m.framework.font.md#unuse)
+* [use](m4m.framework.font.md#use)
+
+#### Properties
+
+* [atlasHeight](m4m.framework.font.md#atlasheight)
+* [atlasWidth](m4m.framework.font.md#atlaswidth)
+* [baseline](m4m.framework.font.md#baseline)
+* [cmap](m4m.framework.font.md#cmap)
+* [defaultAsset](m4m.framework.font.md#defaultasset)
+* [fontname](m4m.framework.font.md#fontname)
+* [lineHeight](m4m.framework.font.md#lineheight)
+* [padding](m4m.framework.font.md#padding)
+* [pointSize](m4m.framework.font.md#pointsize)
+* [ClassName](m4m.framework.font.md#classname)
+
+#### Constructors
+
+* [constructor](m4m.framework.font.md#constructor)
+
+#### Accessors
+
+* [texture](m4m.framework.font.md#texture)
 
 ### Methods
 
-- [Parse](m4m.framework.font.md#parse)
-- [caclByteLength](m4m.framework.font.md#caclbytelength)
-- [dispose](m4m.framework.font.md#dispose)
-- [getGUID](m4m.framework.font.md#getguid)
-- [getName](m4m.framework.font.md#getname)
-- [unuse](m4m.framework.font.md#unuse)
-- [use](m4m.framework.font.md#use)
-
-### Properties
-
-- [atlasHeight](m4m.framework.font.md#atlasheight)
-- [atlasWidth](m4m.framework.font.md#atlaswidth)
-- [baseline](m4m.framework.font.md#baseline)
-- [cmap](m4m.framework.font.md#cmap)
-- [defaultAsset](m4m.framework.font.md#defaultasset)
-- [fontname](m4m.framework.font.md#fontname)
-- [lineHeight](m4m.framework.font.md#lineheight)
-- [padding](m4m.framework.font.md#padding)
-- [pointSize](m4m.framework.font.md#pointsize)
-- [ClassName](m4m.framework.font.md#classname)
-
-### Constructors
-
-- [constructor](m4m.framework.font.md#constructor)
-
-### Accessors
-
-- [texture](m4m.framework.font.md#texture)
-
-## Methods
-
-### Parse
+#### Parse
 
 ▸ **Parse**(`jsonStr`, `assetmgr`, `bundleName?`): [`font`](m4m.framework.font.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `jsonStr` | `string` | `undefined` | json数据 |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined` | 资源管理实例 |
-| `bundleName` | `string` | `null` | - |
+| Name         | Type                                    | Default value | Description |
+| ------------ | --------------------------------------- | ------------- | ----------- |
+| `jsonStr`    | `string`                                | `undefined`   | json数据      |
+| `assetmgr`   | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined`   | 资源管理实例      |
+| `bundleName` | `string`                                | `null`        | -           |
 
-#### Returns
+**Returns**
 
 [`font`](m4m.framework.font.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:159](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L159)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:100](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L100)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:84](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L84)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:51](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L51)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L40)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:73](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L73)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:62](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L62)
 
-## Properties
+### Properties
 
-### atlasHeight
+#### atlasHeight
 
 • **atlasHeight**: `number`
 
 字符容器图的高度
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:148](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L148)
 
-___
+***
 
-### atlasWidth
+#### atlasWidth
 
 • **atlasWidth**: `number`
 
 字符容器图的宽度
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:146](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L146)
 
-___
+***
 
-### baseline
+#### baseline
 
 • **baseline**: `number`
 
 基线
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:144](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L144)
 
-___
+***
 
-### cmap
+#### cmap
 
 • **cmap**: `Object`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-字体信息map
+**`classdesc`** 字体信息map
 
 **`version`** m4m 1.0
 
-#### Index signature
+**Index signature**
 
-▪ [id: `string`]: `charinfo`
+▪ \[id: `string`]: `charinfo`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:134](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L134)
 
-___
+***
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否为默认资源
+**`classdesc`** 是否为默认资源
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L24)
 
-___
+***
 
-### fontname
+#### fontname
 
 • **fontname**: `string`
 
 字体名
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:136](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L136)
 
-___
+***
 
-### lineHeight
+#### lineHeight
 
 • **lineHeight**: `number`
 
 行高
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:142](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L142)
 
-___
+***
 
-### padding
+#### padding
 
 • **padding**: `number`
 
 填充间隔
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:140](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L140)
 
-___
+***
 
-### pointSize
+#### pointSize
 
 • **pointSize**: `number`
 
 像素尺寸
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:138](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L138)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"font"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L13)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new font**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:25](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L25)
 
-## Accessors
+### Accessors
 
-### texture
+#### texture
 
 • `get` **texture**(): [`texture`](m4m.framework.texture.md)
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:111](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L111)
 
 • `set` **texture**(`value`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                  |
+| ------- | ------------------------------------- |
 | `value` | [`texture`](m4m.framework.texture.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/font.ts:115](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/font.ts#L115)

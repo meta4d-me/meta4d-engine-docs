@@ -1,47 +1,49 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IWorld
+# m4m.framework.IWorld
 
-# Interface: IWorld
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IWorld
+
+## Interface: IWorld
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IWorld
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [bounds](m4m.framework.IWorld.md#bounds)
+* [gravity](m4m.framework.IWorld.md#gravity)
 
 ### Properties
 
-- [bounds](m4m.framework.IWorld.md#bounds)
-- [gravity](m4m.framework.IWorld.md#gravity)
-
-## Properties
-
-### bounds
+#### bounds
 
 • **bounds**: `Object`
 
-#### Type declaration
+**Type declaration**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                         |
+| ----- | ---------------------------- |
 | `max` | [`Ivec2`](m4m.math.Ivec2.md) |
 | `min` | [`Ivec2`](m4m.math.Ivec2.md) |
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L34)
 
-___
+***
 
-### gravity
+#### gravity
 
 • **gravity**: `Object`
 
-#### Type declaration
+**Type declaration**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `scale` | `number` |
-| `x` | `number` |
-| `y` | `number` |
+| `x`     | `number` |
+| `y`     | `number` |
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:29](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L29)

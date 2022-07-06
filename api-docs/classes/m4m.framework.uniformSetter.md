@@ -1,53 +1,55 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / uniformSetter
+# m4m.framework.uniformSetter
 
-# Class: uniformSetter
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / uniformSetter
+
+## Class: uniformSetter
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).uniformSetter
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.uniformSetter.md#constructor)
+
+#### Properties
+
+* [autoUniformDic](m4m.framework.uniformSetter.md#autouniformdic)
+
+#### Methods
+
+* [initAutouniform](m4m.framework.uniformSetter.md#initautouniform)
 
 ### Constructors
 
-- [constructor](m4m.framework.uniformSetter.md#constructor)
-
-### Properties
-
-- [autoUniformDic](m4m.framework.uniformSetter.md#autouniformdic)
-
-### Methods
-
-- [initAutouniform](m4m.framework.uniformSetter.md#initautouniform)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new uniformSetter**()
 
-## Properties
+### Properties
 
-### autoUniformDic
+#### autoUniformDic
 
 ▪ `Static` **autoUniformDic**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [name: `string`]: (`context`: `renderContext`) => `any`
+▪ \[name: `string`]: (`context`: `renderContext`) => `any`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/uniformsetter.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/uniformsetter.ts#L5)
 
-## Methods
+### Methods
 
-### initAutouniform
+#### initAutouniform
 
 ▸ `Static` **initAutouniform**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/uniformsetter.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/uniformsetter.ts#L7)

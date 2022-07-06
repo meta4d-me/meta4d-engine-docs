@@ -1,233 +1,228 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / rawImage2D
+# m4m.framework.rawImage2D
 
-# Class: rawImage2D
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / rawImage2D
+
+## Class: rawImage2D
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).rawImage2D
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-2d图片组件</p>
+**`classdesc`** 2d图片组件
+
 参照UGUI的思路，rawImage只拿整个图片来显示，不关心Sprite、九宫、填充等。这些统一都在iamge中处理
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IRectRenderer`](../interfaces/m4m.framework.IRectRenderer.md)
+* [`IRectRenderer`](../interfaces/m4m.framework.IRectRenderer.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [color](m4m.framework.rawImage2D.md#color)
+* [transform](m4m.framework.rawImage2D.md#transform)
+* [ClassName](m4m.framework.rawImage2D.md#classname)
+
+#### Constructors
+
+* [constructor](m4m.framework.rawImage2D.md#constructor)
+
+#### Methods
+
+* [getDrawBounds](m4m.framework.rawImage2D.md#getdrawbounds)
+* [getMaterial](m4m.framework.rawImage2D.md#getmaterial)
+* [onPlay](m4m.framework.rawImage2D.md#onplay)
+* [setShaderByName](m4m.framework.rawImage2D.md#setshaderbyname)
+
+#### Accessors
+
+* [image](m4m.framework.rawImage2D.md#image)
 
 ### Properties
 
-- [color](m4m.framework.rawImage2D.md#color)
-- [transform](m4m.framework.rawImage2D.md#transform)
-- [ClassName](m4m.framework.rawImage2D.md#classname)
-
-### Constructors
-
-- [constructor](m4m.framework.rawImage2D.md#constructor)
-
-### Methods
-
-- [getDrawBounds](m4m.framework.rawImage2D.md#getdrawbounds)
-- [getMaterial](m4m.framework.rawImage2D.md#getmaterial)
-- [onPlay](m4m.framework.rawImage2D.md#onplay)
-- [setShaderByName](m4m.framework.rawImage2D.md#setshaderbyname)
-
-### Accessors
-
-- [image](m4m.framework.rawImage2D.md#image)
-
-## Properties
-
-### color
+#### color
 
 • **color**: `color`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-颜色
+**`classdesc`** 颜色
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:67](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L67)
 
-___
+***
 
-### transform
+#### transform
 
 • **transform**: [`transform2D`](m4m.framework.transform2D.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-当前组件的2d节点
+**`classdesc`** 当前组件的2d节点
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IRectRenderer](../interfaces/m4m.framework.IRectRenderer.md).[transform](../interfaces/m4m.framework.IRectRenderer.md#transform)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:329](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L329)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"rawImage2D"`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L17)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new rawImage2D**()
 
-## Methods
+### Methods
 
-### getDrawBounds
+#### getDrawBounds
 
 ▸ **getDrawBounds**(): `rect`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取渲染绘制矩形边界
+**`classdesc`** 获取渲染绘制矩形边界
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `rect`
 
-#### Implementation of
+**Implementation of**
 
 [IRectRenderer](../interfaces/m4m.framework.IRectRenderer.md).[getDrawBounds](../interfaces/m4m.framework.IRectRenderer.md#getdrawbounds)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:109](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L109)
 
-___
+***
 
-### getMaterial
+#### getMaterial
 
 ▸ **getMaterial**(): [`material`](m4m.framework.material.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取rander 的材质
+**`classdesc`** 获取rander 的材质
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`material`](m4m.framework.material.md)
 
-#### Implementation of
+**Implementation of**
 
 [IRectRenderer](../interfaces/m4m.framework.IRectRenderer.md).[getMaterial](../interfaces/m4m.framework.IRectRenderer.md#getmaterial)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:93](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L93)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRectRenderer](../interfaces/m4m.framework.IRectRenderer.md).[onPlay](../interfaces/m4m.framework.IRectRenderer.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:310](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L310)
 
-___
+***
 
-### setShaderByName
+#### setShaderByName
 
 ▸ **setShaderByName**(`shaderName`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置rander Shader名字
+**`classdesc`** 设置rander Shader名字
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| ------------ | -------- |
 | `shaderName` | `string` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:82](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L82)
 
-## Accessors
+### Accessors
 
-### image
+#### image
 
 • `get` **image**(): [`texture`](m4m.framework.texture.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-图片
+**`classdesc`** 图片
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L40)
 
 • `set` **image**(`_image`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-图片
+**`classdesc`** 图片
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                  |
+| -------- | ------------------------------------- |
 | `_image` | [`texture`](m4m.framework.texture.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/rawimage.ts:44](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/rawimage.ts#L44)

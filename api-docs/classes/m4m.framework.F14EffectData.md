@@ -1,79 +1,81 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14EffectData
+# m4m.framework.F14EffectData
 
-# Class: F14EffectData
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14EffectData
+
+## Class: F14EffectData
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).F14EffectData
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [beloop](m4m.framework.F14EffectData.md#beloop)
+* [layers](m4m.framework.F14EffectData.md#layers)
+* [lifeTime](m4m.framework.F14EffectData.md#lifetime)
+
+#### Constructors
+
+* [constructor](m4m.framework.F14EffectData.md#constructor)
+
+#### Methods
+
+* [parsejson](m4m.framework.F14EffectData.md#parsejson)
 
 ### Properties
 
-- [beloop](m4m.framework.F14EffectData.md#beloop)
-- [layers](m4m.framework.F14EffectData.md#layers)
-- [lifeTime](m4m.framework.F14EffectData.md#lifetime)
-
-### Constructors
-
-- [constructor](m4m.framework.F14EffectData.md#constructor)
-
-### Methods
-
-- [parsejson](m4m.framework.F14EffectData.md#parsejson)
-
-## Properties
-
-### beloop
+#### beloop
 
 • **beloop**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/f14effectdata.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/f14effectdata.ts#L5)
 
-___
+***
 
-### layers
+#### layers
 
-• **layers**: [`F14LayerData`](m4m.framework.F14LayerData.md)[] = `[]`
+• **layers**: [`F14LayerData`](m4m.framework.F14LayerData.md)\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/f14effectdata.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/f14effectdata.ts#L7)
 
-___
+***
 
-### lifeTime
+#### lifeTime
 
 • **lifeTime**: `number` = `100`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/f14effectdata.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/f14effectdata.ts#L6)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new F14EffectData**()
 
-## Methods
+### Methods
 
-### parsejson
+#### parsejson
 
 ▸ **parsejson**(`json`, `assetmgr`, `assetbundle`): [`F14EffectData`](m4m.framework.F14EffectData.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `json` | `any` |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `assetbundle` | `string` |
+| Name          | Type                                    |
+| ------------- | --------------------------------------- |
+| `json`        | `any`                                   |
+| `assetmgr`    | [`assetMgr`](m4m.framework.assetMgr.md) |
+| `assetbundle` | `string`                                |
 
-#### Returns
+**Returns**
 
 [`F14EffectData`](m4m.framework.F14EffectData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/f14effectdata.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/f14effectdata.ts#L9)

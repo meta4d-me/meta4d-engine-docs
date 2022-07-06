@@ -1,196 +1,197 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRectRenderer
+# m4m.framework.IRectRenderer
 
-# Interface: IRectRenderer
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRectRenderer
+
+## Interface: IRectRenderer
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IRectRenderer
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-2D渲染组件的接口
+**`classdesc`** 2D渲染组件的接口
 
 **`version`** m4m 1.0
 
-## Hierarchy
+### Hierarchy
 
-- [`I2DComponent`](m4m.framework.I2DComponent.md)
+*   [`I2DComponent`](m4m.framework.I2DComponent.md)
 
-  ↳ **`IRectRenderer`**
+    ↳ **`IRectRenderer`**
 
-## Implemented by
+### Implemented by
 
-- [`image2D`](../classes/m4m.framework.image2D.md)
-- [`label`](../classes/m4m.framework.label.md)
-- [`rawImage2D`](../classes/m4m.framework.rawImage2D.md)
-- [`richLabel`](../classes/m4m.framework.richLabel.md)
+* [`image2D`](../classes/m4m.framework.image2D.md)
+* [`label`](../classes/m4m.framework.label.md)
+* [`rawImage2D`](../classes/m4m.framework.rawImage2D.md)
+* [`richLabel`](../classes/m4m.framework.richLabel.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [getDrawBounds](m4m.framework.IRectRenderer.md#getdrawbounds)
+* [getMaterial](m4m.framework.IRectRenderer.md#getmaterial)
+* [onPlay](m4m.framework.IRectRenderer.md#onplay)
+* [remove](m4m.framework.IRectRenderer.md#remove)
+* [render](m4m.framework.IRectRenderer.md#render)
+* [start](m4m.framework.IRectRenderer.md#start)
+* [update](m4m.framework.IRectRenderer.md#update)
+* [updateTran](m4m.framework.IRectRenderer.md#updatetran)
+
+#### Properties
+
+* [transform](m4m.framework.IRectRenderer.md#transform)
 
 ### Methods
 
-- [getDrawBounds](m4m.framework.IRectRenderer.md#getdrawbounds)
-- [getMaterial](m4m.framework.IRectRenderer.md#getmaterial)
-- [onPlay](m4m.framework.IRectRenderer.md#onplay)
-- [remove](m4m.framework.IRectRenderer.md#remove)
-- [render](m4m.framework.IRectRenderer.md#render)
-- [start](m4m.framework.IRectRenderer.md#start)
-- [update](m4m.framework.IRectRenderer.md#update)
-- [updateTran](m4m.framework.IRectRenderer.md#updatetran)
-
-### Properties
-
-- [transform](m4m.framework.IRectRenderer.md#transform)
-
-## Methods
-
-### getDrawBounds
+#### getDrawBounds
 
 ▸ **getDrawBounds**(): `rect`
 
-#### Returns
+**Returns**
 
 `rect`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:66](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L66)
 
-___
+***
 
-### getMaterial
+#### getMaterial
 
 ▸ **getMaterial**(): [`material`](../classes/m4m.framework.material.md)
 
-#### Returns
+**Returns**
 
 [`material`](../classes/m4m.framework.material.md)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:64](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L64)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [I2DComponent](m4m.framework.I2DComponent.md).[onPlay](m4m.framework.I2DComponent.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L32)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [I2DComponent](m4m.framework.I2DComponent.md).[remove](m4m.framework.I2DComponent.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:36](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L36)
 
-___
+***
 
-### render
+#### render
 
 ▸ **render**(`canvas`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                           |
+| -------- | ---------------------------------------------- |
 | `canvas` | [`canvas`](../classes/m4m.framework.canvas.md) |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:60](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L60)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [I2DComponent](m4m.framework.I2DComponent.md).[start](m4m.framework.I2DComponent.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L33)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [I2DComponent](m4m.framework.I2DComponent.md).[update](m4m.framework.I2DComponent.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L34)
 
-___
+***
 
-### updateTran
+#### updateTran
 
 ▸ **updateTran**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:62](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L62)
 
-## Properties
+### Properties
 
-### transform
+#### transform
 
 • **transform**: [`transform2D`](../classes/m4m.framework.transform2D.md)
 
-#### Inherited from
+**Inherited from**
 
 [I2DComponent](m4m.framework.I2DComponent.md).[transform](m4m.framework.I2DComponent.md#transform)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L35)

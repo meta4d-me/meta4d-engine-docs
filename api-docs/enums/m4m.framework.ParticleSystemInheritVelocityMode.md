@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemInheritVelocityMode
+# m4m.framework.ParticleSystemInheritVelocityMode
 
-# Enumeration: ParticleSystemInheritVelocityMode
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemInheritVelocityMode
+
+## Enumeration: ParticleSystemInheritVelocityMode
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ParticleSystemInheritVelocityMode
 
@@ -10,16 +12,16 @@ How to apply emitter velocity to particles.
 
 **`author`** feng3d
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [Current](m4m.framework.ParticleSystemInheritVelocityMode.md#current)
+* [Initial](m4m.framework.ParticleSystemInheritVelocityMode.md#initial)
 
 ### Enumeration Members
 
-- [Current](m4m.framework.ParticleSystemInheritVelocityMode.md#current)
-- [Initial](m4m.framework.ParticleSystemInheritVelocityMode.md#initial)
-
-## Enumeration Members
-
-### Current
+#### Current
 
 • **Current**
 
@@ -27,13 +29,13 @@ Each particle's velocity is set to the emitter's current velocity value, every f
 
 每一帧，每个粒子的速度都设定为发射器的当前速度值。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/enums/ParticleSystemInheritVelocityMode.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/enums/ParticleSystemInheritVelocityMode.ts#L24)
 
-___
+***
 
-### Initial
+#### Initial
 
 • **Initial**
 
@@ -41,6 +43,6 @@ Each particle inherits the emitter's velocity on the frame when it was initially
 
 每个粒子在最初发射时都继承了发射体在帧上的速度。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/enums/ParticleSystemInheritVelocityMode.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/enums/ParticleSystemInheritVelocityMode.ts#L17)

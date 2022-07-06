@@ -1,342 +1,331 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / aabb
+# m4m.framework.aabb
 
-# Class: aabb
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / aabb
+
+## Class: aabb
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).aabb
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-表示轴对称包围盒
+**`classdesc`** 表示轴对称包围盒
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [addAABB](m4m.framework.aabb.md#addaabb)
+* [addVector3](m4m.framework.aabb.md#addvector3)
+* [clear](m4m.framework.aabb.md#clear)
+* [clone](m4m.framework.aabb.md#clone)
+* [cloneTo](m4m.framework.aabb.md#cloneto)
+* [containsVector3](m4m.framework.aabb.md#containsvector3)
+* [getVec3](m4m.framework.aabb.md#getvec3)
+* [intersectAABB](m4m.framework.aabb.md#intersectaabb)
+* [update](m4m.framework.aabb.md#update)
+
+#### Accessors
+
+* [center](m4m.framework.aabb.md#center)
+
+#### Constructors
+
+* [constructor](m4m.framework.aabb.md#constructor)
+
+#### Properties
+
+* [maximum](m4m.framework.aabb.md#maximum)
+* [minimum](m4m.framework.aabb.md#minimum)
 
 ### Methods
 
-- [addAABB](m4m.framework.aabb.md#addaabb)
-- [addVector3](m4m.framework.aabb.md#addvector3)
-- [clear](m4m.framework.aabb.md#clear)
-- [clone](m4m.framework.aabb.md#clone)
-- [cloneTo](m4m.framework.aabb.md#cloneto)
-- [containsVector3](m4m.framework.aabb.md#containsvector3)
-- [getVec3](m4m.framework.aabb.md#getvec3)
-- [intersectAABB](m4m.framework.aabb.md#intersectaabb)
-- [update](m4m.framework.aabb.md#update)
-
-### Accessors
-
-- [center](m4m.framework.aabb.md#center)
-
-### Constructors
-
-- [constructor](m4m.framework.aabb.md#constructor)
-
-### Properties
-
-- [maximum](m4m.framework.aabb.md#maximum)
-- [minimum](m4m.framework.aabb.md#minimum)
-
-## Methods
-
-### addAABB
+#### addAABB
 
 ▸ **addAABB**(`aabb`): `void`
 
-**`language`** zh_CN
-包含一个aabb
+**`language`** zh\_CN 包含一个aabb
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aabb` | [`aabb`](m4m.framework.aabb.md) | 轴对称包围盒 |
+| Name   | Type                            | Description |
+| ------ | ------------------------------- | ----------- |
+| `aabb` | [`aabb`](m4m.framework.aabb.md) | 轴对称包围盒      |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:230](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L230)
 
-___
+***
 
-### addVector3
+#### addVector3
 
 ▸ **addVector3**(`vec`): `void`
 
-**`language`** zh_CN
-包含一个点
+**`language`** zh\_CN 包含一个点
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vec` | `vector3` | 世界坐标 |
+| Name  | Type      | Description |
+| ----- | --------- | ----------- |
+| `vec` | `vector3` | 世界坐标        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:182](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L182)
 
-___
+***
 
-### clear
+#### clear
 
 ▸ **clear**(): `void`
 
-**`language`** zh_CN
-清空
+**`language`** zh\_CN 清空
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:260](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L260)
 
-___
+***
 
-### clone
+#### clone
 
 ▸ **clone**(): [`aabb`](m4m.framework.aabb.md)
 
-**`language`** zh_CN
-克隆
+**`language`** zh\_CN 克隆
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Returns
+**Returns**
 
 [`aabb`](m4m.framework.aabb.md)
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:273](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L273)
 
-___
+***
 
-### cloneTo
+#### cloneTo
 
 ▸ **cloneTo**(`to`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                            |
+| ---- | ------------------------------- |
 | `to` | [`aabb`](m4m.framework.aabb.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:281](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L281)
 
-___
+***
 
-### containsVector3
+#### containsVector3
 
 ▸ **containsVector3**(`vec`): `boolean`
 
-**`language`** zh_CN
-检查是否包含点
+**`language`** zh\_CN 检查是否包含点
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vec` | `vector3` | 世界坐标 |
+| Name  | Type      | Description |
+| ----- | --------- | ----------- |
+| `vec` | `vector3` | 世界坐标        |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:196](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L196)
 
-___
+***
 
-### getVec3
+#### getVec3
 
 ▸ **getVec3**(`vecs`): `void`
 
-**`language`** zh_CN
-获取包围盒顶点数据
+**`language`** zh\_CN 获取包围盒顶点数据
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `vecs` | `vector3`[] | 引用数组 |
+| Name   | Type         | Description |
+| ------ | ------------ | ----------- |
+| `vecs` | `vector3`\[] | 引用数组        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:298](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L298)
 
-___
+***
 
-### intersectAABB
+#### intersectAABB
 
 ▸ **intersectAABB**(`aabb`): `boolean`
 
-**`language`** zh_CN
-检查是否与aabb相交
+**`language`** zh\_CN 检查是否与aabb相交
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aabb` | [`aabb`](m4m.framework.aabb.md) | 轴对称包围盒 |
+| Name   | Type                            | Description |
+| ------ | ------------------------------- | ----------- |
+| `aabb` | [`aabb`](m4m.framework.aabb.md) | 轴对称包围盒      |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:211](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L211)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`worldmatrix`): `void`
 
-**`language`** zh_CN
-刷新轴对称包围盒
+**`language`** zh\_CN 刷新轴对称包围盒
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `worldmatrix` | `matrix` | 物体的世界矩阵 |
+| Name          | Type     | Description |
+| ------------- | -------- | ----------- |
+| `worldmatrix` | `matrix` | 物体的世界矩阵     |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:61](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L61)
 
-## Accessors
+### Accessors
 
-### center
+#### center
 
 • `get` **center**(): `vector3`
 
-**`language`** zh_CN
-计算包围盒的中心位置
+**`language`** zh\_CN 计算包围盒的中心位置
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:246](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L246)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new aabb**(`_minimum`, `_maximum`)
 
-**`language`** zh_CN
-构建轴对称包围盒
+**`language`** zh\_CN 构建轴对称包围盒
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_minimum` | `vector3` | 最小点 |
-| `_maximum` | `vector3` | 最大点 |
+| Name       | Type      | Description |
+| ---------- | --------- | ----------- |
+| `_minimum` | `vector3` | 最小点         |
+| `_maximum` | `vector3` | 最大点         |
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:44](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L44)
 
-## Properties
+### Properties
 
-### maximum
+#### maximum
 
 • **maximum**: `vector3`
 
-**`language`** zh_CN
-最大点
+**`language`** zh\_CN 最大点
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L28)
 
-___
+***
 
-### minimum
+#### minimum
 
 • **minimum**: `vector3`
 
-**`language`** zh_CN
-最小点
+**`language`** zh\_CN 最小点
 
 **`version`** m4m 1.0
 
 **`platform`** Web,Native
 
-#### Defined in
+**Defined in**
 
 [framework/tool/aabb.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/tool/aabb.ts#L19)

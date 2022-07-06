@@ -1,83 +1,85 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ILerpAttributeInterface
+# m4m.framework.ILerpAttributeInterface
 
-# Interface: ILerpAttributeInterface
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ILerpAttributeInterface
+
+## Interface: ILerpAttributeInterface
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ILerpAttributeInterface
 
-## Implemented by
+### Implemented by
 
-- [`NumberAttributeData`](../classes/m4m.framework.NumberAttributeData.md)
-- [`Vector2AttributeData`](../classes/m4m.framework.Vector2AttributeData.md)
-- [`Vector3AttributeData`](../classes/m4m.framework.Vector3AttributeData.md)
+* [`NumberAttributeData`](../classes/m4m.framework.NumberAttributeData.md)
+* [`Vector2AttributeData`](../classes/m4m.framework.Vector2AttributeData.md)
+* [`Vector3AttributeData`](../classes/m4m.framework.Vector3AttributeData.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [addFramePoint](m4m.framework.ILerpAttributeInterface.md#addframepoint)
+* [removeFramePoint](m4m.framework.ILerpAttributeInterface.md#removeframepoint)
+* [updateFramePoint](m4m.framework.ILerpAttributeInterface.md#updateframepoint)
 
 ### Methods
 
-- [addFramePoint](m4m.framework.ILerpAttributeInterface.md#addframepoint)
-- [removeFramePoint](m4m.framework.ILerpAttributeInterface.md#removeframepoint)
-- [updateFramePoint](m4m.framework.ILerpAttributeInterface.md#updateframepoint)
-
-## Methods
-
-### addFramePoint
+#### addFramePoint
 
 ▸ **addFramePoint**(`data`, `func?`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
+| Name    | Type       |
+| ------- | ---------- |
+| `data`  | `any`      |
 | `func?` | `Function` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:207](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L207)
 
-___
+***
 
-### removeFramePoint
+#### removeFramePoint
 
 ▸ **removeFramePoint**(`frameId`, `data`, `func?`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `frameId` | `number` |
-| `data` | `any` |
-| `func?` | `Function` |
+| Name      | Type       |
+| --------- | ---------- |
+| `frameId` | `number`   |
+| `data`    | `any`      |
+| `func?`   | `Function` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:208](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L208)
 
-___
+***
 
-### updateFramePoint
+#### updateFramePoint
 
 ▸ **updateFramePoint**(`data`, `func?`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
+| Name    | Type       |
+| ------- | ---------- |
+| `data`  | `any`      |
 | `func?` | `Function` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:209](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L209)

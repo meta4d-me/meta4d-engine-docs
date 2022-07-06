@@ -1,83 +1,84 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / layoutOption
+# m4m.framework.layoutOption
 
-# Enumeration: layoutOption
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / layoutOption
+
+## Enumeration: layoutOption
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).layoutOption
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-UI布局选项
+**`classdesc`** UI布局选项
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [BOTTOM](m4m.framework.layoutOption.md#bottom)
+* [H\_CENTER](m4m.framework.layoutOption.md#h\_center)
+* [LEFT](m4m.framework.layoutOption.md#left)
+* [RIGHT](m4m.framework.layoutOption.md#right)
+* [TOP](m4m.framework.layoutOption.md#top)
+* [V\_CENTER](m4m.framework.layoutOption.md#v\_center)
 
 ### Enumeration Members
 
-- [BOTTOM](m4m.framework.layoutOption.md#bottom)
-- [H\_CENTER](m4m.framework.layoutOption.md#h_center)
-- [LEFT](m4m.framework.layoutOption.md#left)
-- [RIGHT](m4m.framework.layoutOption.md#right)
-- [TOP](m4m.framework.layoutOption.md#top)
-- [V\_CENTER](m4m.framework.layoutOption.md#v_center)
-
-## Enumeration Members
-
-### BOTTOM
+#### BOTTOM
 
 • **BOTTOM**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L18)
 
-___
+***
 
-### H\_CENTER
+#### H\_CENTER
 
 • **H\_CENTER**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L19)
 
-___
+***
 
-### LEFT
+#### LEFT
 
 • **LEFT**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L15)
 
-___
+***
 
-### RIGHT
+#### RIGHT
 
 • **RIGHT**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L17)
 
-___
+***
 
-### TOP
+#### TOP
 
 • **TOP**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L16)
 
-___
+***
 
-### V\_CENTER
+#### V\_CENTER
 
 • **V\_CENTER**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/transform2d.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/transform2d.ts#L20)

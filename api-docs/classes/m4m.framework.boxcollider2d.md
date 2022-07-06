@@ -1,201 +1,200 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / boxcollider2d
+# m4m.framework.boxcollider2d
 
-# Class: boxcollider2d
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / boxcollider2d
+
+## Class: boxcollider2d
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).boxcollider2d
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-2d矩形碰撞盒
+**`classdesc`** 2d矩形碰撞盒
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`I2DComponent`](../interfaces/m4m.framework.I2DComponent.md)
-- [`ICollider2d`](../interfaces/m4m.framework.ICollider2d.md)
+* [`I2DComponent`](../interfaces/m4m.framework.I2DComponent.md)
+* [`ICollider2d`](../interfaces/m4m.framework.ICollider2d.md)
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.boxcollider2d.md#constructor)
+
+#### Methods
+
+* [getBound](m4m.framework.boxcollider2d.md#getbound)
+* [intersectsTransform](m4m.framework.boxcollider2d.md#intersectstransform)
+* [onPlay](m4m.framework.boxcollider2d.md#onplay)
+* [remove](m4m.framework.boxcollider2d.md#remove)
+* [start](m4m.framework.boxcollider2d.md#start)
+* [update](m4m.framework.boxcollider2d.md#update)
+
+#### Properties
+
+* [transform](m4m.framework.boxcollider2d.md#transform)
+* [ClassName](m4m.framework.boxcollider2d.md#classname)
 
 ### Constructors
 
-- [constructor](m4m.framework.boxcollider2d.md#constructor)
-
-### Methods
-
-- [getBound](m4m.framework.boxcollider2d.md#getbound)
-- [intersectsTransform](m4m.framework.boxcollider2d.md#intersectstransform)
-- [onPlay](m4m.framework.boxcollider2d.md#onplay)
-- [remove](m4m.framework.boxcollider2d.md#remove)
-- [start](m4m.framework.boxcollider2d.md#start)
-- [update](m4m.framework.boxcollider2d.md#update)
-
-### Properties
-
-- [transform](m4m.framework.boxcollider2d.md#transform)
-- [ClassName](m4m.framework.boxcollider2d.md#classname)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new boxcollider2d**()
 
-## Methods
+### Methods
 
-### getBound
+#### getBound
 
 ▸ **getBound**(): [`obb2d`](m4m.framework.obb2d.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取obb2d
+**`classdesc`** 获取obb2d
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`obb2d`](m4m.framework.obb2d.md)
 
-#### Implementation of
+**Implementation of**
 
 [ICollider2d](../interfaces/m4m.framework.ICollider2d.md).[getBound](../interfaces/m4m.framework.ICollider2d.md#getbound)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:29](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L29)
 
-___
+***
 
-### intersectsTransform
+#### intersectsTransform
 
 ▸ **intersectsTransform**(`tran`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-检测碰撞
+**`classdesc`** 检测碰撞
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                          |
+| ------ | --------------------------------------------- |
 | `tran` | [`transform2D`](m4m.framework.transform2D.md) |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [ICollider2d](../interfaces/m4m.framework.ICollider2d.md).[intersectsTransform](../interfaces/m4m.framework.ICollider2d.md#intersectstransform)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L41)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[onPlay](../interfaces/m4m.framework.I2DComponent.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:83](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L83)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[remove](../interfaces/m4m.framework.I2DComponent.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:92](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L92)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[start](../interfaces/m4m.framework.I2DComponent.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:80](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L80)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[update](../interfaces/m4m.framework.I2DComponent.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:86](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L86)
 
-## Properties
+### Properties
 
-### transform
+#### transform
 
 • **transform**: [`transform2D`](m4m.framework.transform2D.md)
 
-#### Implementation of
+**Implementation of**
 
 [ICollider2d](../interfaces/m4m.framework.ICollider2d.md).[transform](../interfaces/m4m.framework.ICollider2d.md#transform)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L18)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"boxcollider2d"`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/boxcollider2d.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/boxcollider2d.ts#L16)

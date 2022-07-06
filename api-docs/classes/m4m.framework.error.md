@@ -1,80 +1,82 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / error
+# m4m.framework.error
 
-# Class: error
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / error
+
+## Class: error
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).error
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.error.md#constructor)
+
+#### Properties
+
+* [onError](m4m.framework.error.md#onerror)
+* [openQueue](m4m.framework.error.md#openqueue)
+
+#### Methods
+
+* [push](m4m.framework.error.md#push)
 
 ### Constructors
 
-- [constructor](m4m.framework.error.md#constructor)
-
-### Properties
-
-- [onError](m4m.framework.error.md#onerror)
-- [openQueue](m4m.framework.error.md#openqueue)
-
-### Methods
-
-- [push](m4m.framework.error.md#push)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new error**()
 
-## Properties
+### Properties
 
-### onError
+#### onError
 
 ▪ `Static` **onError**: (`err`: `Error`) => `void`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (`err`): `void`
 
-##### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type    |
+| ----- | ------- |
 | `err` | `Error` |
 
-##### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/error.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/error.ts#L5)
 
-___
+***
 
-### openQueue
+#### openQueue
 
 ▪ `Static` **openQueue**: `boolean` = `true`
 
-#### Defined in
+**Defined in**
 
 [framework/error.ts:4](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/error.ts#L4)
 
-## Methods
+### Methods
 
-### push
+#### push
 
 ▸ `Static` **push**(`err`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type    |
+| ----- | ------- |
 | `err` | `Error` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/error.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/error.ts#L6)

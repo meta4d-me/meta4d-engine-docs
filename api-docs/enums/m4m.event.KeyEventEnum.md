@@ -1,34 +1,36 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [event](../modules/m4m.event.md) / KeyEventEnum
+# m4m.event.KeyEventEnum
 
-# Enumeration: KeyEventEnum
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [event](../modules/m4m.event.md) / KeyEventEnum
+
+## Enumeration: KeyEventEnum
 
 [m4m](../modules/m4m.md).[event](../modules/m4m.event.md).KeyEventEnum
 
 按键事件枚举
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [KeyDown](m4m.event.KeyEventEnum.md#keydown)
+* [KeyUp](m4m.event.KeyEventEnum.md#keyup)
 
 ### Enumeration Members
 
-- [KeyDown](m4m.event.KeyEventEnum.md#keydown)
-- [KeyUp](m4m.event.KeyEventEnum.md#keyup)
-
-## Enumeration Members
-
-### KeyDown
+#### KeyDown
 
 • **KeyDown**
 
-#### Defined in
+**Defined in**
 
 [framework/event/EventEnums.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/EventEnums.ts#L32)
 
-___
+***
 
-### KeyUp
+#### KeyUp
 
 • **KeyUp**
 
-#### Defined in
+**Defined in**
 
 [framework/event/EventEnums.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/EventEnums.ts#L33)

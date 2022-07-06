@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_DDS
+# m4m.framework.AssetFactory\_DDS
 
-# Class: AssetFactory\_DDS
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_DDS
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_DDS
+## Class: AssetFactory\_DDS
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_DDS
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_DDS.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_DDS.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_DDS.md#constructor)
+#### constructor
+
+• **new AssetFactory\_DDS**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_DDS.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_DDS**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `filename`, `bytes`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `filename` | `string` |
-| `bytes` | `ArrayBuffer` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `filename` | `string`                                      |
+| `bytes`    | `ArrayBuffer`                                 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_dds.ts:68](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_dds.ts#L68)
+[framework/asset/factorys/assetfactory\_dds.ts:68](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_dds.ts#L68)

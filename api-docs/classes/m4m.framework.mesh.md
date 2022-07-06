@@ -1,465 +1,454 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / mesh
+# m4m.framework.mesh
 
-# Class: mesh
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / mesh
+
+## Class: mesh
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).mesh
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-mesh资源
+**`classdesc`** mesh资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Parse](m4m.framework.mesh.md#parse)
+* [caclByteLength](m4m.framework.mesh.md#caclbytelength)
+* [calcVectexMinMax](m4m.framework.mesh.md#calcvectexminmax)
+* [clone](m4m.framework.mesh.md#clone)
+* [dispose](m4m.framework.mesh.md#dispose)
+* [getGUID](m4m.framework.mesh.md#getguid)
+* [getName](m4m.framework.mesh.md#getname)
+* [intersects](m4m.framework.mesh.md#intersects)
+* [parseCMesh](m4m.framework.mesh.md#parsecmesh)
+* [unuse](m4m.framework.mesh.md#unuse)
+* [use](m4m.framework.mesh.md#use)
+
+#### Constructors
+
+* [constructor](m4m.framework.mesh.md#constructor)
+
+#### Properties
+
+* [data](m4m.framework.mesh.md#data)
+* [defaultAsset](m4m.framework.mesh.md#defaultasset)
+* [maximun](m4m.framework.mesh.md#maximun)
+* [minimun](m4m.framework.mesh.md#minimun)
+* [onReadFinish](m4m.framework.mesh.md#onreadfinish)
+* [submesh](m4m.framework.mesh.md#submesh)
+* [updateByEffect](m4m.framework.mesh.md#updatebyeffect)
+* [ClassName](m4m.framework.mesh.md#classname)
+* [useThead](m4m.framework.mesh.md#usethead)
 
 ### Methods
 
-- [Parse](m4m.framework.mesh.md#parse)
-- [caclByteLength](m4m.framework.mesh.md#caclbytelength)
-- [calcVectexMinMax](m4m.framework.mesh.md#calcvectexminmax)
-- [clone](m4m.framework.mesh.md#clone)
-- [dispose](m4m.framework.mesh.md#dispose)
-- [getGUID](m4m.framework.mesh.md#getguid)
-- [getName](m4m.framework.mesh.md#getname)
-- [intersects](m4m.framework.mesh.md#intersects)
-- [parseCMesh](m4m.framework.mesh.md#parsecmesh)
-- [unuse](m4m.framework.mesh.md#unuse)
-- [use](m4m.framework.mesh.md#use)
+#### Parse
 
-### Constructors
+▸ **Parse**(`inData`, `webgl`): `Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)>
 
-- [constructor](m4m.framework.mesh.md#constructor)
+**`language`** zh\_CN
 
-### Properties
-
-- [data](m4m.framework.mesh.md#data)
-- [defaultAsset](m4m.framework.mesh.md#defaultasset)
-- [maximun](m4m.framework.mesh.md#maximun)
-- [minimun](m4m.framework.mesh.md#minimun)
-- [onReadFinish](m4m.framework.mesh.md#onreadfinish)
-- [submesh](m4m.framework.mesh.md#submesh)
-- [updateByEffect](m4m.framework.mesh.md#updatebyeffect)
-- [ClassName](m4m.framework.mesh.md#classname)
-- [useThead](m4m.framework.mesh.md#usethead)
-
-## Methods
-
-### Parse
-
-▸ **Parse**(`inData`, `webgl`): `Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)\>
-
-**`language`** zh_CN
-
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `inData` | `any` | - |
-| `webgl` | `WebGLRenderingContext` | webgl实例 |
+| Name     | Type                    | Description |
+| -------- | ----------------------- | ----------- |
+| `inData` | `any`                   | -           |
+| `webgl`  | `WebGLRenderingContext` | webgl实例     |
 
-#### Returns
+**Returns**
 
-`Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)\>
+`Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)>
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:386](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L386)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:95](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L95)
 
-___
+***
 
-### calcVectexMinMax
+#### calcVectexMinMax
 
 ▸ **calcVectexMinMax**(`outMin`, `outMax`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算模型顶点的 最大最小值
+**`classdesc`** 计算模型顶点的 最大最小值
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `outMin` | `vector3` | 输出最小 |
-| `outMax` | `vector3` | 输出最大 |
+| Name     | Type      | Description |
+| -------- | --------- | ----------- |
+| `outMin` | `vector3` | 输出最小        |
+| `outMax` | `vector3` | 输出最大        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:834](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L834)
 
-___
+***
 
-### clone
+#### clone
 
 ▸ **clone**(): [`mesh`](m4m.framework.mesh.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-克隆mesh
+**`classdesc`** 克隆mesh
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`mesh`](m4m.framework.mesh.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:803](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L803)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:82](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L82)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:49](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L49)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L34)
 
-___
+***
 
-### intersects
+#### intersects
 
 ▸ **intersects**(`ray`, `matrix`, `outInfo`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-检测射线碰撞
+**`classdesc`** 检测射线碰撞
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | 射线 |
-| `matrix` | `matrix` | 所在transform的矩阵 |
-| `outInfo` | `pickinfo` | - |
+| Name      | Type                          | Description    |
+| --------- | ----------------------------- | -------------- |
+| `ray`     | [`ray`](m4m.framework.ray.md) | 射线             |
+| `matrix`  | `matrix`                      | 所在transform的矩阵 |
+| `outInfo` | `pickinfo`                    | -              |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:734](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L734)
 
-___
+***
 
-### parseCMesh
+#### parseCMesh
 
 ▸ **parseCMesh**(`inData`, `webgl`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type  |
+| -------- | ----- |
 | `inData` | `any` |
-| `webgl` | `any` |
+| `webgl`  | `any` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:405](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L405)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:71](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L71)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:60](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L60)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new mesh**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L19)
 
-## Properties
+### Properties
 
-### data
+#### data
 
 • **data**: `meshData`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-mesh数据实例
+**`classdesc`** mesh数据实例
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:118](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L118)
 
-___
+***
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean` = `false`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L18)
 
-___
+***
 
-### maximun
+#### maximun
 
 • **maximun**: `vector3`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:14](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L14)
 
-___
+***
 
-### minimun
+#### minimun
 
 • **minimun**: `vector3`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L15)
 
-___
+***
 
-### onReadFinish
+#### onReadFinish
 
 • **onReadFinish**: () => `void`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (): `void`
 
-##### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:133](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L133)
 
-___
+***
 
-### submesh
+#### submesh
 
-• **submesh**: `subMeshInfo`[] = `[]`
+• **submesh**: `subMeshInfo`\[] = `[]`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-submesh信息列表
+**`classdesc`** submesh信息列表
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:126](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L126)
 
-___
+***
 
-### updateByEffect
+#### updateByEffect
 
 • **updateByEffect**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:110](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L110)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"mesh"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L13)
 
-___
+***
 
-### useThead
+#### useThead
 
 ▪ `Static` **useThead**: `boolean` = `true`
 
 是否使用多线程解析
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/mesh.ts:131](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/mesh.ts#L131)

@@ -1,43 +1,45 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [io](../modules/m4m.io.md) / SaveAssetType
+# m4m.io.SaveAssetType
 
-# Enumeration: SaveAssetType
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [io](../modules/m4m.io.md) / SaveAssetType
+
+## Enumeration: SaveAssetType
 
 [m4m](../modules/m4m.md).[io](../modules/m4m.io.md).SaveAssetType
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [DefaultAssets](m4m.io.SaveAssetType.md#defaultassets)
+* [FullUrl](m4m.io.SaveAssetType.md#fullurl)
+* [NameAndContent](m4m.io.SaveAssetType.md#nameandcontent)
 
 ### Enumeration Members
 
-- [DefaultAssets](m4m.io.SaveAssetType.md#defaultassets)
-- [FullUrl](m4m.io.SaveAssetType.md#fullurl)
-- [NameAndContent](m4m.io.SaveAssetType.md#nameandcontent)
-
-## Enumeration Members
-
-### DefaultAssets
+#### DefaultAssets
 
 • **DefaultAssets**
 
-#### Defined in
+**Defined in**
 
 [framework/io/serialize.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/io/serialize.ts#L9)
 
-___
+***
 
-### FullUrl
+#### FullUrl
 
 • **FullUrl**
 
-#### Defined in
+**Defined in**
 
 [framework/io/serialize.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/io/serialize.ts#L7)
 
-___
+***
 
-### NameAndContent
+#### NameAndContent
 
 • **NameAndContent**
 
-#### Defined in
+**Defined in**
 
 [framework/io/serialize.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/io/serialize.ts#L8)

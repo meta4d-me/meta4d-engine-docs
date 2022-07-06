@@ -1,574 +1,576 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / f14EffectSystem
+# m4m.framework.f14EffectSystem
 
-# Class: f14EffectSystem
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / f14EffectSystem
+
+## Class: f14EffectSystem
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).f14EffectSystem
 
-## Implements
+### Implements
 
-- [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
+* [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [VF](m4m.framework.f14EffectSystem.md#vf)
+* [\_root](m4m.framework.f14EffectSystem.md#\_root)
+* [beref](m4m.framework.f14EffectSystem.md#beref)
+* [data](m4m.framework.f14EffectSystem.md#data)
+* [enableDraw](m4m.framework.f14EffectSystem.md#enabledraw)
+* [enabletimeFlow](m4m.framework.f14EffectSystem.md#enabletimeflow)
+* [gameObject](m4m.framework.f14EffectSystem.md#gameobject)
+* [layer](m4m.framework.f14EffectSystem.md#layer)
+* [layers](m4m.framework.f14EffectSystem.md#layers)
+* [mvpMat](m4m.framework.f14EffectSystem.md#mvpmat)
+* [queue](m4m.framework.f14EffectSystem.md#queue)
+* [renderBatch](m4m.framework.f14EffectSystem.md#renderbatch)
+* [restartFrame](m4m.framework.f14EffectSystem.md#restartframe)
+* [totalFrame](m4m.framework.f14EffectSystem.md#totalframe)
+* [webgl](m4m.framework.f14EffectSystem.md#webgl)
+* [ClassName](m4m.framework.f14EffectSystem.md#classname)
+
+#### Methods
+
+* [changeAlpha](m4m.framework.f14EffectSystem.md#changealpha)
+* [changeColor](m4m.framework.f14EffectSystem.md#changecolor)
+* [clone](m4m.framework.f14EffectSystem.md#clone)
+* [getElementCount](m4m.framework.f14EffectSystem.md#getelementcount)
+* [onPlay](m4m.framework.f14EffectSystem.md#onplay)
+* [pause](m4m.framework.f14EffectSystem.md#pause)
+* [play](m4m.framework.f14EffectSystem.md#play)
+* [remove](m4m.framework.f14EffectSystem.md#remove)
+* [render](m4m.framework.f14EffectSystem.md#render)
+* [reset](m4m.framework.f14EffectSystem.md#reset)
+* [setData](m4m.framework.f14EffectSystem.md#setdata)
+* [start](m4m.framework.f14EffectSystem.md#start)
+* [stop](m4m.framework.f14EffectSystem.md#stop)
+* [update](m4m.framework.f14EffectSystem.md#update)
+
+#### Constructors
+
+* [constructor](m4m.framework.f14EffectSystem.md#constructor)
+
+#### Accessors
+
+* [renderCamera](m4m.framework.f14EffectSystem.md#rendercamera)
+* [renderLayer](m4m.framework.f14EffectSystem.md#renderlayer)
+* [root](m4m.framework.f14EffectSystem.md#root)
 
 ### Properties
 
-- [VF](m4m.framework.f14EffectSystem.md#vf)
-- [\_root](m4m.framework.f14EffectSystem.md#_root)
-- [beref](m4m.framework.f14EffectSystem.md#beref)
-- [data](m4m.framework.f14EffectSystem.md#data)
-- [enableDraw](m4m.framework.f14EffectSystem.md#enabledraw)
-- [enabletimeFlow](m4m.framework.f14EffectSystem.md#enabletimeflow)
-- [gameObject](m4m.framework.f14EffectSystem.md#gameobject)
-- [layer](m4m.framework.f14EffectSystem.md#layer)
-- [layers](m4m.framework.f14EffectSystem.md#layers)
-- [mvpMat](m4m.framework.f14EffectSystem.md#mvpmat)
-- [queue](m4m.framework.f14EffectSystem.md#queue)
-- [renderBatch](m4m.framework.f14EffectSystem.md#renderbatch)
-- [restartFrame](m4m.framework.f14EffectSystem.md#restartframe)
-- [totalFrame](m4m.framework.f14EffectSystem.md#totalframe)
-- [webgl](m4m.framework.f14EffectSystem.md#webgl)
-- [ClassName](m4m.framework.f14EffectSystem.md#classname)
-
-### Methods
-
-- [changeAlpha](m4m.framework.f14EffectSystem.md#changealpha)
-- [changeColor](m4m.framework.f14EffectSystem.md#changecolor)
-- [clone](m4m.framework.f14EffectSystem.md#clone)
-- [getElementCount](m4m.framework.f14EffectSystem.md#getelementcount)
-- [onPlay](m4m.framework.f14EffectSystem.md#onplay)
-- [pause](m4m.framework.f14EffectSystem.md#pause)
-- [play](m4m.framework.f14EffectSystem.md#play)
-- [remove](m4m.framework.f14EffectSystem.md#remove)
-- [render](m4m.framework.f14EffectSystem.md#render)
-- [reset](m4m.framework.f14EffectSystem.md#reset)
-- [setData](m4m.framework.f14EffectSystem.md#setdata)
-- [start](m4m.framework.f14EffectSystem.md#start)
-- [stop](m4m.framework.f14EffectSystem.md#stop)
-- [update](m4m.framework.f14EffectSystem.md#update)
-
-### Constructors
-
-- [constructor](m4m.framework.f14EffectSystem.md#constructor)
-
-### Accessors
-
-- [renderCamera](m4m.framework.f14EffectSystem.md#rendercamera)
-- [renderLayer](m4m.framework.f14EffectSystem.md#renderlayer)
-- [root](m4m.framework.f14EffectSystem.md#root)
-
-## Properties
-
-### VF
+#### VF
 
 • **VF**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:38](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L38)
 
-___
+***
 
-### \_root
+#### \_root
 
 • **\_root**: [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:121](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L121)
 
-___
+***
 
-### beref
+#### beref
 
 • **beref**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:129](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L129)
 
-___
+***
 
-### data
+#### data
 
 • **data**: [`F14EffectData`](m4m.framework.F14EffectData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L35)
 
-___
+***
 
-### enableDraw
+#### enableDraw
 
 • **enableDraw**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:350](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L350)
 
-___
+***
 
-### enabletimeFlow
+#### enabletimeFlow
 
 • **enabletimeFlow**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:349](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L349)
 
-___
+***
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](m4m.framework.gameObject.md)
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[gameObject](../interfaces/m4m.framework.IRenderer.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:31](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L31)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md) = `RenderLayerEnum.Transparent`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[layer](../interfaces/m4m.framework.IRenderer.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L9)
 
-___
+***
 
-### layers
+#### layers
 
-• **layers**: [`F14Layer`](m4m.framework.F14Layer.md)[] = `[]`
+• **layers**: [`F14Layer`](m4m.framework.F14Layer.md)\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:36](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L36)
 
-___
+***
 
-### mvpMat
+#### mvpMat
 
 • **mvpMat**: `matrix`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:243](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L243)
 
-___
+***
 
-### queue
+#### queue
 
 • **queue**: `number` = `10`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[queue](../interfaces/m4m.framework.IRenderer.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L17)
 
-___
+***
 
-### renderBatch
+#### renderBatch
 
-• **renderBatch**: [`F14Basebatch`](../interfaces/m4m.framework.F14Basebatch.md)[] = `[]`
+• **renderBatch**: [`F14Basebatch`](../interfaces/m4m.framework.F14Basebatch.md)\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:124](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L124)
 
-___
+***
 
-### restartFrame
+#### restartFrame
 
 • **restartFrame**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:261](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L261)
 
-___
+***
 
-### totalFrame
+#### totalFrame
 
 • **totalFrame**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:262](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L262)
 
-___
+***
 
-### webgl
+#### webgl
 
 • **webgl**: `WebGLRenderingContext`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:39](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L39)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"f14EffectSystem"`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L7)
 
-## Methods
+### Methods
 
-### changeAlpha
+#### changeAlpha
 
 ▸ **changeAlpha**(`newAlpha`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| ---------- | -------- |
 | `newAlpha` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:405](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L405)
 
-___
+***
 
-### changeColor
+#### changeColor
 
 ▸ **changeColor**(`newcolor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type    |
+| ---------- | ------- |
 | `newcolor` | `color` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:397](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L397)
 
-___
+***
 
-### clone
+#### clone
 
 ▸ **clone**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[clone](../interfaces/m4m.framework.IRenderer.md#clone)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:421](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L421)
 
-___
+***
 
-### getElementCount
+#### getElementCount
 
 ▸ **getElementCount**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:331](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L331)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[onPlay](../interfaces/m4m.framework.IRenderer.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L26)
 
-___
+***
 
-### pause
+#### pause
 
 ▸ **pause**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:385](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L385)
 
-___
+***
 
-### play
+#### play
 
 ▸ **play**(`onFinish?`, `PlayRate?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `onFinish` | () => `void` | `null` |
-| `PlayRate` | `number` | `1.0` |
+| Name       | Type         | Default value |
+| ---------- | ------------ | ------------- |
+| `onFinish` | () => `void` | `null`        |
+| `PlayRate` | `number`     | `1.0`         |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:352](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L352)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[remove](../interfaces/m4m.framework.IRenderer.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:425](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L425)
 
-___
+***
 
-### render
+#### render
 
 ▸ **render**(`context`, `assetmgr`, `camera`, `Effqueue?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `context` | `renderContext` | `undefined` |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined` |
-| `camera` | [`camera`](m4m.framework.camera.md) | `undefined` |
-| `Effqueue` | `number` | `0` |
+| Name       | Type                                    | Default value |
+| ---------- | --------------------------------------- | ------------- |
+| `context`  | `renderContext`                         | `undefined`   |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined`   |
+| `camera`   | [`camera`](m4m.framework.camera.md)     | `undefined`   |
+| `Effqueue` | `number`                                | `0`           |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[render](../interfaces/m4m.framework.IRenderer.md#render)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:245](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L245)
 
-___
+***
 
-### reset
+#### reset
 
 ▸ **reset**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:412](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L412)
 
-___
+***
 
-### setData
+#### setData
 
 ▸ **setData**(`data`, `bundleName`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `data` | [`F14EffectData`](m4m.framework.F14EffectData.md) |
-| `bundleName` | `string` |
+| Name         | Type                                              |
+| ------------ | ------------------------------------------------- |
+| `data`       | [`F14EffectData`](m4m.framework.F14EffectData.md) |
+| `bundleName` | `string`                                          |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:78](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L78)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[start](../interfaces/m4m.framework.IRenderer.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L18)
 
-___
+***
 
-### stop
+#### stop
 
 ▸ **stop**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:374](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L374)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`deltaTime`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| ----------- | -------- |
 | `deltaTime` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[update](../interfaces/m4m.framework.IRenderer.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:130](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L130)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new f14EffectSystem**(`bundleName`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| ------------ | -------- |
 | `bundleName` | `string` |
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:98](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L98)
 
-## Accessors
+### Accessors
 
-### renderCamera
+#### renderCamera
 
 • `get` **renderCamera**(): [`camera`](m4m.framework.camera.md)
 
-#### Returns
+**Returns**
 
 [`camera`](m4m.framework.camera.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:233](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L233)
 
-___
+***
 
-### renderLayer
+#### renderLayer
 
 • `get` **renderLayer**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L12)
 
 • `set` **renderLayer**(`layer`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `layer` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L13)
 
-___
+***
 
-### root
+#### root
 
 • `get` **root**(): [`transform`](m4m.framework.transform.md)
 
 ref effect 增加transform层控制
 
-#### Returns
+**Returns**
 
 [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14effect.ts:113](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14effect.ts#L113)

@@ -1,166 +1,166 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / behaviour2d
+# m4m.framework.behaviour2d
 
-# Class: behaviour2d
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / behaviour2d
+
+## Class: behaviour2d
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).behaviour2d
 
-## Hierarchy
+### Hierarchy
 
-- **`behaviour2d`**
+*   **`behaviour2d`**
 
-  ↳ [`physics2DBody`](m4m.framework.physics2DBody.md)
+    ↳ [`physics2DBody`](m4m.framework.physics2DBody.md)
 
-## Implements
+### Implements
 
-- [`I2DComponent`](../interfaces/m4m.framework.I2DComponent.md)
-- [`IEnabled`](../interfaces/m4m.framework.IEnabled.md)
+* [`I2DComponent`](../interfaces/m4m.framework.I2DComponent.md)
+* [`IEnabled`](../interfaces/m4m.framework.IEnabled.md)
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.behaviour2d.md#constructor)
+
+#### Properties
+
+* [enabled](m4m.framework.behaviour2d.md#enabled)
+* [transform](m4m.framework.behaviour2d.md#transform)
+
+#### Methods
+
+* [onPlay](m4m.framework.behaviour2d.md#onplay)
+* [remove](m4m.framework.behaviour2d.md#remove)
+* [start](m4m.framework.behaviour2d.md#start)
+* [update](m4m.framework.behaviour2d.md#update)
 
 ### Constructors
 
-- [constructor](m4m.framework.behaviour2d.md#constructor)
-
-### Properties
-
-- [enabled](m4m.framework.behaviour2d.md#enabled)
-- [transform](m4m.framework.behaviour2d.md#transform)
-
-### Methods
-
-- [onPlay](m4m.framework.behaviour2d.md#onplay)
-- [remove](m4m.framework.behaviour2d.md#remove)
-- [start](m4m.framework.behaviour2d.md#start)
-- [update](m4m.framework.behaviour2d.md#update)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new behaviour2d**()
 
-## Properties
+### Properties
 
-### enabled
+#### enabled
 
 • **enabled**: `boolean` = `true`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-组件启用
+**`classdesc`** 组件启用
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IEnabled](../interfaces/m4m.framework.IEnabled.md).[enabled](../interfaces/m4m.framework.IEnabled.md#enabled)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L16)
 
-___
+***
 
-### transform
+#### transform
 
 • **transform**: [`transform2D`](m4m.framework.transform2D.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-挂载的transform
+**`classdesc`** 挂载的transform
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[transform](../interfaces/m4m.framework.I2DComponent.md#transform)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:25](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L25)
 
-## Methods
+### Methods
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-初始化使用  在start 之后
+初始化使用 在start 之后
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[onPlay](../interfaces/m4m.framework.I2DComponent.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L33)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[remove](../interfaces/m4m.framework.I2DComponent.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L40)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
 初始化使用
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[start](../interfaces/m4m.framework.I2DComponent.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L28)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
 每帧调用一次
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [I2DComponent](../interfaces/m4m.framework.I2DComponent.md).[update](../interfaces/m4m.framework.I2DComponent.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/behaviour2d.ts:37](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/behaviour2d.ts#L37)

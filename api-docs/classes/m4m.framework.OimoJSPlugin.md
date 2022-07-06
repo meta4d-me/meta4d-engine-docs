@@ -1,893 +1,894 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / OimoJSPlugin
+# m4m.framework.OimoJSPlugin
 
-# Class: OimoJSPlugin
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / OimoJSPlugin
+
+## Class: OimoJSPlugin
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).OimoJSPlugin
 
 OimoJS physic engine Plugin
 
-## Implements
+### Implements
 
-- [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md)
+* [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [BJSOIMO](m4m.framework.OimoJSPlugin.md#bjsoimo)
+* [name](m4m.framework.OimoJSPlugin.md#name)
+* [world](m4m.framework.OimoJSPlugin.md#world)
+
+#### Methods
+
+* [applyForce](m4m.framework.OimoJSPlugin.md#applyforce)
+* [applyImpulse](m4m.framework.OimoJSPlugin.md#applyimpulse)
+* [dispose](m4m.framework.OimoJSPlugin.md#dispose)
+* [executeStep](m4m.framework.OimoJSPlugin.md#executestep)
+* [generateJoint](m4m.framework.OimoJSPlugin.md#generatejoint)
+* [generatePhysicsBody](m4m.framework.OimoJSPlugin.md#generatephysicsbody)
+* [getAngularVelocity](m4m.framework.OimoJSPlugin.md#getangularvelocity)
+* [getBodyFriction](m4m.framework.OimoJSPlugin.md#getbodyfriction)
+* [getBodyMass](m4m.framework.OimoJSPlugin.md#getbodymass)
+* [getBodyRestitution](m4m.framework.OimoJSPlugin.md#getbodyrestitution)
+* [getBoxSizeToRef](m4m.framework.OimoJSPlugin.md#getboxsizetoref)
+* [getLinearVelocity](m4m.framework.OimoJSPlugin.md#getlinearvelocity)
+* [getRadius](m4m.framework.OimoJSPlugin.md#getradius)
+* [getTimeStep](m4m.framework.OimoJSPlugin.md#gettimestep)
+* [isSleeping](m4m.framework.OimoJSPlugin.md#issleeping)
+* [isSupported](m4m.framework.OimoJSPlugin.md#issupported)
+* [removeJoint](m4m.framework.OimoJSPlugin.md#removejoint)
+* [removePhysicsBody](m4m.framework.OimoJSPlugin.md#removephysicsbody)
+* [setAngularVelocity](m4m.framework.OimoJSPlugin.md#setangularvelocity)
+* [setBodyFriction](m4m.framework.OimoJSPlugin.md#setbodyfriction)
+* [setBodyMass](m4m.framework.OimoJSPlugin.md#setbodymass)
+* [setBodyRestitution](m4m.framework.OimoJSPlugin.md#setbodyrestitution)
+* [setGravity](m4m.framework.OimoJSPlugin.md#setgravity)
+* [setLimit](m4m.framework.OimoJSPlugin.md#setlimit)
+* [setLinearVelocity](m4m.framework.OimoJSPlugin.md#setlinearvelocity)
+* [setMotor](m4m.framework.OimoJSPlugin.md#setmotor)
+* [setPhysicsBodyTransformation](m4m.framework.OimoJSPlugin.md#setphysicsbodytransformation)
+* [setTimeStep](m4m.framework.OimoJSPlugin.md#settimestep)
+* [setTransformationFromPhysicsBody](m4m.framework.OimoJSPlugin.md#settransformationfromphysicsbody)
+* [sleepBody](m4m.framework.OimoJSPlugin.md#sleepbody)
+* [updateDistanceJoint](m4m.framework.OimoJSPlugin.md#updatedistancejoint)
+* [wakeUpBody](m4m.framework.OimoJSPlugin.md#wakeupbody)
+
+#### Constructors
+
+* [constructor](m4m.framework.OimoJSPlugin.md#constructor)
 
 ### Properties
 
-- [BJSOIMO](m4m.framework.OimoJSPlugin.md#bjsoimo)
-- [name](m4m.framework.OimoJSPlugin.md#name)
-- [world](m4m.framework.OimoJSPlugin.md#world)
-
-### Methods
-
-- [applyForce](m4m.framework.OimoJSPlugin.md#applyforce)
-- [applyImpulse](m4m.framework.OimoJSPlugin.md#applyimpulse)
-- [dispose](m4m.framework.OimoJSPlugin.md#dispose)
-- [executeStep](m4m.framework.OimoJSPlugin.md#executestep)
-- [generateJoint](m4m.framework.OimoJSPlugin.md#generatejoint)
-- [generatePhysicsBody](m4m.framework.OimoJSPlugin.md#generatephysicsbody)
-- [getAngularVelocity](m4m.framework.OimoJSPlugin.md#getangularvelocity)
-- [getBodyFriction](m4m.framework.OimoJSPlugin.md#getbodyfriction)
-- [getBodyMass](m4m.framework.OimoJSPlugin.md#getbodymass)
-- [getBodyRestitution](m4m.framework.OimoJSPlugin.md#getbodyrestitution)
-- [getBoxSizeToRef](m4m.framework.OimoJSPlugin.md#getboxsizetoref)
-- [getLinearVelocity](m4m.framework.OimoJSPlugin.md#getlinearvelocity)
-- [getRadius](m4m.framework.OimoJSPlugin.md#getradius)
-- [getTimeStep](m4m.framework.OimoJSPlugin.md#gettimestep)
-- [isSleeping](m4m.framework.OimoJSPlugin.md#issleeping)
-- [isSupported](m4m.framework.OimoJSPlugin.md#issupported)
-- [removeJoint](m4m.framework.OimoJSPlugin.md#removejoint)
-- [removePhysicsBody](m4m.framework.OimoJSPlugin.md#removephysicsbody)
-- [setAngularVelocity](m4m.framework.OimoJSPlugin.md#setangularvelocity)
-- [setBodyFriction](m4m.framework.OimoJSPlugin.md#setbodyfriction)
-- [setBodyMass](m4m.framework.OimoJSPlugin.md#setbodymass)
-- [setBodyRestitution](m4m.framework.OimoJSPlugin.md#setbodyrestitution)
-- [setGravity](m4m.framework.OimoJSPlugin.md#setgravity)
-- [setLimit](m4m.framework.OimoJSPlugin.md#setlimit)
-- [setLinearVelocity](m4m.framework.OimoJSPlugin.md#setlinearvelocity)
-- [setMotor](m4m.framework.OimoJSPlugin.md#setmotor)
-- [setPhysicsBodyTransformation](m4m.framework.OimoJSPlugin.md#setphysicsbodytransformation)
-- [setTimeStep](m4m.framework.OimoJSPlugin.md#settimestep)
-- [setTransformationFromPhysicsBody](m4m.framework.OimoJSPlugin.md#settransformationfromphysicsbody)
-- [sleepBody](m4m.framework.OimoJSPlugin.md#sleepbody)
-- [updateDistanceJoint](m4m.framework.OimoJSPlugin.md#updatedistancejoint)
-- [wakeUpBody](m4m.framework.OimoJSPlugin.md#wakeupbody)
-
-### Constructors
-
-- [constructor](m4m.framework.OimoJSPlugin.md#constructor)
-
-## Properties
-
-### BJSOIMO
+#### BJSOIMO
 
 • **BJSOIMO**: `any`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L10)
 
-___
+***
 
-### name
+#### name
 
 • **name**: `string` = `"OIMOJSPlugin"`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[name](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#name)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L7)
 
-___
+***
 
-### world
+#### world
 
 • **world**: `any`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[world](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#world)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L6)
 
-## Methods
+### Methods
 
-### applyForce
+#### applyForce
 
 ▸ **applyForce**(`impostor`, `force`, `contactPoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                  |
+| -------------- | ----------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                             |
+| `contactPoint` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[applyForce](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#applyforce)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:107](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L107)
 
-___
+***
 
-### applyImpulse
+#### applyImpulse
 
 ▸ **applyImpulse**(`impostor`, `force`, `contactPoint`): `void`
 
 申请 冲量
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                  |
+| -------------- | ----------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                             |
+| `contactPoint` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[applyImpulse](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#applyimpulse)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:98](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L98)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[dispose](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:516](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L516)
 
-___
+***
 
-### executeStep
+#### executeStep
 
 ▸ **executeStep**(`delta`, `impostors`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `delta` | `number` |
-| `impostors` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md)[] |
+| Name        | Type                                                     |
+| ----------- | -------------------------------------------------------- |
+| `delta`     | `number`                                                 |
+| `impostors` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md)\[] |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[executeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#executestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:60](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L60)
 
-___
+***
 
-### generateJoint
+#### generateJoint
 
 ▸ **generateJoint**(`impostorJoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                                                                          |
+| --------------- | ----------------------------------------------------------------------------- |
 | `impostorJoint` | [`PhysicsImpostorJoint`](../interfaces/m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[generateJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#generatejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:303](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L303)
 
-___
+***
 
-### generatePhysicsBody
+#### generatePhysicsBody
 
 ▸ **generatePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[generatePhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#generatephysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:116](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L116)
 
-___
+***
 
-### getAngularVelocity
+#### getAngularVelocity
 
 ▸ **getAngularVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getAngularVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getangularvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:413](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L413)
 
-___
+***
 
-### getBodyFriction
+#### getBodyFriction
 
 ▸ **getBodyFriction**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyFriction](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodyfriction)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:433](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L433)
 
-___
+***
 
-### getBodyMass
+#### getBodyMass
 
 ▸ **getBodyMass**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyMass](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodymass)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:429](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L429)
 
-___
+***
 
-### getBodyRestitution
+#### getBodyRestitution
 
 ▸ **getBodyRestitution**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyRestitution](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodyrestitution)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:441](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L441)
 
-___
+***
 
-### getBoxSizeToRef
+#### getBoxSizeToRef
 
 ▸ **getBoxSizeToRef**(`impostor`, `result`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `result` | `vector3` |
+| `result`   | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBoxSizeToRef](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getboxsizetoref)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:509](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L509)
 
-___
+***
 
-### getLinearVelocity
+#### getLinearVelocity
 
 ▸ **getLinearVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getLinearVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getlinearvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:406](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L406)
 
-___
+***
 
-### getRadius
+#### getRadius
 
 ▸ **getRadius**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getRadius](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getradius)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:505](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L505)
 
-___
+***
 
-### getTimeStep
+#### getTimeStep
 
 ▸ **getTimeStep**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getTimeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#gettimestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L54)
 
-___
+***
 
-### isSleeping
+#### isSleeping
 
 ▸ **isSleeping**(`impostor`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[isSleeping](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#issleeping)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:453](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L453)
 
-___
+***
 
-### isSupported
+#### isSupported
 
 ▸ **isSupported**(): `boolean`
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[isSupported](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#issupported)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:394](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L394)
 
-___
+***
 
-### removeJoint
+#### removeJoint
 
 ▸ **removeJoint**(`impostorJoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                                                                          |
+| --------------- | ----------------------------------------------------------------------------- |
 | `impostorJoint` | [`PhysicsImpostorJoint`](../interfaces/m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[removeJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#removejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:364](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L364)
 
-___
+***
 
-### removePhysicsBody
+#### removePhysicsBody
 
 ▸ **removePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[removePhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#removephysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:296](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L296)
 
-___
+***
 
-### setAngularVelocity
+#### setAngularVelocity
 
 ▸ **setAngularVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setAngularVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setangularvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:402](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L402)
 
-___
+***
 
-### setBodyFriction
+#### setBodyFriction
 
 ▸ **setBodyFriction**(`impostor`, `friction`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `friction` | `number` |
+| `friction` | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyFriction](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodyfriction)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:437](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L437)
 
-___
+***
 
-### setBodyMass
+#### setBodyMass
 
 ▸ **setBodyMass**(`impostor`, `mass`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `mass` | `number` |
+| `mass`     | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyMass](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodymass)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:421](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L421)
 
-___
+***
 
-### setBodyRestitution
+#### setBodyRestitution
 
 ▸ **setBodyRestitution**(`impostor`, `restitution`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `restitution` | `number` |
+| Name          | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `restitution` | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyRestitution](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodyrestitution)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:445](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L445)
 
-___
+***
 
-### setGravity
+#### setGravity
 
 ▸ **setGravity**(`gravity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| --------- | --------- |
 | `gravity` | `vector3` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setGravity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setgravity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:46](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L46)
 
-___
+***
 
-### setLimit
+#### setLimit
 
 ▸ **setLimit**(`joint`, `upperLimit`, `lowerLimit?`, `motorIndex?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
-| `upperLimit` | `number` |
-| `lowerLimit?` | `number` |
-| `motorIndex?` | `number` |
+| Name          | Type                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
+| `upperLimit`  | `number`                                                                  |
+| `lowerLimit?` | `number`                                                                  |
+| `motorIndex?` | `number`                                                                  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setLimit](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setlimit)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:483](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L483)
 
-___
+***
 
-### setLinearVelocity
+#### setLinearVelocity
 
 ▸ **setLinearVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setLinearVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setlinearvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:398](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L398)
 
-___
+***
 
-### setMotor
+#### setMotor
 
 ▸ **setMotor**(`joint`, `speed?`, `force?`, `motorIndex?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
-| `speed?` | `number` |
-| `force?` | `number` |
-| `motorIndex?` | `number` |
+| Name          | Type                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
+| `speed?`      | `number`                                                                  |
+| `force?`      | `number`                                                                  |
+| `motorIndex?` | `number`                                                                  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setMotor](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setmotor)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:468](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L468)
 
-___
+***
 
-### setPhysicsBodyTransformation
+#### setPhysicsBodyTransformation
 
 ▸ **setPhysicsBodyTransformation**(`impostor`, `newPosition`, `newRotation`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `newPosition` | `vector3` |
-| `newRotation` | `quaternion` |
+| Name          | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `newPosition` | `vector3`                                             |
+| `newRotation` | `quaternion`                                          |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setPhysicsBodyTransformation](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setphysicsbodytransformation)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:387](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L387)
 
-___
+***
 
-### setTimeStep
+#### setTimeStep
 
 ▸ **setTimeStep**(`timeStep`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| ---------- | -------- |
 | `timeStep` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setTimeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#settimestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:50](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L50)
 
-___
+***
 
-### setTransformationFromPhysicsBody
+#### setTransformationFromPhysicsBody
 
 ▸ **setTransformationFromPhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setTransformationFromPhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#settransformationfromphysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:372](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L372)
 
-___
+***
 
-### sleepBody
+#### sleepBody
 
 ▸ **sleepBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[sleepBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#sleepbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:449](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L449)
 
-___
+***
 
-### updateDistanceJoint
+#### updateDistanceJoint
 
 ▸ **updateDistanceJoint**(`joint`, `maxDistance`, `minDistance?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`PhysicsJoint`](m4m.framework.PhysicsJoint.md) |
-| `maxDistance` | `number` |
-| `minDistance?` | `number` |
+| Name           | Type                                            |
+| -------------- | ----------------------------------------------- |
+| `joint`        | [`PhysicsJoint`](m4m.framework.PhysicsJoint.md) |
+| `maxDistance`  | `number`                                        |
+| `minDistance?` | `number`                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[updateDistanceJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#updatedistancejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:461](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L461)
 
-___
+***
 
-### wakeUpBody
+#### wakeUpBody
 
 ▸ **wakeUpBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[wakeUpBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#wakeupbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:457](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L457)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new OimoJSPlugin**(`iterations?`, `oimoInjection?`)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-OimoJS 物理引擎插件
+**`classdesc`** OimoJS 物理引擎插件
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `iterations?` | `number` | `undefined` | - |
-| `oimoInjection` | `any` | `OIMO` | Omio对象 |
+| Name            | Type     | Default value | Description |
+| --------------- | -------- | ------------- | ----------- |
+| `iterations?`   | `number` | `undefined`   | -           |
+| `oimoInjection` | `any`    | `OIMO`        | Omio对象      |
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/oimoJSPlugin.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/oimoJSPlugin.ts#L26)

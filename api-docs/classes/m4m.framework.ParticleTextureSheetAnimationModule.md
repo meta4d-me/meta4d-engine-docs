@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleTextureSheetAnimationModule
+# m4m.framework.ParticleTextureSheetAnimationModule
 
-# Class: ParticleTextureSheetAnimationModule
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleTextureSheetAnimationModule
+
+## Class: ParticleTextureSheetAnimationModule
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ParticleTextureSheetAnimationModule
 
@@ -8,49 +10,49 @@
 
 **`author`** feng3d
 
-## Hierarchy
+### Hierarchy
 
-- [`ParticleModule`](m4m.framework.ParticleModule.md)
+*   [`ParticleModule`](m4m.framework.ParticleModule.md)
 
-  ↳ **`ParticleTextureSheetAnimationModule`**
+    ↳ **`ParticleTextureSheetAnimationModule`**
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [animation](m4m.framework.ParticleTextureSheetAnimationModule.md#animation)
+* [cycleCount](m4m.framework.ParticleTextureSheetAnimationModule.md#cyclecount)
+* [enabled](m4m.framework.ParticleTextureSheetAnimationModule.md#enabled)
+* [flipUV](m4m.framework.ParticleTextureSheetAnimationModule.md#flipuv)
+* [frameOverTime](m4m.framework.ParticleTextureSheetAnimationModule.md#frameovertime)
+* [particleSystem](m4m.framework.ParticleTextureSheetAnimationModule.md#particlesystem)
+* [startFrame](m4m.framework.ParticleTextureSheetAnimationModule.md#startframe)
+* [tiles](m4m.framework.ParticleTextureSheetAnimationModule.md#tiles)
+* [useRandomRow](m4m.framework.ParticleTextureSheetAnimationModule.md#userandomrow)
+* [uvChannelMask](m4m.framework.ParticleTextureSheetAnimationModule.md#uvchannelmask)
+
+#### Constructors
+
+* [constructor](m4m.framework.ParticleTextureSheetAnimationModule.md#constructor)
+
+#### Accessors
+
+* [flipU](m4m.framework.ParticleTextureSheetAnimationModule.md#flipu)
+* [flipV](m4m.framework.ParticleTextureSheetAnimationModule.md#flipv)
+* [frameOverTimeMultiplier](m4m.framework.ParticleTextureSheetAnimationModule.md#frameovertimemultiplier)
+* [numTilesX](m4m.framework.ParticleTextureSheetAnimationModule.md#numtilesx)
+* [numTilesY](m4m.framework.ParticleTextureSheetAnimationModule.md#numtilesy)
+* [rowIndex](m4m.framework.ParticleTextureSheetAnimationModule.md#rowindex)
+* [startFrameMultiplier](m4m.framework.ParticleTextureSheetAnimationModule.md#startframemultiplier)
+
+#### Methods
+
+* [initParticleState](m4m.framework.ParticleTextureSheetAnimationModule.md#initparticlestate)
+* [updateParticleState](m4m.framework.ParticleTextureSheetAnimationModule.md#updateparticlestate)
 
 ### Properties
 
-- [animation](m4m.framework.ParticleTextureSheetAnimationModule.md#animation)
-- [cycleCount](m4m.framework.ParticleTextureSheetAnimationModule.md#cyclecount)
-- [enabled](m4m.framework.ParticleTextureSheetAnimationModule.md#enabled)
-- [flipUV](m4m.framework.ParticleTextureSheetAnimationModule.md#flipuv)
-- [frameOverTime](m4m.framework.ParticleTextureSheetAnimationModule.md#frameovertime)
-- [particleSystem](m4m.framework.ParticleTextureSheetAnimationModule.md#particlesystem)
-- [startFrame](m4m.framework.ParticleTextureSheetAnimationModule.md#startframe)
-- [tiles](m4m.framework.ParticleTextureSheetAnimationModule.md#tiles)
-- [useRandomRow](m4m.framework.ParticleTextureSheetAnimationModule.md#userandomrow)
-- [uvChannelMask](m4m.framework.ParticleTextureSheetAnimationModule.md#uvchannelmask)
-
-### Constructors
-
-- [constructor](m4m.framework.ParticleTextureSheetAnimationModule.md#constructor)
-
-### Accessors
-
-- [flipU](m4m.framework.ParticleTextureSheetAnimationModule.md#flipu)
-- [flipV](m4m.framework.ParticleTextureSheetAnimationModule.md#flipv)
-- [frameOverTimeMultiplier](m4m.framework.ParticleTextureSheetAnimationModule.md#frameovertimemultiplier)
-- [numTilesX](m4m.framework.ParticleTextureSheetAnimationModule.md#numtilesx)
-- [numTilesY](m4m.framework.ParticleTextureSheetAnimationModule.md#numtilesy)
-- [rowIndex](m4m.framework.ParticleTextureSheetAnimationModule.md#rowindex)
-- [startFrameMultiplier](m4m.framework.ParticleTextureSheetAnimationModule.md#startframemultiplier)
-
-### Methods
-
-- [initParticleState](m4m.framework.ParticleTextureSheetAnimationModule.md#initparticlestate)
-- [updateParticleState](m4m.framework.ParticleTextureSheetAnimationModule.md#updateparticlestate)
-
-## Properties
-
-### animation
+#### animation
 
 • **animation**: [`ParticleSystemAnimationType`](../enums/m4m.framework.ParticleSystemAnimationType.md) = `ParticleSystemAnimationType.WholeSheet`
 
@@ -58,13 +60,13 @@ Specifies the animation type.
 
 指定动画类型。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:25](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L25)
 
-___
+***
 
-### cycleCount
+#### cycleCount
 
 • **cycleCount**: `number` = `1`
 
@@ -72,29 +74,29 @@ Specifies how many times the animation will loop during the lifetime of the part
 
 指定在粒子的生命周期内动画将循环多少次。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:70](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L70)
 
-___
+***
 
-### enabled
+#### enabled
 
 • **enabled**: `boolean` = `false`
 
 是否开启
 
-#### Inherited from
+**Inherited from**
 
 [ParticleModule](m4m.framework.ParticleModule.md).[enabled](m4m.framework.ParticleModule.md#enabled)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleModule.ts:14](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleModule.ts#L14)
 
-___
+***
 
-### flipUV
+#### flipUV
 
 • **flipUV**: `vector2`
 
@@ -102,13 +104,13 @@ Flip the UV coordinate on particles, causing them to appear mirrored.
 
 在粒子上翻转UV坐标，使它们呈现镜像翻转。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:78](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L78)
 
-___
+***
 
-### frameOverTime
+#### frameOverTime
 
 • **frameOverTime**: [`MinMaxCurve`](m4m.framework.MinMaxCurve.md)
 
@@ -116,29 +118,29 @@ Curve to control which frame of the texture sheet animation to play.
 
 曲线控制哪个帧的纹理表动画播放。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L33)
 
-___
+***
 
-### particleSystem
+#### particleSystem
 
 • **particleSystem**: [`ParticleSystem`](m4m.framework.ParticleSystem.md)
 
 粒子系统
 
-#### Inherited from
+**Inherited from**
 
 [ParticleModule](m4m.framework.ParticleModule.md).[particleSystem](m4m.framework.ParticleModule.md#particlesystem)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleModule.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleModule.ts#L19)
 
-___
+***
 
-### startFrame
+#### startFrame
 
 • **startFrame**: [`MinMaxCurve`](m4m.framework.MinMaxCurve.md)
 
@@ -146,13 +148,13 @@ Define a random starting frame for the texture sheet animation.
 
 为纹理表动画定义一个随机的起始帧。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:62](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L62)
 
-___
+***
 
-### tiles
+#### tiles
 
 • **tiles**: `vector2`
 
@@ -160,13 +162,13 @@ Defines the tiling of the texture.
 
 定义纹理的平铺。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L17)
 
-___
+***
 
-### useRandomRow
+#### useRandomRow
 
 • **useRandomRow**: `boolean` = `true`
 
@@ -174,13 +176,13 @@ Use a random row of the texture sheet for each particle emitted.
 
 对每个发射的粒子使用纹理表的随机行。
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L41)
 
-___
+***
 
-### uvChannelMask
+#### uvChannelMask
 
 • **uvChannelMask**: [`UVChannelFlags`](../enums/m4m.framework.UVChannelFlags.md) = `UVChannelFlags.Everything`
 
@@ -190,23 +192,23 @@ Choose which UV channels will receive texture animation.
 
 todo 目前引擎中只有一套UV
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:88](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L88)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new ParticleTextureSheetAnimationModule**()
 
-#### Inherited from
+**Inherited from**
 
 [ParticleModule](m4m.framework.ParticleModule.md).[constructor](m4m.framework.ParticleModule.md#constructor)
 
-## Accessors
+### Accessors
 
-### flipU
+#### flipU
 
 • `get` **flipU**(): `number`
 
@@ -214,11 +216,11 @@ Flip the U coordinate on particles, causing them to appear mirrored horizontally
 
 在粒子上翻转U坐标，使它们呈现水平镜像。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:95](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L95)
 
@@ -228,23 +230,23 @@ Flip the U coordinate on particles, causing them to appear mirrored horizontally
 
 在粒子上翻转U坐标，使它们呈现水平镜像。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:100](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L100)
 
-___
+***
 
-### flipV
+#### flipV
 
 • `get` **flipV**(): `number`
 
@@ -252,11 +254,11 @@ Flip the V coordinate on particles, causing them to appear mirrored vertically.
 
 在粒子上翻转V坐标，使它们垂直镜像。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:110](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L110)
 
@@ -266,23 +268,23 @@ Flip the V coordinate on particles, causing them to appear mirrored vertically.
 
 在粒子上翻转V坐标，使它们垂直镜像。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:115](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L115)
 
-___
+***
 
-### frameOverTimeMultiplier
+#### frameOverTimeMultiplier
 
 • `get` **frameOverTimeMultiplier**(): `number`
 
@@ -290,11 +292,11 @@ Frame over time mutiplier.
 
 帧随时间变化的乘数。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:125](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L125)
 
@@ -304,23 +306,23 @@ Frame over time mutiplier.
 
 帧随时间变化的乘数。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:130](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L130)
 
-___
+***
 
-### numTilesX
+#### numTilesX
 
 • `get` **numTilesX**(): `number`
 
@@ -328,11 +330,11 @@ Defines the tiling of the texture in the X axis.
 
 定义纹理在X轴上的平铺。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:140](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L140)
 
@@ -342,23 +344,23 @@ Defines the tiling of the texture in the X axis.
 
 定义纹理在X轴上的平铺。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:145](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L145)
 
-___
+***
 
-### numTilesY
+#### numTilesY
 
 • `get` **numTilesY**(): `number`
 
@@ -366,11 +368,11 @@ Defines the tiling of the texture in the Y axis.
 
 定义纹理在Y轴上的平铺。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:155](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L155)
 
@@ -380,23 +382,23 @@ Defines the tiling of the texture in the Y axis.
 
 定义纹理在Y轴上的平铺。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:160](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L160)
 
-___
+***
 
-### rowIndex
+#### rowIndex
 
 • `get` **rowIndex**(): `number`
 
@@ -404,11 +406,11 @@ Explicitly select which row of the texture sheet is used, when useRandomRow is s
 
 当useRandomRow设置为false时，显式选择使用纹理表的哪一行。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:49](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L49)
 
@@ -418,23 +420,23 @@ Explicitly select which row of the texture sheet is used, when useRandomRow is s
 
 当useRandomRow设置为false时，显式选择使用纹理表的哪一行。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:50](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L50)
 
-___
+***
 
-### startFrameMultiplier
+#### startFrameMultiplier
 
 • `get` **startFrameMultiplier**(): `number`
 
@@ -442,11 +444,11 @@ Starting frame multiplier.
 
 起始帧乘数。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:170](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L170)
 
@@ -456,68 +458,68 @@ Starting frame multiplier.
 
 起始帧乘数。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:175](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L175)
 
-## Methods
+### Methods
 
-### initParticleState
+#### initParticleState
 
 ▸ **initParticleState**(`particle`): `void`
 
 初始化粒子状态
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `particle` | [`Particle1`](m4m.framework.Particle1.md) | 粒子 |
+| Name       | Type                                      | Description |
+| ---------- | ----------------------------------------- | ----------- |
+| `particle` | [`Particle1`](m4m.framework.Particle1.md) | 粒子          |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [ParticleModule](m4m.framework.ParticleModule.md).[initParticleState](m4m.framework.ParticleModule.md#initparticlestate)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:184](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L184)
 
-___
+***
 
-### updateParticleState
+#### updateParticleState
 
 ▸ **updateParticleState**(`particle`): `void`
 
 更新粒子状态
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `particle` | [`Particle1`](m4m.framework.Particle1.md) | 粒子 |
+| Name       | Type                                      | Description |
+| ---------- | ----------------------------------------- | ----------- |
+| `particle` | [`Particle1`](m4m.framework.Particle1.md) | 粒子          |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [ParticleModule](m4m.framework.ParticleModule.md).[updateParticleState](m4m.framework.ParticleModule.md#updateparticlestate)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts:195](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/modules/ParticleTextureSheetAnimationModule.ts#L195)

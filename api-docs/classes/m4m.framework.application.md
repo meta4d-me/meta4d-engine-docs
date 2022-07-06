@@ -1,603 +1,592 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / application
+# m4m.framework.application
 
-# Class: application
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / application
+
+## Class: application
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).application
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引擎的主入口
+**`classdesc`** 引擎的主入口
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [OffOrientationUpdate](m4m.framework.application.md#offorientationupdate)
+* [bePlay](m4m.framework.application.md#beplay)
+* [ccHeight](m4m.framework.application.md#ccheight)
+* [ccWidth](m4m.framework.application.md#ccwidth)
+* [container](m4m.framework.application.md#container)
+* [curcameraindex](m4m.framework.application.md#curcameraindex)
+* [edModel](m4m.framework.application.md#edmodel)
+* [globalMacros](m4m.framework.application.md#globalmacros)
+* [limitFrame](m4m.framework.application.md#limitframe)
+* [notify](m4m.framework.application.md#notify)
+* [orientation](m4m.framework.application.md#orientation)
+* [outcontainer](m4m.framework.application.md#outcontainer)
+* [screenAdaptiveType](m4m.framework.application.md#screenadaptivetype)
+* [shouldRotate](m4m.framework.application.md#shouldrotate)
+* [stats](m4m.framework.application.md#stats)
+* [webgl](m4m.framework.application.md#webgl)
+
+#### Methods
+
+* [addEditorCode](m4m.framework.application.md#addeditorcode)
+* [addEditorCodeDirect](m4m.framework.application.md#addeditorcodedirect)
+* [addUserCode](m4m.framework.application.md#addusercode)
+* [addUserCodeDirect](m4m.framework.application.md#addusercodedirect)
+* [closeDrawCall](m4m.framework.application.md#closedrawcall)
+* [closeFps](m4m.framework.application.md#closefps)
+* [getAssetMgr](m4m.framework.application.md#getassetmgr)
+* [getInputMgr](m4m.framework.application.md#getinputmgr)
+* [getScene](m4m.framework.application.md#getscene)
+* [markNotify](m4m.framework.application.md#marknotify)
+* [refreshOrientationMode](m4m.framework.application.md#refreshorientationmode)
+* [showDrawCall](m4m.framework.application.md#showdrawcall)
+* [showFps](m4m.framework.application.md#showfps)
+* [start](m4m.framework.application.md#start)
+* [startForCanvas](m4m.framework.application.md#startforcanvas)
+
+#### Accessors
+
+* [beRendering](m4m.framework.application.md#berendering)
+* [canvasClientHeight](m4m.framework.application.md#canvasclientheight)
+* [canvasClientWidth](m4m.framework.application.md#canvasclientwidth)
+* [canvasFixHeight](m4m.framework.application.md#canvasfixheight)
+* [canvasFixWidth](m4m.framework.application.md#canvasfixwidth)
+* [frameID](m4m.framework.application.md#frameid)
+* [height](m4m.framework.application.md#height)
+* [scaleFromPandding](m4m.framework.application.md#scalefrompandding)
+* [targetFrame](m4m.framework.application.md#targetframe)
+* [timeScale](m4m.framework.application.md#timescale)
+* [width](m4m.framework.application.md#width)
+
+#### Constructors
+
+* [constructor](m4m.framework.application.md#constructor)
 
 ### Properties
 
-- [OffOrientationUpdate](m4m.framework.application.md#offorientationupdate)
-- [bePlay](m4m.framework.application.md#beplay)
-- [ccHeight](m4m.framework.application.md#ccheight)
-- [ccWidth](m4m.framework.application.md#ccwidth)
-- [container](m4m.framework.application.md#container)
-- [curcameraindex](m4m.framework.application.md#curcameraindex)
-- [edModel](m4m.framework.application.md#edmodel)
-- [globalMacros](m4m.framework.application.md#globalmacros)
-- [limitFrame](m4m.framework.application.md#limitframe)
-- [notify](m4m.framework.application.md#notify)
-- [orientation](m4m.framework.application.md#orientation)
-- [outcontainer](m4m.framework.application.md#outcontainer)
-- [screenAdaptiveType](m4m.framework.application.md#screenadaptivetype)
-- [shouldRotate](m4m.framework.application.md#shouldrotate)
-- [stats](m4m.framework.application.md#stats)
-- [webgl](m4m.framework.application.md#webgl)
-
-### Methods
-
-- [addEditorCode](m4m.framework.application.md#addeditorcode)
-- [addEditorCodeDirect](m4m.framework.application.md#addeditorcodedirect)
-- [addUserCode](m4m.framework.application.md#addusercode)
-- [addUserCodeDirect](m4m.framework.application.md#addusercodedirect)
-- [closeDrawCall](m4m.framework.application.md#closedrawcall)
-- [closeFps](m4m.framework.application.md#closefps)
-- [getAssetMgr](m4m.framework.application.md#getassetmgr)
-- [getInputMgr](m4m.framework.application.md#getinputmgr)
-- [getScene](m4m.framework.application.md#getscene)
-- [markNotify](m4m.framework.application.md#marknotify)
-- [refreshOrientationMode](m4m.framework.application.md#refreshorientationmode)
-- [showDrawCall](m4m.framework.application.md#showdrawcall)
-- [showFps](m4m.framework.application.md#showfps)
-- [start](m4m.framework.application.md#start)
-- [startForCanvas](m4m.framework.application.md#startforcanvas)
-
-### Accessors
-
-- [beRendering](m4m.framework.application.md#berendering)
-- [canvasClientHeight](m4m.framework.application.md#canvasclientheight)
-- [canvasClientWidth](m4m.framework.application.md#canvasclientwidth)
-- [canvasFixHeight](m4m.framework.application.md#canvasfixheight)
-- [canvasFixWidth](m4m.framework.application.md#canvasfixwidth)
-- [frameID](m4m.framework.application.md#frameid)
-- [height](m4m.framework.application.md#height)
-- [scaleFromPandding](m4m.framework.application.md#scalefrompandding)
-- [targetFrame](m4m.framework.application.md#targetframe)
-- [timeScale](m4m.framework.application.md#timescale)
-- [width](m4m.framework.application.md#width)
-
-### Constructors
-
-- [constructor](m4m.framework.application.md#constructor)
-
-## Properties
-
-### OffOrientationUpdate
+#### OffOrientationUpdate
 
 • **OffOrientationUpdate**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:843](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L843)
 
-___
+***
 
-### bePlay
+#### bePlay
 
 • **bePlay**: `boolean` = `false`
 
 运行开关
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:659](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L659)
 
-___
+***
 
-### ccHeight
+#### ccHeight
 
 • **ccHeight**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:150](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L150)
 
-___
+***
 
-### ccWidth
+#### ccWidth
 
 • **ccWidth**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:149](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L149)
 
-___
+***
 
-### container
+#### container
 
 • **container**: `HTMLDivElement`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:55](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L55)
 
-___
+***
 
-### curcameraindex
+#### curcameraindex
 
 • **curcameraindex**: `number` = `-1`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:655](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L655)
 
-___
+***
 
-### edModel
+#### edModel
 
 • **edModel**: `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:57](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L57)
 
-___
+***
 
-### globalMacros
+#### globalMacros
 
-• `Readonly` **globalMacros**: `string`[] = `[]`
+• `Readonly` **globalMacros**: `string`\[] = `[]`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-全局宏定义
+**`classdesc`** 全局宏定义
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:66](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L66)
 
-___
+***
 
-### limitFrame
+#### limitFrame
 
 • **limitFrame**: `boolean` = `true`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:92](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L92)
 
-___
+***
 
-### notify
+#### notify
 
 • **notify**: `INotify`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:93](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L93)
 
-___
+***
 
-### orientation
+#### orientation
 
 • **orientation**: `string` = `OrientationMode.AUTO`
 
 旋转角度 OrientationMode.AUTO
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:839](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L839)
 
-___
+***
 
-### outcontainer
+#### outcontainer
 
 • **outcontainer**: `HTMLDivElement`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:56](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L56)
 
-___
+***
 
-### screenAdaptiveType
+#### screenAdaptiveType
 
 • **screenAdaptiveType**: `string`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:143](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L143)
 
-___
+***
 
-### shouldRotate
+#### shouldRotate
 
 • **shouldRotate**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:840](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L840)
 
-___
+***
 
-### stats
+#### stats
 
 • **stats**: `Stats`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L54)
 
-___
+***
 
-### webgl
+#### webgl
 
 • **webgl**: `WebGLRenderingContext`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-全局webgl实例
+**`classdesc`** 全局webgl实例
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:53](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L53)
 
-## Methods
+### Methods
 
-### addEditorCode
+#### addEditorCode
 
 ▸ **addEditorCode**(`classname`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-根据classname添加editorcode
+**`classdesc`** 根据classname添加editorcode
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type     | Description  |
+| ----------- | -------- | ------------ |
 | `classname` | `string` | editorcode类名 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:818](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L818)
 
-___
+***
 
-### addEditorCodeDirect
+#### addEditorCodeDirect
 
 ▸ **addEditorCodeDirect**(`program`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-直接添加editorcode实例
+**`classdesc`** 直接添加editorcode实例
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name      | Type                                                        | Description  |
+| --------- | ----------------------------------------------------------- | ------------ |
 | `program` | [`IEditorCode`](../interfaces/m4m.framework.IEditorCode.md) | editorcode实例 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:834](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L834)
 
-___
+***
 
-### addUserCode
+#### addUserCode
 
 ▸ **addUserCode**(`classname`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-根据classname添加usercode
+**`classdesc`** 根据classname添加usercode
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `classname` | `string` | usercode类名 |
+| Name        | Type     | Description |
+| ----------- | -------- | ----------- |
+| `classname` | `string` | usercode类名  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:801](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L801)
 
-___
+***
 
-### addUserCodeDirect
+#### addUserCodeDirect
 
 ▸ **addUserCodeDirect**(`program`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-直接添加usercode实例
+**`classdesc`** 直接添加usercode实例
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `program` | [`IUserCode`](../interfaces/m4m.framework.IUserCode.md) | usercode实例 |
+| Name      | Type                                                    | Description |
+| --------- | ------------------------------------------------------- | ----------- |
+| `program` | [`IUserCode`](../interfaces/m4m.framework.IUserCode.md) | usercode实例  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:788](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L788)
 
-___
+***
 
-### closeDrawCall
+#### closeDrawCall
 
 ▸ **closeDrawCall**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:395](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L395)
 
-___
+***
 
-### closeFps
+#### closeFps
 
 ▸ **closeFps**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-关闭性能参数面板
+**`classdesc`** 关闭性能参数面板
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:386](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L386)
 
-___
+***
 
-### getAssetMgr
+#### getAssetMgr
 
 ▸ **getAssetMgr**(): [`assetMgr`](m4m.framework.assetMgr.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源管理器实例
+**`classdesc`** 获取资源管理器实例
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`assetMgr`](m4m.framework.assetMgr.md)
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:622](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L622)
 
-___
+***
 
-### getInputMgr
+#### getInputMgr
 
 ▸ **getInputMgr**(): [`inputMgr`](m4m.framework.inputMgr.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取输入管理器实例
+**`classdesc`** 获取输入管理器实例
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`inputMgr`](m4m.framework.inputMgr.md)
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:641](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L641)
 
-___
+***
 
-### getScene
+#### getScene
 
 ▸ **getScene**(): [`scene`](m4m.framework.scene.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取场景实例
+**`classdesc`** 获取场景实例
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`scene`](m4m.framework.scene.md)
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:604](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L604)
 
-___
+***
 
-### markNotify
+#### markNotify
 
 ▸ **markNotify**(`trans`, `type`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `trans` | `any` |
-| `type` | `NotifyType` |
+| Name    | Type         |
+| ------- | ------------ |
+| `trans` | `any`        |
+| `type`  | `NotifyType` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:321](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L321)
 
-___
+***
 
-### refreshOrientationMode
+#### refreshOrientationMode
 
 ▸ **refreshOrientationMode**(`rect?`, `screenWidth?`, `screenHeight?`): `void`
 
 刷新 一次,视窗朝向数据。
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `rect?` | `DOMRect` | 视窗矩形区域 |
-| `screenWidth?` | `number` | 视窗宽度 |
-| `screenHeight?` | `number` | 视窗高度 |
+| Name            | Type      | Description |
+| --------------- | --------- | ----------- |
+| `rect?`         | `DOMRect` | 视窗矩形区域      |
+| `screenWidth?`  | `number`  | 视窗宽度        |
+| `screenHeight?` | `number`  | 视窗高度        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:904](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L904)
 
-___
+***
 
-### showDrawCall
+#### showDrawCall
 
 ▸ **showDrawCall**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:392](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L392)
 
-___
+***
 
-### showFps
+#### showFps
 
 ▸ **showFps**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-显示性能参数面板
+**`classdesc`** 显示性能参数面板
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:364](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L364)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(`div`, `type?`, `val?`, `webglDebug?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引擎的启动方法
+**`classdesc`** 引擎的启动方法
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `div` | `HTMLDivElement` | `undefined` | 绘制区域的dom |
-| `type` | [`CanvasFixedType`](../enums/m4m.framework.CanvasFixedType.md) | `CanvasFixedType.Free` | - |
-| `val` | `number` | `1200` | - |
-| `webglDebug` | `boolean` | `false` | - |
+| Name         | Type                                                           | Default value          | Description |
+| ------------ | -------------------------------------------------------------- | ---------------------- | ----------- |
+| `div`        | `HTMLDivElement`                                               | `undefined`            | 绘制区域的dom    |
+| `type`       | [`CanvasFixedType`](../enums/m4m.framework.CanvasFixedType.md) | `CanvasFixedType.Free` | -           |
+| `val`        | `number`                                                       | `1200`                 | -           |
+| `webglDebug` | `boolean`                                                      | `false`                | -           |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:178](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L178)
 
-___
+***
 
-### startForCanvas
+#### startForCanvas
 
 ▸ **startForCanvas**(`canvas`, `type?`, `val?`, `webglDebug?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `canvas` | `HTMLCanvasElement` | `undefined` |
-| `type` | [`CanvasFixedType`](../enums/m4m.framework.CanvasFixedType.md) | `CanvasFixedType.Free` |
-| `val` | `number` | `1200` |
-| `webglDebug` | `boolean` | `false` |
+| Name         | Type                                                           | Default value          |
+| ------------ | -------------------------------------------------------------- | ---------------------- |
+| `canvas`     | `HTMLCanvasElement`                                            | `undefined`            |
+| `type`       | [`CanvasFixedType`](../enums/m4m.framework.CanvasFixedType.md) | `CanvasFixedType.Free` |
+| `val`        | `number`                                                       | `1200`                 |
+| `webglDebug` | `boolean`                                                      | `false`                |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:237](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L237)
 
-## Accessors
+### Accessors
 
-### beRendering
+#### beRendering
 
 • `get` **beRendering**(): `boolean`
 
 渲染开关
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:777](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L777)
 
@@ -605,241 +594,236 @@ ___
 
 渲染开关
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type      |
+| ----- | --------- |
 | `val` | `boolean` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:778](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L778)
 
-___
+***
 
-### canvasClientHeight
+#### canvasClientHeight
 
 • `get` **canvasClientHeight**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:164](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L164)
 
-___
+***
 
-### canvasClientWidth
+#### canvasClientWidth
 
 • `get` **canvasClientWidth**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:161](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L161)
 
-___
+***
 
-### canvasFixHeight
+#### canvasFixHeight
 
 • `set` **canvasFixHeight**(`val`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `val` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:155](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L155)
 
-___
+***
 
-### canvasFixWidth
+#### canvasFixWidth
 
 • `set` **canvasFixWidth**(`val`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `val` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:158](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L158)
 
-___
+***
 
-### frameID
+#### frameID
 
 • `get` **frameID**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:399](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L399)
 
-___
+***
 
-### height
+#### height
 
 • `get` **height**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:87](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L87)
 
-___
+***
 
-### scaleFromPandding
+#### scaleFromPandding
 
 • `get` **scaleFromPandding**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:168](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L168)
 
-___
+***
 
-### targetFrame
+#### targetFrame
 
 • `get` **targetFrame**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取当前固定帧数
+**`classdesc`** 获取当前固定帧数
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:140](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L140)
 
 • `set` **targetFrame**(`val`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置固定帧数 不设置即为不限制帧数
+**`classdesc`** 设置固定帧数 不设置即为不限制帧数
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `val` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:126](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L126)
 
-___
+***
 
-### timeScale
+#### timeScale
 
 • `get` **timeScale**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取timescale
+**`classdesc`** 获取timescale
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:112](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L112)
 
 • `set` **timeScale**(`val`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置timescale
+**`classdesc`** 设置timescale
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `val` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:102](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L102)
 
-___
+***
 
-### width
+#### width
 
 • `get` **width**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-绘制区域宽度 像素单位
+**`classdesc`** 绘制区域宽度 像素单位
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/application.ts:75](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/application.ts#L75)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new application**()

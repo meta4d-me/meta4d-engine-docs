@@ -1,75 +1,76 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / meshRenderer
+# m4m.framework.meshRenderer
 
-# Class: meshRenderer
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / meshRenderer
+
+## Class: meshRenderer
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).meshRenderer
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-mesh的渲染组件
+**`classdesc`** mesh的渲染组件
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)
+* [`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.meshRenderer.md#constructor)
+
+#### Accessors
+
+* [filter](m4m.framework.meshRenderer.md#filter)
+* [queue](m4m.framework.meshRenderer.md#queue)
+* [renderLayer](m4m.framework.meshRenderer.md#renderlayer)
+
+#### Properties
+
+* [gameObject](m4m.framework.meshRenderer.md#gameobject)
+* [layer](m4m.framework.meshRenderer.md#layer)
+* [materials](m4m.framework.meshRenderer.md#materials)
+* [ClassName](m4m.framework.meshRenderer.md#classname)
+
+#### Methods
+
+* [isGpuInstancing](m4m.framework.meshRenderer.md#isgpuinstancing)
+* [onPlay](m4m.framework.meshRenderer.md#onplay)
+* [refreshLayerAndQue](m4m.framework.meshRenderer.md#refreshlayerandque)
+* [render](m4m.framework.meshRenderer.md#render)
+* [start](m4m.framework.meshRenderer.md#start)
+* [update](m4m.framework.meshRenderer.md#update)
+* [GpuInstancingRender](m4m.framework.meshRenderer.md#gpuinstancingrender)
+* [GpuInstancingRenderBatcher](m4m.framework.meshRenderer.md#gpuinstancingrenderbatcher)
+* [instanceDrawType](m4m.framework.meshRenderer.md#instancedrawtype)
+* [setInstanceOffsetMatrix](m4m.framework.meshRenderer.md#setinstanceoffsetmatrix)
 
 ### Constructors
 
-- [constructor](m4m.framework.meshRenderer.md#constructor)
-
-### Accessors
-
-- [filter](m4m.framework.meshRenderer.md#filter)
-- [queue](m4m.framework.meshRenderer.md#queue)
-- [renderLayer](m4m.framework.meshRenderer.md#renderlayer)
-
-### Properties
-
-- [gameObject](m4m.framework.meshRenderer.md#gameobject)
-- [layer](m4m.framework.meshRenderer.md#layer)
-- [materials](m4m.framework.meshRenderer.md#materials)
-- [ClassName](m4m.framework.meshRenderer.md#classname)
-
-### Methods
-
-- [isGpuInstancing](m4m.framework.meshRenderer.md#isgpuinstancing)
-- [onPlay](m4m.framework.meshRenderer.md#onplay)
-- [refreshLayerAndQue](m4m.framework.meshRenderer.md#refreshlayerandque)
-- [render](m4m.framework.meshRenderer.md#render)
-- [start](m4m.framework.meshRenderer.md#start)
-- [update](m4m.framework.meshRenderer.md#update)
-- [GpuInstancingRender](m4m.framework.meshRenderer.md#gpuinstancingrender)
-- [GpuInstancingRenderBatcher](m4m.framework.meshRenderer.md#gpuinstancingrenderbatcher)
-- [instanceDrawType](m4m.framework.meshRenderer.md#instancedrawtype)
-- [setInstanceOffsetMatrix](m4m.framework.meshRenderer.md#setinstanceoffsetmatrix)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new meshRenderer**()
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:175](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L175)
 
-## Accessors
+### Accessors
 
-### filter
+#### filter
 
 • `get` **filter**(): [`meshFilter`](m4m.framework.meshFilter.md)
 
 渲染使用 meshFilter
 
-#### Returns
+**Returns**
 
 [`meshFilter`](m4m.framework.meshFilter.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:261](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L261)
 
@@ -77,393 +78,385 @@ mesh的渲染组件
 
 渲染使用 meshFilter
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                        |
+| ----- | ------------------------------------------- |
 | `val` | [`meshFilter`](m4m.framework.meshFilter.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:267](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L267)
 
-___
+***
 
-### queue
+#### queue
 
 • `get` **queue**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-返回此组件的场景渲染层级排序依据queue大小
+**`classdesc`** 返回此组件的场景渲染层级排序依据queue大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[queue](../interfaces/m4m.framework.IRendererGpuIns.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:248](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L248)
 
 • `set` **queue**(`value`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-返回此组件的场景渲染层级排序依据queue大小
+**`classdesc`** 返回此组件的场景渲染层级排序依据queue大小
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `value` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[queue](../interfaces/m4m.framework.IRendererGpuIns.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:251](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L251)
 
-___
+***
 
-### renderLayer
+#### renderLayer
 
 • `get` **renderLayer**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-渲染mask层级（和相机相对应）
+**`classdesc`** 渲染mask层级（和相机相对应）
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[renderLayer](../interfaces/m4m.framework.IRendererGpuIns.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:232](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L232)
 
 • `set` **renderLayer**(`layer`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-渲染mask层级（和相机相对应）
+**`classdesc`** 渲染mask层级（和相机相对应）
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `layer` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[renderLayer](../interfaces/m4m.framework.IRendererGpuIns.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:233](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L233)
 
-## Properties
+### Properties
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](m4m.framework.gameObject.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-挂载的gameobject
+**`classdesc`** 挂载的gameobject
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[gameObject](../interfaces/m4m.framework.IRendererGpuIns.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:185](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L185)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md) = `RenderLayerEnum.Common`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景渲染层级（common、transparent、overlay）
+**`classdesc`** 场景渲染层级（common、transparent、overlay）
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[layer](../interfaces/m4m.framework.IRendererGpuIns.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:222](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L222)
 
-___
+***
 
-### materials
+#### materials
 
-• **materials**: [`material`](m4m.framework.material.md)[] = `[]`
+• **materials**: [`material`](m4m.framework.material.md)\[] = `[]`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-mesh的材质数组
+**`classdesc`** mesh的材质数组
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:195](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L195)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"meshRenderer"`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:173](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L173)
 
-## Methods
+### Methods
 
-### isGpuInstancing
+#### isGpuInstancing
 
 ▸ **isGpuInstancing**(): `boolean`
 
 是否开启 GPU Instancing 绘制
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[isGpuInstancing](../interfaces/m4m.framework.IRendererGpuIns.md#isgpuinstancing)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:520](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L520)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[onPlay](../interfaces/m4m.framework.IRendererGpuIns.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:285](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L285)
 
-___
+***
 
-### refreshLayerAndQue
+#### refreshLayerAndQue
 
 ▸ **refreshLayerAndQue**(): `void`
 
-刷新 渲染layer 和 渲染 queueId （切换了材质时需要手动刷新）
-*优化了自动处理的消耗
+刷新 渲染layer 和 渲染 queueId （切换了材质时需要手动刷新） \*优化了自动处理的消耗
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:293](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L293)
 
-___
+***
 
-### render
+#### render
 
 ▸ **render**(`context`, `assetmgr`, `camera`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `renderContext` |
+| Name       | Type                                    |
+| ---------- | --------------------------------------- |
+| `context`  | `renderContext`                         |
 | `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `camera` | [`camera`](m4m.framework.camera.md) |
+| `camera`   | [`camera`](m4m.framework.camera.md)     |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[render](../interfaces/m4m.framework.IRendererGpuIns.md#render)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:311](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L311)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[start](../interfaces/m4m.framework.IRendererGpuIns.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:277](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L277)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRendererGpuIns](../interfaces/m4m.framework.IRendererGpuIns.md).[update](../interfaces/m4m.framework.IRendererGpuIns.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:308](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L308)
 
-___
+***
 
-### GpuInstancingRender
+#### GpuInstancingRender
 
 ▸ `Static` **GpuInstancingRender**(`context`, `instanceArray`, `cacheBuffer?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `renderContext` |
-| `instanceArray` | [`ReuseArray`](m4m.math.ReuseArray.md)<[`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)\> |
-| `cacheBuffer?` | `Float32Array` |
+| Name            | Type                                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| `context`       | `renderContext`                                                                                             |
+| `instanceArray` | [`ReuseArray`](m4m.math.ReuseArray.md)<[`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)> |
+| `cacheBuffer?`  | `Float32Array`                                                                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:391](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L391)
 
-___
+***
 
-### GpuInstancingRenderBatcher
+#### GpuInstancingRenderBatcher
 
 ▸ `Static` **GpuInstancingRenderBatcher**(`context`, `batcher`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `renderContext` |
+| Name      | Type                                                      |
+| --------- | --------------------------------------------------------- |
+| `context` | `renderContext`                                           |
 | `batcher` | [`meshGpuInsBatcher`](m4m.framework.meshGpuInsBatcher.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:436](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L436)
 
-___
+***
 
-### instanceDrawType
+#### instanceDrawType
 
 ▸ `Static` **instanceDrawType**(): `string`
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:499](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L499)
 
-___
+***
 
-### setInstanceOffsetMatrix
+#### setInstanceOffsetMatrix
 
 ▸ `Static` **setInstanceOffsetMatrix**(`tran`, `mat`, `pass`): `void`
 
 设置 OffsetMatrix
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `tran` | [`transform`](m4m.framework.transform.md) | transform |
-| `mat` | [`material`](m4m.framework.material.md) | 材质对象 |
-| `pass` | `glDrawPass` | 绘制通道对象 |
+| Name   | Type                                      | Description |
+| ------ | ----------------------------------------- | ----------- |
+| `tran` | [`transform`](m4m.framework.transform.md) | transform   |
+| `mat`  | [`material`](m4m.framework.material.md)   | 材质对象        |
+| `pass` | `glDrawPass`                              | 绘制通道对象      |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:479](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L479)

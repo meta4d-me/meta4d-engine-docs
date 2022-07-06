@@ -1,196 +1,198 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / BeBillboard
+# m4m.framework.BeBillboard
 
-# Class: BeBillboard
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / BeBillboard
+
+## Class: BeBillboard
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).BeBillboard
 
-## Implements
+### Implements
 
-- [`INodeComponent`](../interfaces/m4m.framework.INodeComponent.md)
+* [`INodeComponent`](../interfaces/m4m.framework.INodeComponent.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [clone](m4m.framework.BeBillboard.md#clone)
+* [onPlay](m4m.framework.BeBillboard.md#onplay)
+* [remove](m4m.framework.BeBillboard.md#remove)
+* [setActive](m4m.framework.BeBillboard.md#setactive)
+* [setTarget](m4m.framework.BeBillboard.md#settarget)
+* [start](m4m.framework.BeBillboard.md#start)
+* [update](m4m.framework.BeBillboard.md#update)
+
+#### Constructors
+
+* [constructor](m4m.framework.BeBillboard.md#constructor)
+
+#### Properties
+
+* [gameObject](m4m.framework.BeBillboard.md#gameobject)
+* [ClassName](m4m.framework.BeBillboard.md#classname)
 
 ### Methods
 
-- [clone](m4m.framework.BeBillboard.md#clone)
-- [onPlay](m4m.framework.BeBillboard.md#onplay)
-- [remove](m4m.framework.BeBillboard.md#remove)
-- [setActive](m4m.framework.BeBillboard.md#setactive)
-- [setTarget](m4m.framework.BeBillboard.md#settarget)
-- [start](m4m.framework.BeBillboard.md#start)
-- [update](m4m.framework.BeBillboard.md#update)
-
-### Constructors
-
-- [constructor](m4m.framework.BeBillboard.md#constructor)
-
-### Properties
-
-- [gameObject](m4m.framework.BeBillboard.md#gameobject)
-- [ClassName](m4m.framework.BeBillboard.md#classname)
-
-## Methods
-
-### clone
+#### clone
 
 ▸ **clone**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[clone](../interfaces/m4m.framework.INodeComponent.md#clone)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L24)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[onPlay](../interfaces/m4m.framework.INodeComponent.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L11)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[remove](../interfaces/m4m.framework.INodeComponent.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:21](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L21)
 
-___
+***
 
-### setActive
+#### setActive
 
 ▸ **setActive**(`active`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type      |
+| -------- | --------- |
 | `active` | `boolean` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L28)
 
-___
+***
 
-### setTarget
+#### setTarget
 
 ▸ **setTarget**(`trans`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                      |
+| ------- | ----------------------------------------- |
 | `trans` | [`transform`](m4m.framework.transform.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L33)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[start](../interfaces/m4m.framework.INodeComponent.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L7)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[update](../interfaces/m4m.framework.INodeComponent.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L16)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new BeBillboard**()
 
-## Properties
+### Properties
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](m4m.framework.gameObject.md)
 
-#### Implementation of
+**Implementation of**
 
 [INodeComponent](../interfaces/m4m.framework.INodeComponent.md).[gameObject](../interfaces/m4m.framework.INodeComponent.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L20)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"BeBillboard"`
 
-#### Defined in
+**Defined in**
 
 [framework/component/beBillboard.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/beBillboard.ts#L5)

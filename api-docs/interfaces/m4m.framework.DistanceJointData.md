@@ -1,131 +1,133 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / DistanceJointData
+# m4m.framework.DistanceJointData
 
-# Interface: DistanceJointData
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / DistanceJointData
+
+## Interface: DistanceJointData
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).DistanceJointData
 
 Joint data for a Distance-Joint
 
-## Hierarchy
+### Hierarchy
 
-- [`PhysicsJointData`](m4m.framework.PhysicsJointData.md)
+*   [`PhysicsJointData`](m4m.framework.PhysicsJointData.md)
 
-  ↳ **`DistanceJointData`**
+    ↳ **`DistanceJointData`**
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [collision](m4m.framework.DistanceJointData.md#collision)
+* [connectedAxis](m4m.framework.DistanceJointData.md#connectedaxis)
+* [connectedPivot](m4m.framework.DistanceJointData.md#connectedpivot)
+* [mainAxis](m4m.framework.DistanceJointData.md#mainaxis)
+* [mainPivot](m4m.framework.DistanceJointData.md#mainpivot)
+* [maxDistance](m4m.framework.DistanceJointData.md#maxdistance)
+* [nativeParams](m4m.framework.DistanceJointData.md#nativeparams)
 
 ### Properties
 
-- [collision](m4m.framework.DistanceJointData.md#collision)
-- [connectedAxis](m4m.framework.DistanceJointData.md#connectedaxis)
-- [connectedPivot](m4m.framework.DistanceJointData.md#connectedpivot)
-- [mainAxis](m4m.framework.DistanceJointData.md#mainaxis)
-- [mainPivot](m4m.framework.DistanceJointData.md#mainpivot)
-- [maxDistance](m4m.framework.DistanceJointData.md#maxdistance)
-- [nativeParams](m4m.framework.DistanceJointData.md#nativeparams)
-
-## Properties
-
-### collision
+#### collision
 
 • `Optional` **collision**: `boolean`
 
 The collision of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[collision](m4m.framework.PhysicsJointData.md#collision)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L24)
 
-___
+***
 
-### connectedAxis
+#### connectedAxis
 
 • `Optional` **connectedAxis**: `vector3`
 
 The connected axis of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[connectedAxis](m4m.framework.PhysicsJointData.md#connectedaxis)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L20)
 
-___
+***
 
-### connectedPivot
+#### connectedPivot
 
 • `Optional` **connectedPivot**: `vector3`
 
 The connected pivot of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[connectedPivot](m4m.framework.PhysicsJointData.md#connectedpivot)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L12)
 
-___
+***
 
-### mainAxis
+#### mainAxis
 
 • `Optional` **mainAxis**: `vector3`
 
 The main axis of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[mainAxis](m4m.framework.PhysicsJointData.md#mainaxis)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L16)
 
-___
+***
 
-### mainPivot
+#### mainPivot
 
 • `Optional` **mainPivot**: `vector3`
 
 The main pivot of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[mainPivot](m4m.framework.PhysicsJointData.md#mainpivot)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L8)
 
-___
+***
 
-### maxDistance
+#### maxDistance
 
 • **maxDistance**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:241](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L241)
 
-___
+***
 
-### nativeParams
+#### nativeParams
 
 • `Optional` **nativeParams**: `any`
 
 Native Oimo/Cannon/Energy data
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[nativeParams](m4m.framework.PhysicsJointData.md#nativeparams)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L28)

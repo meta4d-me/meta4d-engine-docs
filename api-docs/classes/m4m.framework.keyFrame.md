@@ -1,75 +1,77 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / keyFrame
+# m4m.framework.keyFrame
 
-# Class: keyFrame
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / keyFrame
+
+## Class: keyFrame
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).keyFrame
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.keyFrame.md#constructor)
+
+#### Properties
+
+* [inTangent](m4m.framework.keyFrame.md#intangent)
+* [outTangent](m4m.framework.keyFrame.md#outtangent)
+* [tangentMode](m4m.framework.keyFrame.md#tangentmode)
+* [time](m4m.framework.keyFrame.md#time)
+* [value](m4m.framework.keyFrame.md#value)
 
 ### Constructors
 
-- [constructor](m4m.framework.keyFrame.md#constructor)
-
-### Properties
-
-- [inTangent](m4m.framework.keyFrame.md#intangent)
-- [outTangent](m4m.framework.keyFrame.md#outtangent)
-- [tangentMode](m4m.framework.keyFrame.md#tangentmode)
-- [time](m4m.framework.keyFrame.md#time)
-- [value](m4m.framework.keyFrame.md#value)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new keyFrame**()
 
-## Properties
+### Properties
 
-### inTangent
+#### inTangent
 
 • **inTangent**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/keyFrameAniClip.ts:244](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/keyFrameAniClip.ts#L244)
 
-___
+***
 
-### outTangent
+#### outTangent
 
 • **outTangent**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/keyFrameAniClip.ts:245](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/keyFrameAniClip.ts#L245)
 
-___
+***
 
-### tangentMode
+#### tangentMode
 
 • **tangentMode**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/keyFrameAniClip.ts:246](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/keyFrameAniClip.ts#L246)
 
-___
+***
 
-### time
+#### time
 
 • **time**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/keyFrameAniClip.ts:247](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/keyFrameAniClip.ts#L247)
 
-___
+***
 
-### value
+#### value
 
 • **value**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/keyFrameAniClip.ts:248](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/keyFrameAniClip.ts#L248)

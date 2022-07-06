@@ -1,724 +1,702 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / scene
+# m4m.framework.scene
 
-# Class: scene
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / scene
+
+## Class: scene
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).scene
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景是基础的功能，有场景图，相当于Unity的Level
+**`classdesc`** 场景是基础的功能，有场景图，相当于Unity的Level
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [addCamera](m4m.framework.scene.md#addcamera)
+* [addChild](m4m.framework.scene.md#addchild)
+* [addLight](m4m.framework.scene.md#addlight)
+* [addScreenSpaceOverlay](m4m.framework.scene.md#addscreenspaceoverlay)
+* [clearCameras](m4m.framework.scene.md#clearcameras)
+* [clearLights](m4m.framework.scene.md#clearlights)
+* [enable2DPhysics](m4m.framework.scene.md#enable2dphysics)
+* [enablePhysics](m4m.framework.scene.md#enablephysics)
+* [getChild](m4m.framework.scene.md#getchild)
+* [getChildByName](m4m.framework.scene.md#getchildbyname)
+* [getChildCount](m4m.framework.scene.md#getchildcount)
+* [getChildren](m4m.framework.scene.md#getchildren)
+* [getRoot](m4m.framework.scene.md#getroot)
+* [pick](m4m.framework.scene.md#pick)
+* [pickAll](m4m.framework.scene.md#pickall)
+* [refreshGpuInstancBatcher](m4m.framework.scene.md#refreshgpuinstancbatcher)
+* [removeChild](m4m.framework.scene.md#removechild)
+* [removeScreenSpaceOverlay](m4m.framework.scene.md#removescreenspaceoverlay)
+* [update](m4m.framework.scene.md#update)
+
+#### Properties
+
+* [app](m4m.framework.scene.md#app)
+* [autoCollectlightCamera](m4m.framework.scene.md#autocollectlightcamera)
+* [fog](m4m.framework.scene.md#fog)
+* [lightmaps](m4m.framework.scene.md#lightmaps)
+* [name](m4m.framework.scene.md#name)
+* [onLateUpdate](m4m.framework.scene.md#onlateupdate)
+* [renderCameras](m4m.framework.scene.md#rendercameras)
+* [renderContext](m4m.framework.scene.md#rendercontext)
+* [renderList](m4m.framework.scene.md#renderlist)
+* [webgl](m4m.framework.scene.md#webgl)
+
+#### Accessors
+
+* [mainCamera](m4m.framework.scene.md#maincamera)
 
 ### Methods
 
-- [addCamera](m4m.framework.scene.md#addcamera)
-- [addChild](m4m.framework.scene.md#addchild)
-- [addLight](m4m.framework.scene.md#addlight)
-- [addScreenSpaceOverlay](m4m.framework.scene.md#addscreenspaceoverlay)
-- [clearCameras](m4m.framework.scene.md#clearcameras)
-- [clearLights](m4m.framework.scene.md#clearlights)
-- [enable2DPhysics](m4m.framework.scene.md#enable2dphysics)
-- [enablePhysics](m4m.framework.scene.md#enablephysics)
-- [getChild](m4m.framework.scene.md#getchild)
-- [getChildByName](m4m.framework.scene.md#getchildbyname)
-- [getChildCount](m4m.framework.scene.md#getchildcount)
-- [getChildren](m4m.framework.scene.md#getchildren)
-- [getRoot](m4m.framework.scene.md#getroot)
-- [pick](m4m.framework.scene.md#pick)
-- [pickAll](m4m.framework.scene.md#pickall)
-- [refreshGpuInstancBatcher](m4m.framework.scene.md#refreshgpuinstancbatcher)
-- [removeChild](m4m.framework.scene.md#removechild)
-- [removeScreenSpaceOverlay](m4m.framework.scene.md#removescreenspaceoverlay)
-- [update](m4m.framework.scene.md#update)
-
-### Properties
-
-- [app](m4m.framework.scene.md#app)
-- [autoCollectlightCamera](m4m.framework.scene.md#autocollectlightcamera)
-- [fog](m4m.framework.scene.md#fog)
-- [lightmaps](m4m.framework.scene.md#lightmaps)
-- [name](m4m.framework.scene.md#name)
-- [onLateUpdate](m4m.framework.scene.md#onlateupdate)
-- [renderCameras](m4m.framework.scene.md#rendercameras)
-- [renderContext](m4m.framework.scene.md#rendercontext)
-- [renderList](m4m.framework.scene.md#renderlist)
-- [webgl](m4m.framework.scene.md#webgl)
-
-### Accessors
-
-- [mainCamera](m4m.framework.scene.md#maincamera)
-
-## Methods
-
-### addCamera
+#### addCamera
 
 ▸ **addCamera**(`cam`): `void`
 
-添加相机到场景中（autoCollectlightCamera : false 时  有效 ）
+添加相机到场景中（autoCollectlightCamera : false 时 有效 ）
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type                                |
+| ----- | ----------------------------------- |
 | `cam` | [`camera`](m4m.framework.camera.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:495](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L495)
 
-___
+***
 
-### addChild
+#### addChild
 
 ▸ **addChild**(`node`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景根节点下添加物体
+**`classdesc`** 场景根节点下添加物体
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                      | Description   |
+| ------ | ----------------------------------------- | ------------- |
 | `node` | [`transform`](m4m.framework.transform.md) | 要添加的transform |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:516](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L516)
 
-___
+***
 
-### addLight
+#### addLight
 
 ▸ **addLight**(`l`): `void`
 
-添加灯光到场景中（autoCollectlightCamera : false 时  有效 ）
+添加灯光到场景中（autoCollectlightCamera : false 时 有效 ）
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `l` | [`light`](m4m.framework.light.md) | 灯光组件 |
+| Name | Type                              | Description |
+| ---- | --------------------------------- | ----------- |
+| `l`  | [`light`](m4m.framework.light.md) | 灯光组件        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:480](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L480)
 
-___
+***
 
-### addScreenSpaceOverlay
+#### addScreenSpaceOverlay
 
 ▸ **addScreenSpaceOverlay**(`overlay`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-添加ScreenSpaceOverlay
+**`classdesc`** 添加ScreenSpaceOverlay
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                      |
+| --------- | ----------------------------------------- |
 | `overlay` | [`overlay2D`](m4m.framework.overlay2D.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:73](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L73)
 
-___
+***
 
-### clearCameras
+#### clearCameras
 
 ▸ **clearCameras**(): `void`
 
 清除场景中添加过的相机 （autoCollectlightCamera : false 时 有效 ）
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:503](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L503)
 
-___
+***
 
-### clearLights
+#### clearLights
 
 ▸ **clearLights**(): `void`
 
-清除场景中添加过的灯光 （autoCollectlightCamera : false 时  有效 ）
+清除场景中添加过的灯光 （autoCollectlightCamera : false 时 有效 ）
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:487](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L487)
 
-___
+***
 
-### enable2DPhysics
+#### enable2DPhysics
 
 ▸ **enable2DPhysics**(`gravity`, `physicOption?`): `boolean`
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `gravity` | `vector2` | `undefined` |
-| `physicOption` | [`IEngine2DOP`](../interfaces/m4m.framework.IEngine2DOP.md) | `null` |
+| Name           | Type                                                        | Default value |
+| -------------- | ----------------------------------------------------------- | ------------- |
+| `gravity`      | `vector2`                                                   | `undefined`   |
+| `physicOption` | [`IEngine2DOP`](../interfaces/m4m.framework.IEngine2DOP.md) | `null`        |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:805](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L805)
 
-___
+***
 
-### enablePhysics
+#### enablePhysics
 
 ▸ **enablePhysics**(`gravity`, `plugin?`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-启用物理到当前场景
+**`classdesc`** 启用物理到当前场景
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `gravity` | `vector3` | 定义场景物理世界的重力向量 |
-| `plugin?` | [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md) | 定义场景物理世界引擎插件 |
+| Name      | Type                                                                          | Description   |
+| --------- | ----------------------------------------------------------------------------- | ------------- |
+| `gravity` | `vector3`                                                                     | 定义场景物理世界的重力向量 |
+| `plugin?` | [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md) | 定义场景物理世界引擎插件  |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:782](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L782)
 
-___
+***
 
-### getChild
+#### getChild
 
 ▸ **getChild**(`index`): [`transform`](m4m.framework.transform.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-根据索引获取child
+**`classdesc`** 根据索引获取child
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | 索引 |
+| Name    | Type     | Description |
+| ------- | -------- | ----------- |
+| `index` | `number` | 索引          |
 
-#### Returns
+**Returns**
 
 [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:567](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L567)
 
-___
+***
 
-### getChildByName
+#### getChildByName
 
 ▸ **getChildByName**(`name`): [`transform`](m4m.framework.transform.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-根据name获取child
+**`classdesc`** 根据name获取child
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| ------ | -------- |
 | `name` | `string` |
 
-#### Returns
+**Returns**
 
 [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:580](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L580)
 
-___
+***
 
-### getChildCount
+#### getChildCount
 
 ▸ **getChildCount**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取children数量
+**`classdesc`** 获取children数量
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:553](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L553)
 
-___
+***
 
-### getChildren
+#### getChildren
 
-▸ **getChildren**(): [`transform`](m4m.framework.transform.md)[]
+▸ **getChildren**(): [`transform`](m4m.framework.transform.md)\[]
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取children列表
+**`classdesc`** 获取children列表
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
-[`transform`](m4m.framework.transform.md)[]
+[`transform`](m4m.framework.transform.md)\[]
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:541](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L541)
 
-___
+***
 
-### getRoot
+#### getRoot
 
 ▸ **getRoot**(): [`transform`](m4m.framework.transform.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取场景根节点
+**`classdesc`** 获取场景根节点
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:593](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L593)
 
-___
+***
 
-### pick
+#### pick
 
 ▸ **pick**(`ray`, `outInfo`, `isPickMesh?`, `root?`, `layermask?`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取射线拾取到的最近物体
+**`classdesc`** 获取射线拾取到的最近物体
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | `undefined` | 射线实例 |
-| `outInfo` | `pickinfo` | `undefined` | - |
-| `isPickMesh` | `boolean` | `false` | 是否为拾取mesh 否为拾取collider |
-| `root` | [`transform`](m4m.framework.transform.md) | `undefined` | - |
-| `layermask` | `number` | `NaN` | - |
+| Name         | Type                                      | Default value | Description            |
+| ------------ | ----------------------------------------- | ------------- | ---------------------- |
+| `ray`        | [`ray`](m4m.framework.ray.md)             | `undefined`   | 射线实例                   |
+| `outInfo`    | `pickinfo`                                | `undefined`   | -                      |
+| `isPickMesh` | `boolean`                                 | `false`       | 是否为拾取mesh 否为拾取collider |
+| `root`       | [`transform`](m4m.framework.transform.md) | `undefined`   | -                      |
+| `layermask`  | `number`                                  | `NaN`         | -                      |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:623](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L623)
 
-___
+***
 
-### pickAll
+#### pickAll
 
 ▸ **pickAll**(`ray`, `outInfos`, `isPickMesh?`, `root?`, `layermask?`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取射线路径上的所有物体
+**`classdesc`** 获取射线路径上的所有物体
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | `undefined` | 射线实例 |
-| `outInfos` | `pickinfo`[] | `undefined` | - |
-| `isPickMesh` | `boolean` | `false` | 是否为拾取mesh 否为拾取collider |
-| `root` | [`transform`](m4m.framework.transform.md) | `undefined` | - |
-| `layermask` | `number` | `NaN` | - |
+| Name         | Type                                      | Default value | Description            |
+| ------------ | ----------------------------------------- | ------------- | ---------------------- |
+| `ray`        | [`ray`](m4m.framework.ray.md)             | `undefined`   | 射线实例                   |
+| `outInfos`   | `pickinfo`\[]                             | `undefined`   | -                      |
+| `isPickMesh` | `boolean`                                 | `false`       | 是否为拾取mesh 否为拾取collider |
+| `root`       | [`transform`](m4m.framework.transform.md) | `undefined`   | -                      |
+| `layermask`  | `number`                                  | `NaN`         | -                      |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:607](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L607)
 
-___
+***
 
-### refreshGpuInstancBatcher
+#### refreshGpuInstancBatcher
 
 ▸ **refreshGpuInstancBatcher**(`rootNode?`): `void`
 
-刷新 GpuInstancBatcher
-被 batcher 条件[isStatic= true , visible = true , needGpuInstancBatcher = true , isGpuInstancing() = true]
+刷新 GpuInstancBatcher 被 batcher 条件\[isStatic= true , visible = true , needGpuInstancBatcher = true , isGpuInstancing() = true]
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                      | Description       |
+| ----------- | ----------------------------------------- | ----------------- |
 | `rootNode?` | [`transform`](m4m.framework.transform.md) | 指定刷新节点（默认为 场景根节点） |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:833](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L833)
 
-___
+***
 
-### removeChild
+#### removeChild
 
 ▸ **removeChild**(`node`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景根节点下移出物体
+**`classdesc`** 场景根节点下移出物体
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type                                      | Description   |
+| ------ | ----------------------------------------- | ------------- |
 | `node` | [`transform`](m4m.framework.transform.md) | 要移出的transform |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:529](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L529)
 
-___
+***
 
-### removeScreenSpaceOverlay
+#### removeScreenSpaceOverlay
 
 ▸ **removeScreenSpaceOverlay**(`overlay`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-删除ScreenSpaceOverlay
+**`classdesc`** 删除ScreenSpaceOverlay
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type  |
+| --------- | ----- |
 | `overlay` | `any` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:90](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L90)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景的刷新函数
+**`classdesc`** 场景的刷新函数
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:169](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L169)
 
-## Properties
+### Properties
 
-### app
+#### app
 
 • **app**: [`application`](m4m.framework.application.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-全局的application实例
+**`classdesc`** 全局的application实例
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:21](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L21)
 
-___
+***
 
-### autoCollectlightCamera
+#### autoCollectlightCamera
 
 • **autoCollectlightCamera**: `boolean` = `true`
 
 自动收集场景中灯光 和 相机
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L54)
 
-___
+***
 
-### fog
+#### fog
 
 • **fog**: `Fog`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-雾效
+**`classdesc`** 雾效
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:158](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L158)
 
-___
+***
 
-### lightmaps
+#### lightmaps
 
-• **lightmaps**: [`texture`](m4m.framework.texture.md)[] = `[]`
+• **lightmaps**: [`texture`](m4m.framework.texture.md)\[] = `[]`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-lightmap列表
+**`classdesc`** lightmap列表
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:150](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L150)
 
-___
+***
 
-### name
+#### name
 
 • **name**: `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-场景名称
+**`classdesc`** 场景名称
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:51](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L51)
 
-___
+***
 
-### onLateUpdate
+#### onLateUpdate
 
 • **onLateUpdate**: (`delta`: `number`) => `any`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (`delta`): `any`
 
-##### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-##### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:160](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L160)
 
-___
+***
 
-### renderCameras
+#### renderCameras
 
-• **renderCameras**: [`camera`](m4m.framework.camera.md)[] = `[]`
+• **renderCameras**: [`camera`](m4m.framework.camera.md)\[] = `[]`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-参与渲染的相机
+**`classdesc`** 参与渲染的相机
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:105](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L105)
 
-___
+***
 
-### renderContext
+#### renderContext
 
-• **renderContext**: `renderContext`[] = `[]`
+• **renderContext**: `renderContext`\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:141](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L141)
 
-___
+***
 
-### renderList
+#### renderList
 
 • **renderList**: `renderList`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-渲染列表
+**`classdesc`** 渲染列表
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L63)
 
-___
+***
 
-### webgl
+#### webgl
 
 • **webgl**: `WebGLRenderingContext`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-全局的webgl实例
+**`classdesc`** 全局的webgl实例
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:29](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L29)
 
-## Accessors
+### Accessors
 
-### mainCamera
+#### mainCamera
 
 • `get` **mainCamera**(): [`camera`](m4m.framework.camera.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取当前主相机
+**`classdesc`** 获取当前主相机
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`camera`](m4m.framework.camera.md)
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:115](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L115)
 
 • `set` **mainCamera**(`_camera`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置当前主相机
+**`classdesc`** 设置当前主相机
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `_camera` | [`camera`](m4m.framework.camera.md) | 相机组件实例 |
+| Name      | Type                                | Description |
+| --------- | ----------------------------------- | ----------- |
+| `_camera` | [`camera`](m4m.framework.camera.md) | 相机组件实例      |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/scene/scene.ts:131](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/scene/scene.ts#L131)

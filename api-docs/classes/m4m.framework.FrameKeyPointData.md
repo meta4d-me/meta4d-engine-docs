@@ -1,64 +1,66 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / FrameKeyPointData
+# m4m.framework.FrameKeyPointData
 
-# Class: FrameKeyPointData
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / FrameKeyPointData
+
+## Class: FrameKeyPointData
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).FrameKeyPointData
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [actions](m4m.framework.FrameKeyPointData.md#actions)
+* [frameIndex](m4m.framework.FrameKeyPointData.md#frameindex)
+* [val](m4m.framework.FrameKeyPointData.md#val)
+
+#### Constructors
+
+* [constructor](m4m.framework.FrameKeyPointData.md#constructor)
 
 ### Properties
 
-- [actions](m4m.framework.FrameKeyPointData.md#actions)
-- [frameIndex](m4m.framework.FrameKeyPointData.md#frameindex)
-- [val](m4m.framework.FrameKeyPointData.md#val)
+#### actions
 
-### Constructors
+• **actions**: `IEffectAction`\[]
 
-- [constructor](m4m.framework.FrameKeyPointData.md#constructor)
-
-## Properties
-
-### actions
-
-• **actions**: `IEffectAction`[]
-
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:237](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L237)
 
-___
+***
 
-### frameIndex
+#### frameIndex
 
 • **frameIndex**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:235](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L235)
 
-___
+***
 
-### val
+#### val
 
 • **val**: `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:236](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L236)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new FrameKeyPointData**(`frameIndex`, `val`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type     |
+| ------------ | -------- |
 | `frameIndex` | `number` |
-| `val` | `any` |
+| `val`        | `any`    |
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/attribute.ts:238](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/attribute.ts#L238)

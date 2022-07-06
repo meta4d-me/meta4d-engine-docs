@@ -1,291 +1,292 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / PhysicsJoint
+# m4m.framework.PhysicsJoint
 
-# Class: PhysicsJoint
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / PhysicsJoint
+
+## Class: PhysicsJoint
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).PhysicsJoint
 
-This is a holder class for the physics joint created by the physics plugin.
-It holds a set of functions to control the underlying joint.
+This is a holder class for the physics joint created by the physics plugin. It holds a set of functions to control the underlying joint.
 
-## Hierarchy
+### Hierarchy
 
-- **`PhysicsJoint`**
+*   **`PhysicsJoint`**
 
-  ↳ [`DistanceJoint`](m4m.framework.DistanceJoint.md)
+    ↳ [`DistanceJoint`](m4m.framework.DistanceJoint.md)
 
-  ↳ [`MotorEnabledJoint`](m4m.framework.MotorEnabledJoint.md)
+    ↳ [`MotorEnabledJoint`](m4m.framework.MotorEnabledJoint.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_physicsPlugin](m4m.framework.PhysicsJoint.md#\_physicsplugin)
+* [jointData](m4m.framework.PhysicsJoint.md#jointdata)
+* [type](m4m.framework.PhysicsJoint.md#type)
+* [BallAndSocketJoint](m4m.framework.PhysicsJoint.md#ballandsocketjoint)
+* [DistanceJoint](m4m.framework.PhysicsJoint.md#distancejoint)
+* [Hinge2Joint](m4m.framework.PhysicsJoint.md#hinge2joint)
+* [HingeJoint](m4m.framework.PhysicsJoint.md#hingejoint)
+* [LockJoint](m4m.framework.PhysicsJoint.md#lockjoint)
+* [PointToPointJoint](m4m.framework.PhysicsJoint.md#pointtopointjoint)
+* [PrismaticJoint](m4m.framework.PhysicsJoint.md#prismaticjoint)
+* [SliderJoint](m4m.framework.PhysicsJoint.md#sliderjoint)
+* [SpringJoint](m4m.framework.PhysicsJoint.md#springjoint)
+* [UniversalJoint](m4m.framework.PhysicsJoint.md#universaljoint)
+* [WheelJoint](m4m.framework.PhysicsJoint.md#wheeljoint)
+
+#### Constructors
+
+* [constructor](m4m.framework.PhysicsJoint.md#constructor)
+
+#### Methods
+
+* [executeNativeFunction](m4m.framework.PhysicsJoint.md#executenativefunction)
+
+#### Accessors
+
+* [physicsJoint](m4m.framework.PhysicsJoint.md#physicsjoint)
+* [physicsPlugin](m4m.framework.PhysicsJoint.md#physicsplugin)
 
 ### Properties
 
-- [\_physicsPlugin](m4m.framework.PhysicsJoint.md#_physicsplugin)
-- [jointData](m4m.framework.PhysicsJoint.md#jointdata)
-- [type](m4m.framework.PhysicsJoint.md#type)
-- [BallAndSocketJoint](m4m.framework.PhysicsJoint.md#ballandsocketjoint)
-- [DistanceJoint](m4m.framework.PhysicsJoint.md#distancejoint)
-- [Hinge2Joint](m4m.framework.PhysicsJoint.md#hinge2joint)
-- [HingeJoint](m4m.framework.PhysicsJoint.md#hingejoint)
-- [LockJoint](m4m.framework.PhysicsJoint.md#lockjoint)
-- [PointToPointJoint](m4m.framework.PhysicsJoint.md#pointtopointjoint)
-- [PrismaticJoint](m4m.framework.PhysicsJoint.md#prismaticjoint)
-- [SliderJoint](m4m.framework.PhysicsJoint.md#sliderjoint)
-- [SpringJoint](m4m.framework.PhysicsJoint.md#springjoint)
-- [UniversalJoint](m4m.framework.PhysicsJoint.md#universaljoint)
-- [WheelJoint](m4m.framework.PhysicsJoint.md#wheeljoint)
-
-### Constructors
-
-- [constructor](m4m.framework.PhysicsJoint.md#constructor)
-
-### Methods
-
-- [executeNativeFunction](m4m.framework.PhysicsJoint.md#executenativefunction)
-
-### Accessors
-
-- [physicsJoint](m4m.framework.PhysicsJoint.md#physicsjoint)
-- [physicsPlugin](m4m.framework.PhysicsJoint.md#physicsplugin)
-
-## Properties
-
-### \_physicsPlugin
+#### \_physicsPlugin
 
 • `Protected` **\_physicsPlugin**: [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:38](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L38)
 
-___
+***
 
-### jointData
+#### jointData
 
 • **jointData**: [`PhysicsJointData`](../interfaces/m4m.framework.PhysicsJointData.md)
 
-___
+***
 
-### type
+#### type
 
 • **type**: `number`
 
-___
+***
 
-### BallAndSocketJoint
+#### BallAndSocketJoint
 
 ▪ `Static` **BallAndSocketJoint**: `number` = `2`
 
 Ball-and-Socket joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:85](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L85)
 
-___
+***
 
-### DistanceJoint
+#### DistanceJoint
 
 ▪ `Static` **DistanceJoint**: `number` = `0`
 
 Distance-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:77](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L77)
 
-___
+***
 
-### Hinge2Joint
+#### Hinge2Joint
 
 ▪ `Static` **Hinge2Joint**: `number` = `PhysicsJoint.WheelJoint`
 
 Hinge-Joint 2 type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:107](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L107)
 
-___
+***
 
-### HingeJoint
+#### HingeJoint
 
 ▪ `Static` **HingeJoint**: `number` = `1`
 
 Hinge-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:81](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L81)
 
-___
+***
 
-### LockJoint
+#### LockJoint
 
 ▪ `Static` **LockJoint**: `number` = `10`
 
 Lock-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:121](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L121)
 
-___
+***
 
-### PointToPointJoint
+#### PointToPointJoint
 
 ▪ `Static` **PointToPointJoint**: `number` = `8`
 
-Point to Point Joint type.  Similar to a Ball-Joint.  Different in parameters
+Point to Point Joint type. Similar to a Ball-Joint. Different in parameters
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:112](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L112)
 
-___
+***
 
-### PrismaticJoint
+#### PrismaticJoint
 
 ▪ `Static` **PrismaticJoint**: `number` = `5`
 
 Prismatic-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:98](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L98)
 
-___
+***
 
-### SliderJoint
+#### SliderJoint
 
 ▪ `Static` **SliderJoint**: `number` = `4`
 
 Slider-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:93](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L93)
 
-___
+***
 
-### SpringJoint
+#### SpringJoint
 
 ▪ `Static` **SpringJoint**: `number` = `9`
 
 Spring-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:117](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L117)
 
-___
+***
 
-### UniversalJoint
+#### UniversalJoint
 
 ▪ `Static` **UniversalJoint**: `number` = `6`
 
 Universal-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:103](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L103)
 
-___
+***
 
-### WheelJoint
+#### WheelJoint
 
 ▪ `Static` **WheelJoint**: `number` = `3`
 
 Wheel-Joint type
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:89](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L89)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new PhysicsJoint**(`type`, `jointData`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `type` | `number` |
+| Name        | Type                                                                  |
+| ----------- | --------------------------------------------------------------------- |
+| `type`      | `number`                                                              |
 | `jointData` | [`PhysicsJointData`](../interfaces/m4m.framework.PhysicsJointData.md) |
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L40)
 
-## Methods
+### Methods
 
-### executeNativeFunction
+#### executeNativeFunction
 
 ▸ **executeNativeFunction**(`func`): `void`
 
 Execute a function that is physics-plugin specific.
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `func` | (`world`: `any`, `physicsJoint`: `any`) => `void` | the function that will be executed.                        It accepts two parameters: the physics world and the physics joint. |
+| Name   | Type                                              | Description                                                                                             |
+| ------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `func` | (`world`: `any`, `physicsJoint`: `any`) => `void` | the function that will be executed. It accepts two parameters: the physics world and the physics joint. |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:66](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L66)
 
-## Accessors
+### Accessors
 
-### physicsJoint
+#### physicsJoint
 
 • `get` **physicsJoint**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:44](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L44)
 
 • `set` **physicsJoint**(`newJoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type  |
+| ---------- | ----- |
 | `newJoint` | `any` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L48)
 
-___
+***
 
-### physicsPlugin
+#### physicsPlugin
 
 • `set` **physicsPlugin**(`physicsPlugin`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                                                                          |
+| --------------- | ----------------------------------------------------------------------------- |
 | `physicsPlugin` | [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:57](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L57)

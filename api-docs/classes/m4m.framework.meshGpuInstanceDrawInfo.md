@@ -1,266 +1,268 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / meshGpuInstanceDrawInfo
+# m4m.framework.meshGpuInstanceDrawInfo
 
-# Class: meshGpuInstanceDrawInfo
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / meshGpuInstanceDrawInfo
+
+## Class: meshGpuInstanceDrawInfo
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).meshGpuInstanceDrawInfo
 
-mesh  Gpu 实例 绘制info数据类
+mesh Gpu 实例 绘制info数据类
 
-## Implements
+### Implements
 
-- [`DrawInstanceInfo`](../interfaces/m4m.framework.DrawInstanceInfo.md)
+* [`DrawInstanceInfo`](../interfaces/m4m.framework.DrawInstanceInfo.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [activeAttributes](m4m.framework.meshGpuInstanceDrawInfo.md#activeattributes)
+* [disableAttributes](m4m.framework.meshGpuInstanceDrawInfo.md#disableattributes)
+* [initBuffer](m4m.framework.meshGpuInstanceDrawInfo.md#initbuffer)
+* [del\_info](m4m.framework.meshGpuInstanceDrawInfo.md#del\_info)
+* [new\_info](m4m.framework.meshGpuInstanceDrawInfo.md#new\_info)
+
+#### Properties
+
+* [bufferIdMap](m4m.framework.meshGpuInstanceDrawInfo.md#bufferidmap)
+* [cacheBuffers](m4m.framework.meshGpuInstanceDrawInfo.md#cachebuffers)
+* [helpDArray](m4m.framework.meshGpuInstanceDrawInfo.md#helpdarray)
+* [instanceArray](m4m.framework.meshGpuInstanceDrawInfo.md#instancearray)
+* [instanceCount](m4m.framework.meshGpuInstanceDrawInfo.md#instancecount)
+* [mid](m4m.framework.meshGpuInstanceDrawInfo.md#mid)
+* [onDisableAttribute](m4m.framework.meshGpuInstanceDrawInfo.md#ondisableattribute)
+* [vbo](m4m.framework.meshGpuInstanceDrawInfo.md#vbo)
+
+#### Constructors
+
+* [constructor](m4m.framework.meshGpuInstanceDrawInfo.md#constructor)
 
 ### Methods
 
-- [activeAttributes](m4m.framework.meshGpuInstanceDrawInfo.md#activeattributes)
-- [disableAttributes](m4m.framework.meshGpuInstanceDrawInfo.md#disableattributes)
-- [initBuffer](m4m.framework.meshGpuInstanceDrawInfo.md#initbuffer)
-- [del\_info](m4m.framework.meshGpuInstanceDrawInfo.md#del_info)
-- [new\_info](m4m.framework.meshGpuInstanceDrawInfo.md#new_info)
-
-### Properties
-
-- [bufferIdMap](m4m.framework.meshGpuInstanceDrawInfo.md#bufferidmap)
-- [cacheBuffers](m4m.framework.meshGpuInstanceDrawInfo.md#cachebuffers)
-- [helpDArray](m4m.framework.meshGpuInstanceDrawInfo.md#helpdarray)
-- [instanceArray](m4m.framework.meshGpuInstanceDrawInfo.md#instancearray)
-- [instanceCount](m4m.framework.meshGpuInstanceDrawInfo.md#instancecount)
-- [mid](m4m.framework.meshGpuInstanceDrawInfo.md#mid)
-- [onDisableAttribute](m4m.framework.meshGpuInstanceDrawInfo.md#ondisableattribute)
-- [vbo](m4m.framework.meshGpuInstanceDrawInfo.md#vbo)
-
-### Constructors
-
-- [constructor](m4m.framework.meshGpuInstanceDrawInfo.md#constructor)
-
-## Methods
-
-### activeAttributes
+#### activeAttributes
 
 ▸ **activeAttributes**(`gl`, `pass`): `void`
 
 启用批量渲染相关顶点属性
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `gl` | `WebGLRenderingContext` |
-| `pass` | `glDrawPass` |
+| Name   | Type                    |
+| ------ | ----------------------- |
+| `gl`   | `WebGLRenderingContext` |
+| `pass` | `glDrawPass`            |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [DrawInstanceInfo](../interfaces/m4m.framework.DrawInstanceInfo.md).[activeAttributes](../interfaces/m4m.framework.DrawInstanceInfo.md#activeattributes)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:71](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L71)
 
-___
+***
 
-### disableAttributes
+#### disableAttributes
 
 ▸ **disableAttributes**(`gl`, `pass`): `void`
 
 禁用批量渲染相关顶点属性
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `gl` | `WebGLRenderingContext` |
-| `pass` | `glDrawPass` |
+| Name   | Type                    |
+| ------ | ----------------------- |
+| `gl`   | `WebGLRenderingContext` |
+| `pass` | `glDrawPass`            |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [DrawInstanceInfo](../interfaces/m4m.framework.DrawInstanceInfo.md).[disableAttributes](../interfaces/m4m.framework.DrawInstanceInfo.md#disableattributes)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:114](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L114)
 
-___
+***
 
-### initBuffer
+#### initBuffer
 
 ▸ **initBuffer**(`gl`): `void`
 
 初始化Buffer
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type                    |
+| ---- | ----------------------- |
 | `gl` | `WebGLRenderingContext` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [DrawInstanceInfo](../interfaces/m4m.framework.DrawInstanceInfo.md).[initBuffer](../interfaces/m4m.framework.DrawInstanceInfo.md#initbuffer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:68](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L68)
 
-___
+***
 
-### del\_info
+#### del\_info
 
-▸ `Static` **del_info**(`info`): `void`
+▸ `Static` **del\_info**(`info`): `void`
 
 放回池子
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                                  |
+| ------ | --------------------------------------------------------------------- |
 | `info` | [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:157](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L157)
 
-___
+***
 
-### new\_info
+#### new\_info
 
-▸ `Static` **new_info**(): [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md)
+▸ `Static` **new\_info**(): [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md)
 
 池子中取出一个
 
-#### Returns
+**Returns**
 
 [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:148](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L148)
 
-## Properties
+### Properties
 
-### bufferIdMap
+#### bufferIdMap
 
 • **bufferIdMap**: `Object`
 
-#### Index signature
+**Index signature**
 
-▪ [passId: `number`]: `number`
+▪ \[passId: `number`]: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:64](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L64)
 
-___
+***
 
-### cacheBuffers
+#### cacheBuffers
 
-• **cacheBuffers**: [`ExtenArray`](m4m.math.ExtenArray.md)<`Float32Array`\>[]
+• **cacheBuffers**: [`ExtenArray`](m4m.math.ExtenArray.md)<`Float32Array`>\[]
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L63)
 
-___
+***
 
-### helpDArray
+#### helpDArray
 
-• **helpDArray**: [`ExtenArray`](m4m.math.ExtenArray.md)<`Float32Array`\>
+• **helpDArray**: [`ExtenArray`](m4m.math.ExtenArray.md)<`Float32Array`>
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:66](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L66)
 
-___
+***
 
-### instanceArray
+#### instanceArray
 
-• **instanceArray**: [`ReuseArray`](m4m.math.ReuseArray.md)<[`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)\>
+• **instanceArray**: [`ReuseArray`](m4m.math.ReuseArray.md)<[`IRendererGpuIns`](../interfaces/m4m.framework.IRendererGpuIns.md)>
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:65](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L65)
 
-___
+***
 
-### instanceCount
+#### instanceCount
 
 • **instanceCount**: `number`
 
 渲染数量
 
-#### Implementation of
+**Implementation of**
 
 [DrawInstanceInfo](../interfaces/m4m.framework.DrawInstanceInfo.md).[instanceCount](../interfaces/m4m.framework.DrawInstanceInfo.md#instancecount)
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:60](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L60)
 
-___
+***
 
-### mid
+#### mid
 
 • **mid**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:61](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L61)
 
-___
+***
 
-### onDisableAttribute
+#### onDisableAttribute
 
 • **onDisableAttribute**: (`info`: [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md)) => `any`
 
-#### Type declaration
+**Type declaration**
 
 ▸ (`info`): `any`
 
 Disable 结束回调
 
-##### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                                  |
+| ------ | --------------------------------------------------------------------- |
 | `info` | [`meshGpuInstanceDrawInfo`](m4m.framework.meshGpuInstanceDrawInfo.md) |
 
-##### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:143](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L143)
 
-___
+***
 
-### vbo
+#### vbo
 
 • **vbo**: `WebGLBuffer`
 
-#### Defined in
+**Defined in**
 
 [framework/component/meshrenderer.ts:62](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/meshrenderer.ts#L62)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new meshGpuInstanceDrawInfo**()

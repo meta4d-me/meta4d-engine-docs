@@ -1,114 +1,115 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / I2DComponent
+# m4m.framework.I2DComponent
 
-# Interface: I2DComponent
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / I2DComponent
+
+## Interface: I2DComponent
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).I2DComponent
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-2d组件的接口
+**`classdesc`** 2d组件的接口
 
 **`version`** m4m 1.0
 
-## Hierarchy
+### Hierarchy
 
-- **`I2DComponent`**
+*   **`I2DComponent`**
 
-  ↳ [`IRectRenderer`](m4m.framework.IRectRenderer.md)
+    ↳ [`IRectRenderer`](m4m.framework.IRectRenderer.md)
 
-## Implemented by
+### Implemented by
 
-- [`behaviour2d`](../classes/m4m.framework.behaviour2d.md)
-- [`boxcollider2d`](../classes/m4m.framework.boxcollider2d.md)
-- [`button`](../classes/m4m.framework.button.md)
-- [`inputField`](../classes/m4m.framework.inputField.md)
-- [`progressbar`](../classes/m4m.framework.progressbar.md)
-- [`scrollRect`](../classes/m4m.framework.scrollRect.md)
-- [`slideArea`](../classes/m4m.framework.slideArea.md)
-- [`uirect`](../classes/m4m.framework.uirect.md)
+* [`behaviour2d`](../classes/m4m.framework.behaviour2d.md)
+* [`boxcollider2d`](../classes/m4m.framework.boxcollider2d.md)
+* [`button`](../classes/m4m.framework.button.md)
+* [`inputField`](../classes/m4m.framework.inputField.md)
+* [`progressbar`](../classes/m4m.framework.progressbar.md)
+* [`scrollRect`](../classes/m4m.framework.scrollRect.md)
+* [`slideArea`](../classes/m4m.framework.slideArea.md)
+* [`uirect`](../classes/m4m.framework.uirect.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [onPlay](m4m.framework.I2DComponent.md#onplay)
+* [remove](m4m.framework.I2DComponent.md#remove)
+* [start](m4m.framework.I2DComponent.md#start)
+* [update](m4m.framework.I2DComponent.md#update)
+
+#### Properties
+
+* [transform](m4m.framework.I2DComponent.md#transform)
 
 ### Methods
 
-- [onPlay](m4m.framework.I2DComponent.md#onplay)
-- [remove](m4m.framework.I2DComponent.md#remove)
-- [start](m4m.framework.I2DComponent.md#start)
-- [update](m4m.framework.I2DComponent.md#update)
-
-### Properties
-
-- [transform](m4m.framework.I2DComponent.md#transform)
-
-## Methods
-
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L32)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:36](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L36)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L33)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L34)
 
-## Properties
+### Properties
 
-### transform
+#### transform
 
 • **transform**: [`transform2D`](../classes/m4m.framework.transform2D.md)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L35)

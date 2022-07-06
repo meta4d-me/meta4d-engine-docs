@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_PVR
+# m4m.framework.AssetFactory\_PVR
 
-# Class: AssetFactory\_PVR
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_PVR
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_PVR
+## Class: AssetFactory\_PVR
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_PVR
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_PVR.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_PVR.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_PVR.md#constructor)
+#### constructor
+
+• **new AssetFactory\_PVR**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_PVR.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_PVR**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `name`, `bytes`): [`texture`](m4m.framework.texture.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `name` | `string` |
-| `bytes` | `ArrayBuffer` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `name`     | `string`                                      |
+| `bytes`    | `ArrayBuffer`                                 |
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_pvr.ts:49](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_pvr.ts#L49)
+[framework/asset/factorys/assetfactory\_pvr.ts:49](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_pvr.ts#L49)

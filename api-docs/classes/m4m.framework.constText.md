@@ -1,52 +1,53 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / constText
+# m4m.framework.constText
 
-# Class: constText
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / constText
+
+## Class: constText
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).constText
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-静态text 初始化后不可修改
+**`classdesc`** 静态text 初始化后不可修改
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.constText.md#constructor)
+
+#### Methods
+
+* [getText](m4m.framework.constText.md#gettext)
 
 ### Constructors
 
-- [constructor](m4m.framework.constText.md#constructor)
-
-### Methods
-
-- [getText](m4m.framework.constText.md#gettext)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new constText**(`text`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| ------ | -------- |
 | `text` | `string` |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/asset.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/asset.ts#L41)
 
-## Methods
+### Methods
 
-### getText
+#### getText
 
 ▸ **getText**(): `string`
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/asset.ts:46](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/asset.ts#L46)

@@ -1,375 +1,363 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / atlas
+# m4m.framework.atlas
 
-# Class: atlas
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / atlas
+
+## Class: atlas
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).atlas
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-图集资源
+**`classdesc`** 图集资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Parse](m4m.framework.atlas.md#parse)
+* [caclByteLength](m4m.framework.atlas.md#caclbytelength)
+* [dispose](m4m.framework.atlas.md#dispose)
+* [getGUID](m4m.framework.atlas.md#getguid)
+* [getName](m4m.framework.atlas.md#getname)
+* [unuse](m4m.framework.atlas.md#unuse)
+* [use](m4m.framework.atlas.md#use)
+
+#### Constructors
+
+* [constructor](m4m.framework.atlas.md#constructor)
+
+#### Properties
+
+* [defaultAsset](m4m.framework.atlas.md#defaultasset)
+* [sprites](m4m.framework.atlas.md#sprites)
+* [textureheight](m4m.framework.atlas.md#textureheight)
+* [texturewidth](m4m.framework.atlas.md#texturewidth)
+* [ClassName](m4m.framework.atlas.md#classname)
+
+#### Accessors
+
+* [texture](m4m.framework.atlas.md#texture)
 
 ### Methods
 
-- [Parse](m4m.framework.atlas.md#parse)
-- [caclByteLength](m4m.framework.atlas.md#caclbytelength)
-- [dispose](m4m.framework.atlas.md#dispose)
-- [getGUID](m4m.framework.atlas.md#getguid)
-- [getName](m4m.framework.atlas.md#getname)
-- [unuse](m4m.framework.atlas.md#unuse)
-- [use](m4m.framework.atlas.md#use)
-
-### Constructors
-
-- [constructor](m4m.framework.atlas.md#constructor)
-
-### Properties
-
-- [defaultAsset](m4m.framework.atlas.md#defaultasset)
-- [sprites](m4m.framework.atlas.md#sprites)
-- [textureheight](m4m.framework.atlas.md#textureheight)
-- [texturewidth](m4m.framework.atlas.md#texturewidth)
-- [ClassName](m4m.framework.atlas.md#classname)
-
-### Accessors
-
-- [texture](m4m.framework.atlas.md#texture)
-
-## Methods
-
-### Parse
+#### Parse
 
 ▸ **Parse**(`jsonStr`, `assetmgr`, `bundleName?`): [`atlas`](m4m.framework.atlas.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `jsonStr` | `string` | `undefined` | json数据 |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined` | 资源管理实例 |
-| `bundleName` | `string` | `null` | - |
+| Name         | Type                                    | Default value | Description |
+| ------------ | --------------------------------------- | ------------- | ----------- |
+| `jsonStr`    | `string`                                | `undefined`   | json数据      |
+| `assetmgr`   | [`assetMgr`](m4m.framework.assetMgr.md) | `undefined`   | 资源管理实例      |
+| `bundleName` | `string`                                | `null`        | -           |
 
-#### Returns
+**Returns**
 
 [`atlas`](m4m.framework.atlas.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:176](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L176)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:101](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L101)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:85](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L85)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:52](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L52)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L41)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:74](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L74)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L63)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new atlas**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L26)
 
-## Properties
+### Properties
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否为默认资源
+**`classdesc`** 是否为默认资源
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:25](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L25)
 
-___
+***
 
-### sprites
+#### sprites
 
 • **sprites**: `Object` = `{}`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-解析得到的sprite列表 key-->name
+**`classdesc`** 解析得到的sprite列表 key-->name
 
 **`version`** m4m 1.0
 
-#### Index signature
+**Index signature**
 
-▪ [id: `string`]: [`sprite`](m4m.framework.sprite.md)
+▪ \[id: `string`]: [`sprite`](m4m.framework.sprite.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:165](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L165)
 
-___
+***
 
-### textureheight
+#### textureheight
 
 • **textureheight**: `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-贴图像素高度
+**`classdesc`** 贴图像素高度
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:126](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L126)
 
-___
+***
 
-### texturewidth
+#### texturewidth
 
 • **texturewidth**: `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-贴图像素宽度
+**`classdesc`** 贴图像素宽度
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:118](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L118)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"atlas"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L13)
 
-## Accessors
+### Accessors
 
-### texture
+#### texture
 
 • `get` **texture**(): [`texture`](m4m.framework.texture.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取当前texture
+**`classdesc`** 获取当前texture
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:137](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L137)
 
 • `set` **texture**(`value`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置当前texture
+**`classdesc`** 设置当前texture
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                  |
+| ------- | ------------------------------------- |
 | `value` | [`texture`](m4m.framework.texture.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/atlas.ts:149](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/atlas.ts#L149)

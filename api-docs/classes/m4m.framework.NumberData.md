@@ -1,209 +1,211 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / NumberData
+# m4m.framework.NumberData
 
-# Class: NumberData
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / NumberData
+
+## Class: NumberData
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).NumberData
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_value](m4m.framework.NumberData.md#\_value)
+* [\_valueLimitMax](m4m.framework.NumberData.md#\_valuelimitmax)
+* [\_valueLimitMin](m4m.framework.NumberData.md#\_valuelimitmin)
+* [beInited](m4m.framework.NumberData.md#beinited)
+* [isRandom](m4m.framework.NumberData.md#israndom)
+* [key](m4m.framework.NumberData.md#key)
+
+#### Constructors
+
+* [constructor](m4m.framework.NumberData.md#constructor)
+
+#### Methods
+
+* [getValue](m4m.framework.NumberData.md#getvalue)
+* [setRandomValue](m4m.framework.NumberData.md#setrandomvalue)
+* [setValue](m4m.framework.NumberData.md#setvalue)
+* [FormJson](m4m.framework.NumberData.md#formjson)
+* [copyto](m4m.framework.NumberData.md#copyto)
 
 ### Properties
 
-- [\_value](m4m.framework.NumberData.md#_value)
-- [\_valueLimitMax](m4m.framework.NumberData.md#_valuelimitmax)
-- [\_valueLimitMin](m4m.framework.NumberData.md#_valuelimitmin)
-- [beInited](m4m.framework.NumberData.md#beinited)
-- [isRandom](m4m.framework.NumberData.md#israndom)
-- [key](m4m.framework.NumberData.md#key)
-
-### Constructors
-
-- [constructor](m4m.framework.NumberData.md#constructor)
-
-### Methods
-
-- [getValue](m4m.framework.NumberData.md#getvalue)
-- [setRandomValue](m4m.framework.NumberData.md#setrandomvalue)
-- [setValue](m4m.framework.NumberData.md#setvalue)
-- [FormJson](m4m.framework.NumberData.md#formjson)
-- [copyto](m4m.framework.NumberData.md#copyto)
-
-## Properties
-
-### \_value
+#### \_value
 
 • **\_value**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L6)
 
-___
+***
 
-### \_valueLimitMax
+#### \_valueLimitMax
 
 • **\_valueLimitMax**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L8)
 
-___
+***
 
-### \_valueLimitMin
+#### \_valueLimitMin
 
 • **\_valueLimitMin**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L7)
 
-___
+***
 
-### beInited
+#### beInited
 
 • **beInited**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L9)
 
-___
+***
 
-### isRandom
+#### isRandom
 
 • **isRandom**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L5)
 
-___
+***
 
-### key
+#### key
 
 • **key**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L10)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new NumberData**(`value?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `value` | `number` | `0` |
+| Name    | Type     | Default value |
+| ------- | -------- | ------------- |
+| `value` | `number` | `0`           |
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:38](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L38)
 
-## Methods
+### Methods
 
-### getValue
+#### getValue
 
 ▸ **getValue**(`reRandom?`): `number`
 
 针对随机类型，只要随机过一次就返回值不变（rerandom=false），返回新的随机值（rerandom=true）
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `reRandom` | `boolean` | `false` |
+| Name       | Type      | Default value |
+| ---------- | --------- | ------------- |
+| `reRandom` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L24)
 
-___
+***
 
-### setRandomValue
+#### setRandomValue
 
 ▸ **setRandomValue**(`max`, `min`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `max` | `number` |
 | `min` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L15)
 
-___
+***
 
-### setValue
+#### setValue
 
 ▸ **setValue**(`value`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `value` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L11)
 
-___
+***
 
-### FormJson
+#### FormJson
 
 ▸ `Static` **FormJson**(`json`, `data`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `json` | `string` |
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
+| `json` | `string`                                    |
 | `data` | [`NumberData`](m4m.framework.NumberData.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:51](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L51)
 
-___
+***
 
-### copyto
+#### copyto
 
 ▸ `Static` **copyto**(`from`, `to`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
 | `from` | [`NumberData`](m4m.framework.NumberData.md) |
-| `to` | [`NumberData`](m4m.framework.NumberData.md) |
+| `to`   | [`NumberData`](m4m.framework.NumberData.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/data/numberdata.ts:43](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/data/numberdata.ts#L43)

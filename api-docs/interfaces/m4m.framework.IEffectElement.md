@@ -1,120 +1,122 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IEffectElement
+# m4m.framework.IEffectElement
 
-# Interface: IEffectElement
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IEffectElement
+
+## Interface: IEffectElement
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IEffectElement
 
-## Implemented by
+### Implemented by
 
-- [`EffectElementEmission`](../classes/m4m.framework.EffectElementEmission.md)
-- [`EffectElementSingleMesh`](../classes/m4m.framework.EffectElementSingleMesh.md)
+* [`EffectElementEmission`](../classes/m4m.framework.EffectElementEmission.md)
+* [`EffectElementSingleMesh`](../classes/m4m.framework.EffectElementSingleMesh.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [beloop](m4m.framework.IEffectElement.md#beloop)
+* [delayTime](m4m.framework.IEffectElement.md#delaytime)
+* [elementType](m4m.framework.IEffectElement.md#elementtype)
+* [mat](m4m.framework.IEffectElement.md#mat)
+* [mesh](m4m.framework.IEffectElement.md#mesh)
+* [name](m4m.framework.IEffectElement.md#name)
+
+#### Methods
+
+* [dispose](m4m.framework.IEffectElement.md#dispose)
+* [writeToJson](m4m.framework.IEffectElement.md#writetojson)
 
 ### Properties
 
-- [beloop](m4m.framework.IEffectElement.md#beloop)
-- [delayTime](m4m.framework.IEffectElement.md#delaytime)
-- [elementType](m4m.framework.IEffectElement.md#elementtype)
-- [mat](m4m.framework.IEffectElement.md#mat)
-- [mesh](m4m.framework.IEffectElement.md#mesh)
-- [name](m4m.framework.IEffectElement.md#name)
-
-### Methods
-
-- [dispose](m4m.framework.IEffectElement.md#dispose)
-- [writeToJson](m4m.framework.IEffectElement.md#writetojson)
-
-## Properties
-
-### beloop
+#### beloop
 
 • **beloop**: `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L8)
 
-___
+***
 
-### delayTime
+#### delayTime
 
 • **delayTime**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L9)
 
-___
+***
 
-### elementType
+#### elementType
 
 • **elementType**: `EffectElementTypeEnum`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L7)
 
-___
+***
 
-### mat
+#### mat
 
 • **mat**: [`material`](../classes/m4m.framework.material.md)
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L10)
 
-___
+***
 
-### mesh
+#### mesh
 
 • **mesh**: [`mesh`](../classes/m4m.framework.mesh.md)
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L11)
 
-___
+***
 
-### name
+#### name
 
 • **name**: `string`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L6)
 
-## Methods
+### Methods
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L13)
 
-___
+***
 
-### writeToJson
+#### writeToJson
 
 ▸ **writeToJson**(`obj`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type  |
+| ----- | ----- |
 | `obj` | `any` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/particle/new/element.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/new/element.ts#L12)

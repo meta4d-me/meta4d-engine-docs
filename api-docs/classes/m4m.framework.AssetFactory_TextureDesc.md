@@ -1,78 +1,80 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_TextureDesc
+# m4m.framework.AssetFactory\_TextureDesc
 
-# Class: AssetFactory\_TextureDesc
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_TextureDesc
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_TextureDesc
+## Class: AssetFactory\_TextureDesc
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_TextureDesc
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_TextureDesc.md#constructor)
+
+#### Methods
+
+* [needDownload](m4m.framework.AssetFactory\_TextureDesc.md#needdownload)
+* [parse](m4m.framework.AssetFactory\_TextureDesc.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_TextureDesc.md#constructor)
+#### constructor
+
+• **new AssetFactory\_TextureDesc**()
 
 ### Methods
 
-- [needDownload](m4m.framework.AssetFactory_TextureDesc.md#needdownload)
-- [parse](m4m.framework.AssetFactory_TextureDesc.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_TextureDesc**()
-
-## Methods
-
-### needDownload
+#### needDownload
 
 ▸ **needDownload**(`text`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| ------ | -------- |
 | `text` | `string` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[needDownload](../interfaces/m4m.framework.IAssetFactory.md#needdownload)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_texturedesc.ts:232](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_texturedesc.ts#L232)
+[framework/asset/factorys/assetfactory\_texturedesc.ts:232](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_texturedesc.ts#L232)
 
-___
+***
 
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `name`, `data`, `dwguid`): [`texture`](m4m.framework.texture.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `name` | `string` |
-| `data` | `string` |
-| `dwguid` | `number` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `name`     | `string`                                      |
+| `data`     | `string`                                      |
+| `dwguid`   | `number`                                      |
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_texturedesc.ts:141](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_texturedesc.ts#L141)
+[framework/asset/factorys/assetfactory\_texturedesc.ts:141](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_texturedesc.ts#L141)

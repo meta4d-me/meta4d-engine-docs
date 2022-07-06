@@ -1,119 +1,121 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IEngine2DOP
+# m4m.framework.IEngine2DOP
 
-# Interface: IEngine2DOP
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IEngine2DOP
+
+## Interface: IEngine2DOP
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IEngine2DOP
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [broadphase](m4m.framework.IEngine2DOP.md#broadphase)
+* [constraintIterations](m4m.framework.IEngine2DOP.md#constraintiterations)
+* [enableSleeping](m4m.framework.IEngine2DOP.md#enablesleeping)
+* [positionIterations](m4m.framework.IEngine2DOP.md#positioniterations)
+* [runnerFps](m4m.framework.IEngine2DOP.md#runnerfps)
+* [runnerIsFixed](m4m.framework.IEngine2DOP.md#runnerisfixed)
+* [timing](m4m.framework.IEngine2DOP.md#timing)
+* [velocityIterations](m4m.framework.IEngine2DOP.md#velocityiterations)
 
 ### Properties
 
-- [broadphase](m4m.framework.IEngine2DOP.md#broadphase)
-- [constraintIterations](m4m.framework.IEngine2DOP.md#constraintiterations)
-- [enableSleeping](m4m.framework.IEngine2DOP.md#enablesleeping)
-- [positionIterations](m4m.framework.IEngine2DOP.md#positioniterations)
-- [runnerFps](m4m.framework.IEngine2DOP.md#runnerfps)
-- [runnerIsFixed](m4m.framework.IEngine2DOP.md#runnerisfixed)
-- [timing](m4m.framework.IEngine2DOP.md#timing)
-- [velocityIterations](m4m.framework.IEngine2DOP.md#velocityiterations)
-
-## Properties
-
-### broadphase
+#### broadphase
 
 • `Optional` **broadphase**: `Object`
 
 默认值 : {bucketWidth: 48, bucketHeight: 48}
 
-#### Type declaration
+**Type declaration**
 
-| Name | Type |
-| :------ | :------ |
+| Name           | Type     |
+| -------------- | -------- |
 | `bucketHeight` | `number` |
-| `bucketWidth` | `number` |
+| `bucketWidth`  | `number` |
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:22](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L22)
 
-___
+***
 
-### constraintIterations
+#### constraintIterations
 
 • `Optional` **constraintIterations**: `number`
 
 默认值 ： 2
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L17)
 
-___
+***
 
-### enableSleeping
+#### enableSleeping
 
 • `Optional` **enableSleeping**: `boolean`
 
 默认值 : fales
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L19)
 
-___
+***
 
-### positionIterations
+#### positionIterations
 
 • `Optional` **positionIterations**: `number`
 
 默认值 ： 6
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L13)
 
-___
+***
 
-### runnerFps
+#### runnerFps
 
 • `Optional` **runnerFps**: `any`
 
 循环器的设定帧率 , 默认值 : 60
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L24)
 
-___
+***
 
-### runnerIsFixed
+#### runnerIsFixed
 
 • `Optional` **runnerIsFixed**: `any`
 
 循环器是否应使用固定的timestep（deltaTime），默认值：false
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L26)
 
-___
+***
 
-### timing
+#### timing
 
 • `Optional` **timing**: [`Itiming`](m4m.framework.Itiming.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L20)
 
-___
+***
 
-### velocityIterations
+#### velocityIterations
 
 • `Optional` **velocityIterations**: `number`
 
 默认值 ： 4
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L15)

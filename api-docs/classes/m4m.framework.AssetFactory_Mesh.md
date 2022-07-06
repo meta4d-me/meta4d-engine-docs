@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Mesh
+# m4m.framework.AssetFactory\_Mesh
 
-# Class: AssetFactory\_Mesh
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Mesh
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_Mesh
+## Class: AssetFactory\_Mesh
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_Mesh
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_Mesh.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_Mesh.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_Mesh.md#constructor)
+#### constructor
+
+• **new AssetFactory\_Mesh**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_Mesh.md#parse)
+#### parse
 
-## Constructors
+▸ **parse**(`assetMgr`, `bundle`, `name`, `data`): `Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)>
 
-### constructor
+**Parameters**
 
-• **new AssetFactory_Mesh**()
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetMgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `name`     | `string`                                      |
+| `data`     | `ArrayBuffer`                                 |
 
-## Methods
+**Returns**
 
-### parse
+`Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)>
 
-▸ **parse**(`assetMgr`, `bundle`, `name`, `data`): `Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `assetMgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `name` | `string` |
-| `data` | `ArrayBuffer` |
-
-#### Returns
-
-`Promise`<[`IAsset`](../interfaces/m4m.framework.IAsset.md)\>
-
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_mesh.ts:106](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_mesh.ts#L106)
+[framework/asset/factorys/assetfactory\_mesh.ts:106](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_mesh.ts#L106)

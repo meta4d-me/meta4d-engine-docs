@@ -1,52 +1,54 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_TextAsset
+# m4m.framework.AssetFactory\_TextAsset
 
-# Class: AssetFactory\_TextAsset
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_TextAsset
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_TextAsset
+## Class: AssetFactory\_TextAsset
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_TextAsset
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_TextAsset.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_TextAsset.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_TextAsset.md#constructor)
+#### constructor
+
+• **new AssetFactory\_TextAsset**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_TextAsset.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_TextAsset**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `filename`, `txt`): [`textasset`](m4m.framework.textasset.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `filename` | `string` |
-| `txt` | `string` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `filename` | `string`                                      |
+| `txt`      | `string`                                      |
 
-#### Returns
+**Returns**
 
 [`textasset`](m4m.framework.textasset.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_textasset.ts:61](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_textasset.ts#L61)
+[framework/asset/factorys/assetfactory\_textasset.ts:61](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_textasset.ts#L61)

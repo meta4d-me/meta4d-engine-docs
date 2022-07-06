@@ -1,390 +1,379 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / prefab
+# m4m.framework.prefab
 
-# Class: prefab
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / prefab
+
+## Class: prefab
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).prefab
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-预设资源
+**`classdesc`** 预设资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Parse](m4m.framework.prefab.md#parse)
+* [apply](m4m.framework.prefab.md#apply)
+* [cParse](m4m.framework.prefab.md#cparse)
+* [caclByteLength](m4m.framework.prefab.md#caclbytelength)
+* [dispose](m4m.framework.prefab.md#dispose)
+* [getCloneTrans](m4m.framework.prefab.md#getclonetrans)
+* [getCloneTrans2D](m4m.framework.prefab.md#getclonetrans2d)
+* [getGUID](m4m.framework.prefab.md#getguid)
+* [getName](m4m.framework.prefab.md#getname)
+* [unuse](m4m.framework.prefab.md#unuse)
+* [use](m4m.framework.prefab.md#use)
+
+#### Properties
+
+* [assetbundle](m4m.framework.prefab.md#assetbundle)
+* [defaultAsset](m4m.framework.prefab.md#defaultasset)
+* [isCab](m4m.framework.prefab.md#iscab)
+* [ClassName](m4m.framework.prefab.md#classname)
+
+#### Constructors
+
+* [constructor](m4m.framework.prefab.md#constructor)
 
 ### Methods
 
-- [Parse](m4m.framework.prefab.md#parse)
-- [apply](m4m.framework.prefab.md#apply)
-- [cParse](m4m.framework.prefab.md#cparse)
-- [caclByteLength](m4m.framework.prefab.md#caclbytelength)
-- [dispose](m4m.framework.prefab.md#dispose)
-- [getCloneTrans](m4m.framework.prefab.md#getclonetrans)
-- [getCloneTrans2D](m4m.framework.prefab.md#getclonetrans2d)
-- [getGUID](m4m.framework.prefab.md#getguid)
-- [getName](m4m.framework.prefab.md#getname)
-- [unuse](m4m.framework.prefab.md#unuse)
-- [use](m4m.framework.prefab.md#use)
+#### Parse
 
-### Properties
+▸ **Parse**(`jsonStr`, `assetmgr`): `Promise`<`unknown`>
 
-- [assetbundle](m4m.framework.prefab.md#assetbundle)
-- [defaultAsset](m4m.framework.prefab.md#defaultasset)
-- [isCab](m4m.framework.prefab.md#iscab)
-- [ClassName](m4m.framework.prefab.md#classname)
+**`language`** zh\_CN
 
-### Constructors
-
-- [constructor](m4m.framework.prefab.md#constructor)
-
-## Methods
-
-### Parse
-
-▸ **Parse**(`jsonStr`, `assetmgr`): `Promise`<`unknown`\>
-
-**`language`** zh_CN
-
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `jsonStr` | `string` | json数据 |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | 资源管理实例 |
+| Name       | Type                                    | Description |
+| ---------- | --------------------------------------- | ----------- |
+| `jsonStr`  | `string`                                | json数据      |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) | 资源管理实例      |
 
-#### Returns
+**Returns**
 
-`Promise`<`unknown`\>
+`Promise`<`unknown`>
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:184](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L184)
 
-___
+***
 
-### apply
+#### apply
 
 ▸ **apply**(`trans`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置当前指定的transform
+**`classdesc`** 设置当前指定的transform
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type                                      | Description |
+| ------- | ----------------------------------------- | ----------- |
 | `trans` | [`transform`](m4m.framework.transform.md) | transform实例 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:163](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L163)
 
-___
+***
 
-### cParse
+#### cParse
 
 ▸ **cParse**(`data`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type  |
+| ------ | ----- |
 | `data` | `any` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:214](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L214)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:108](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L108)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:96](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L96)
 
-___
+***
 
-### getCloneTrans
+#### getCloneTrans
 
 ▸ **getCloneTrans**(): [`transform`](m4m.framework.transform.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取克隆的transform
+**`classdesc`** 获取克隆的transform
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`transform`](m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:122](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L122)
 
-___
+***
 
-### getCloneTrans2D
+#### getCloneTrans2D
 
 ▸ **getCloneTrans2D**(): [`transform2D`](m4m.framework.transform2D.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取克隆的transform2D
+**`classdesc`** 获取克隆的transform2D
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 [`transform2D`](m4m.framework.transform2D.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:142](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L142)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:55](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L55)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:44](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L44)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:85](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L85)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:74](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L74)
 
-## Properties
+### Properties
 
-### assetbundle
+#### assetbundle
 
 • **assetbundle**: `string` = `null`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-prefab依赖的AssetBundle
+**`classdesc`** prefab依赖的AssetBundle
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:66](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L66)
 
-___
+***
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean` = `false`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否为默认资源
+**`classdesc`** 是否为默认资源
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L24)
 
-___
+***
 
-### isCab
+#### isCab
 
 • **isCab**: `boolean` = `false`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L26)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"prefab"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L13)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new prefab**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/prefab.ts:27](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/prefab.ts#L27)

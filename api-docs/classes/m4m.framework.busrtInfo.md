@@ -1,102 +1,104 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / busrtInfo
+# m4m.framework.busrtInfo
 
-# Class: busrtInfo
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / busrtInfo
+
+## Class: busrtInfo
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).busrtInfo
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [beburst](m4m.framework.busrtInfo.md#beburst)
+* [burst](m4m.framework.busrtInfo.md#burst)
+* [CreatformJson](m4m.framework.busrtInfo.md#creatformjson)
+
+#### Constructors
+
+* [constructor](m4m.framework.busrtInfo.md#constructor)
+
+#### Properties
+
+* [count](m4m.framework.busrtInfo.md#count)
+* [time](m4m.framework.busrtInfo.md#time)
 
 ### Methods
 
-- [beburst](m4m.framework.busrtInfo.md#beburst)
-- [burst](m4m.framework.busrtInfo.md#burst)
-- [CreatformJson](m4m.framework.busrtInfo.md#creatformjson)
-
-### Constructors
-
-- [constructor](m4m.framework.busrtInfo.md#constructor)
-
-### Properties
-
-- [count](m4m.framework.busrtInfo.md#count)
-- [time](m4m.framework.busrtInfo.md#time)
-
-## Methods
-
-### beburst
+#### beburst
 
 ▸ **beburst**(): `boolean`
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emissionbasedata.ts:327](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emissionbasedata.ts#L327)
 
-___
+***
 
-### burst
+#### burst
 
 ▸ **burst**(`bebusrt?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `bebusrt` | `boolean` | `true` |
+| Name      | Type      | Default value |
+| --------- | --------- | ------------- |
+| `bebusrt` | `boolean` | `true`        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emissionbasedata.ts:331](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emissionbasedata.ts#L331)
 
-___
+***
 
-### CreatformJson
+#### CreatformJson
 
 ▸ `Static` **CreatformJson**(`json`): [`busrtInfo`](m4m.framework.busrtInfo.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type  |
+| ------ | ----- |
 | `json` | `any` |
 
-#### Returns
+**Returns**
 
 [`busrtInfo`](m4m.framework.busrtInfo.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emissionbasedata.ts:336](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emissionbasedata.ts#L336)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new busrtInfo**()
 
-## Properties
+### Properties
 
-### count
+#### count
 
 • **count**: [`NumberData`](m4m.framework.NumberData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emissionbasedata.ts:325](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emissionbasedata.ts#L325)
 
-___
+***
 
-### time
+#### time
 
 • **time**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emissionbasedata.ts:324](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emissionbasedata.ts#L324)

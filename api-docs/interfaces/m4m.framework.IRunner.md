@@ -1,31 +1,33 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRunner
+# m4m.framework.IRunner
 
-# Interface: IRunner
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRunner
+
+## Interface: IRunner
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IRunner
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [tick](m4m.framework.IRunner.md#tick)
 
 ### Methods
 
-- [tick](m4m.framework.IRunner.md#tick)
-
-## Methods
-
-### tick
+#### tick
 
 ▸ **tick**(`delta`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/physicEngine/physicEngine2d.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/physicEngine/physicEngine2d.ts#L41)

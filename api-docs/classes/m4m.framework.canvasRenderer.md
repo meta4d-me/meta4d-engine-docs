@@ -1,486 +1,474 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / canvasRenderer
+# m4m.framework.canvasRenderer
 
-# Class: canvasRenderer
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / canvasRenderer
+
+## Class: canvasRenderer
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).canvasRenderer
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-3DUI的容器类</p>
-3d组件</p>
-与overlay(2DUI)相对应。
+**`classdesc`** 3DUI的容器类
+
+3d组件与overlay(2DUI)相对应。
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
-- [`ICollider`](../interfaces/m4m.framework.ICollider.md)
+* [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
+* [`ICollider`](../interfaces/m4m.framework.ICollider.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [addChild](m4m.framework.canvasRenderer.md#addchild)
+* [calCanvasPosToWorldPos](m4m.framework.canvasRenderer.md#calcanvaspostoworldpos)
+* [calScreenPosToCanvasPos](m4m.framework.canvasRenderer.md#calscreenpostocanvaspos)
+* [getChild](m4m.framework.canvasRenderer.md#getchild)
+* [getChildCount](m4m.framework.canvasRenderer.md#getchildcount)
+* [getChildren](m4m.framework.canvasRenderer.md#getchildren)
+* [onPlay](m4m.framework.canvasRenderer.md#onplay)
+* [pick2d](m4m.framework.canvasRenderer.md#pick2d)
+* [pickAll2d](m4m.framework.canvasRenderer.md#pickall2d)
+* [pickModelPos](m4m.framework.canvasRenderer.md#pickmodelpos)
+* [removeChild](m4m.framework.canvasRenderer.md#removechild)
+
+#### Properties
+
+* [cameraTouch](m4m.framework.canvasRenderer.md#cameratouch)
+* [canvas](m4m.framework.canvasRenderer.md#canvas)
+* [gameObject](m4m.framework.canvasRenderer.md#gameobject)
+* [inputmgr](m4m.framework.canvasRenderer.md#inputmgr)
+* [layer](m4m.framework.canvasRenderer.md#layer)
+* [ClassName](m4m.framework.canvasRenderer.md#classname)
+
+#### Accessors
+
+* [dontFrustumCulling](m4m.framework.canvasRenderer.md#dontfrustumculling)
+* [renderLayer](m4m.framework.canvasRenderer.md#renderlayer)
 
 ### Methods
 
-- [addChild](m4m.framework.canvasRenderer.md#addchild)
-- [calCanvasPosToWorldPos](m4m.framework.canvasRenderer.md#calcanvaspostoworldpos)
-- [calScreenPosToCanvasPos](m4m.framework.canvasRenderer.md#calscreenpostocanvaspos)
-- [getChild](m4m.framework.canvasRenderer.md#getchild)
-- [getChildCount](m4m.framework.canvasRenderer.md#getchildcount)
-- [getChildren](m4m.framework.canvasRenderer.md#getchildren)
-- [onPlay](m4m.framework.canvasRenderer.md#onplay)
-- [pick2d](m4m.framework.canvasRenderer.md#pick2d)
-- [pickAll2d](m4m.framework.canvasRenderer.md#pickall2d)
-- [pickModelPos](m4m.framework.canvasRenderer.md#pickmodelpos)
-- [removeChild](m4m.framework.canvasRenderer.md#removechild)
-
-### Properties
-
-- [cameraTouch](m4m.framework.canvasRenderer.md#cameratouch)
-- [canvas](m4m.framework.canvasRenderer.md#canvas)
-- [gameObject](m4m.framework.canvasRenderer.md#gameobject)
-- [inputmgr](m4m.framework.canvasRenderer.md#inputmgr)
-- [layer](m4m.framework.canvasRenderer.md#layer)
-- [ClassName](m4m.framework.canvasRenderer.md#classname)
-
-### Accessors
-
-- [dontFrustumCulling](m4m.framework.canvasRenderer.md#dontfrustumculling)
-- [renderLayer](m4m.framework.canvasRenderer.md#renderlayer)
-
-## Methods
-
-### addChild
+#### addChild
 
 ▸ **addChild**(`node`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-添加2d子节点
+**`classdesc`** 添加2d子节点
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                          |
+| ------ | --------------------------------------------- |
 | `node` | [`transform2D`](m4m.framework.transform2D.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:126](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L126)
 
-___
+***
 
-### calCanvasPosToWorldPos
+#### calCanvasPosToWorldPos
 
 ▸ **calCanvasPosToWorldPos**(`from`, `out`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-canvas坐标 转到 世界空间坐标
+**`classdesc`** canvas坐标 转到 世界空间坐标
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type      | Description     |
+| ------ | --------- | --------------- |
 | `from` | `vector2` | Transform2D世界坐标 |
-| `out` | `vector3` | 返回结果v2 |
+| `out`  | `vector3` | 返回结果v2          |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:341](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L341)
 
-___
+***
 
-### calScreenPosToCanvasPos
+#### calScreenPosToCanvasPos
 
 ▸ **calScreenPosToCanvasPos**(`camera`, `screenPos`, `outCanvasPos`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-屏幕空间坐标 转到 canvas坐标
+**`classdesc`** 屏幕空间坐标 转到 canvas坐标
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `camera` | [`camera`](m4m.framework.camera.md) |
-| `screenPos` | `vector2` |
-| `outCanvasPos` | `vector2` |
+| Name           | Type                                |
+| -------------- | ----------------------------------- |
+| `camera`       | [`camera`](m4m.framework.camera.md) |
+| `screenPos`    | `vector2`                           |
+| `outCanvasPos` | `vector2`                           |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:321](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L321)
 
-___
+***
 
-### getChild
+#### getChild
 
 ▸ **getChild**(`index`): [`transform2D`](m4m.framework.transform2D.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取2d子节点
+**`classdesc`** 获取2d子节点
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `index` | `number` | 索引 |
+| Name    | Type     | Description |
+| ------- | -------- | ----------- |
+| `index` | `number` | 索引          |
 
-#### Returns
+**Returns**
 
 [`transform2D`](m4m.framework.transform2D.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:175](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L175)
 
-___
+***
 
-### getChildCount
+#### getChildCount
 
 ▸ **getChildCount**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取2d子节点的数量
+**`classdesc`** 获取2d子节点的数量
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:162](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L162)
 
-___
+***
 
-### getChildren
+#### getChildren
 
-▸ **getChildren**(): [`transform2D`](m4m.framework.transform2D.md)[]
+▸ **getChildren**(): [`transform2D`](m4m.framework.transform2D.md)\[]
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取所有2d子节点
+**`classdesc`** 获取所有2d子节点
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
-[`transform2D`](m4m.framework.transform2D.md)[]
+[`transform2D`](m4m.framework.transform2D.md)\[]
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:150](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L150)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[onPlay](../interfaces/m4m.framework.IRenderer.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:114](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L114)
 
-___
+***
 
-### pick2d
+#### pick2d
 
 ▸ **pick2d**(`ray`): [`transform2D`](m4m.framework.transform2D.md)
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-射线拣选transform2D
+**`classdesc`** 射线拣选transform2D
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | 射线 |
+| Name  | Type                          | Description |
+| ----- | ----------------------------- | ----------- |
+| `ray` | [`ray`](m4m.framework.ray.md) | 射线          |
 
-#### Returns
+**Returns**
 
 [`transform2D`](m4m.framework.transform2D.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:279](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L279)
 
-___
+***
 
-### pickAll2d
+#### pickAll2d
 
-▸ **pickAll2d**(`ray`): [`transform2D`](m4m.framework.transform2D.md)[]
+▸ **pickAll2d**(`ray`): [`transform2D`](m4m.framework.transform2D.md)\[]
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-射线拣选 全部 transform2D
+**`classdesc`** 射线拣选 全部 transform2D
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | 射线 |
+| Name  | Type                          | Description |
+| ----- | ----------------------------- | ----------- |
+| `ray` | [`ray`](m4m.framework.ray.md) | 射线          |
 
-#### Returns
+**Returns**
 
-[`transform2D`](m4m.framework.transform2D.md)[]
+[`transform2D`](m4m.framework.transform2D.md)\[]
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:258](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L258)
 
-___
+***
 
-### pickModelPos
+#### pickModelPos
 
 ▸ **pickModelPos**(`ray`, `outModelPos`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-射线碰撞 获取 Model坐标点
+**`classdesc`** 射线碰撞 获取 Model坐标点
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | 射线 |
-| `outModelPos` | `vector2` | - |
+| Name          | Type                          | Description |
+| ------------- | ----------------------------- | ----------- |
+| `ray`         | [`ray`](m4m.framework.ray.md) | 射线          |
+| `outModelPos` | `vector2`                     | -           |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:227](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L227)
 
-___
+***
 
-### removeChild
+#### removeChild
 
 ▸ **removeChild**(`node`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-移除2d子节点
+**`classdesc`** 移除2d子节点
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                          |
+| ------ | --------------------------------------------- |
 | `node` | [`transform2D`](m4m.framework.transform2D.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:138](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L138)
 
-## Properties
+### Properties
 
-### cameraTouch
+#### cameraTouch
 
 • **cameraTouch**: [`camera`](m4m.framework.camera.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:102](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L102)
 
-___
+***
 
-### canvas
+#### canvas
 
 • **canvas**: [`canvas`](m4m.framework.canvas.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:99](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L99)
 
-___
+***
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](m4m.framework.gameObject.md)
 
-#### Implementation of
+**Implementation of**
 
 [ICollider](../interfaces/m4m.framework.ICollider.md).[gameObject](../interfaces/m4m.framework.ICollider.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:97](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L97)
 
-___
+***
 
-### inputmgr
+#### inputmgr
 
 • **inputmgr**: [`inputMgr`](m4m.framework.inputMgr.md)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:100](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L100)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md) = `RenderLayerEnum.Common`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-layer类型
+**`classdesc`** layer类型
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[layer](../interfaces/m4m.framework.IRenderer.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:90](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L90)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"canvasRenderer"`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L20)
 
-## Accessors
+### Accessors
 
-### dontFrustumCulling
+#### dontFrustumCulling
 
 • `get` **dontFrustumCulling**(): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-不受视锥剔除
+**`classdesc`** 不受视锥剔除
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:45](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L45)
 
 • `set` **dontFrustumCulling**(`val`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-不受视锥剔除
+**`classdesc`** 不受视锥剔除
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type      |
+| ----- | --------- |
 | `val` | `boolean` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:53](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L53)
 
-___
+***
 
-### renderLayer
+#### renderLayer
 
 • `get` **renderLayer**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L32)
 
 • `set` **renderLayer**(`layer`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `layer` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/2d/canvasrenderer.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/canvasrenderer.ts#L33)

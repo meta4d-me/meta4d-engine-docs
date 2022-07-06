@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemShapeEdge
+# m4m.framework.ParticleSystemShapeEdge
 
-# Class: ParticleSystemShapeEdge
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ParticleSystemShapeEdge
+
+## Class: ParticleSystemShapeEdge
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ParticleSystemShapeEdge
 
@@ -8,108 +10,108 @@
 
 **`author`** feng3d
 
-## Hierarchy
+### Hierarchy
 
-- [`ParticleSystemShapeBase`](m4m.framework.ParticleSystemShapeBase.md)
+*   [`ParticleSystemShapeBase`](m4m.framework.ParticleSystemShapeBase.md)
 
-  ↳ **`ParticleSystemShapeEdge`**
+    ↳ **`ParticleSystemShapeEdge`**
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_module](m4m.framework.ParticleSystemShapeEdge.md#\_module)
+
+#### Methods
+
+* [calcParticlePosDir](m4m.framework.ParticleSystemShapeEdge.md#calcparticleposdir)
+
+#### Constructors
+
+* [constructor](m4m.framework.ParticleSystemShapeEdge.md#constructor)
+
+#### Accessors
+
+* [radius](m4m.framework.ParticleSystemShapeEdge.md#radius)
+* [radiusMode](m4m.framework.ParticleSystemShapeEdge.md#radiusmode)
+* [radiusSpeed](m4m.framework.ParticleSystemShapeEdge.md#radiusspeed)
+* [radiusSpread](m4m.framework.ParticleSystemShapeEdge.md#radiusspread)
 
 ### Properties
 
-- [\_module](m4m.framework.ParticleSystemShapeEdge.md#_module)
-
-### Methods
-
-- [calcParticlePosDir](m4m.framework.ParticleSystemShapeEdge.md#calcparticleposdir)
-
-### Constructors
-
-- [constructor](m4m.framework.ParticleSystemShapeEdge.md#constructor)
-
-### Accessors
-
-- [radius](m4m.framework.ParticleSystemShapeEdge.md#radius)
-- [radiusMode](m4m.framework.ParticleSystemShapeEdge.md#radiusmode)
-- [radiusSpeed](m4m.framework.ParticleSystemShapeEdge.md#radiusspeed)
-- [radiusSpread](m4m.framework.ParticleSystemShapeEdge.md#radiusspread)
-
-## Properties
-
-### \_module
+#### \_module
 
 • `Protected` **\_module**: [`ParticleShapeModule`](m4m.framework.ParticleShapeModule.md)
 
-#### Inherited from
+**Inherited from**
 
-[ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[_module](m4m.framework.ParticleSystemShapeBase.md#_module)
+[ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[\_module](m4m.framework.ParticleSystemShapeBase.md#\_module)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeBase.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeBase.ts#L10)
 
-## Methods
+### Methods
 
-### calcParticlePosDir
+#### calcParticlePosDir
 
 ▸ **calcParticlePosDir**(`particle`, `position`, `dir`): `void`
 
 计算粒子的发射位置与方向
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                      |
+| ---------- | ----------------------------------------- |
 | `particle` | [`Particle1`](m4m.framework.Particle1.md) |
-| `position` | `vector3` |
-| `dir` | `vector3` |
+| `position` | `vector3`                                 |
+| `dir`      | `vector3`                                 |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[calcParticlePosDir](m4m.framework.ParticleSystemShapeBase.md#calcparticleposdir)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:75](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L75)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new ParticleSystemShapeEdge**(`module`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                                          |
+| -------- | ------------------------------------------------------------- |
 | `module` | [`ParticleShapeModule`](m4m.framework.ParticleShapeModule.md) |
 
-#### Inherited from
+**Inherited from**
 
 [ParticleSystemShapeBase](m4m.framework.ParticleSystemShapeBase.md).[constructor](m4m.framework.ParticleSystemShapeBase.md#constructor)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeBase.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeBase.ts#L12)
 
-## Accessors
+### Accessors
 
-### radius
+#### radius
 
 • `get` **radius**(): `number`
 
 边长的一半。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L13)
 
@@ -117,23 +119,23 @@
 
 边长的一半。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L18)
 
-___
+***
 
-### radiusMode
+#### radiusMode
 
 • `get` **radiusMode**(): [`ParticleSystemShapeMultiModeValue`](../enums/m4m.framework.ParticleSystemShapeMultiModeValue.md)
 
@@ -141,11 +143,11 @@ The mode used for generating particles around the radius.
 
 在弧线周围产生粒子的模式。
 
-#### Returns
+**Returns**
 
 [`ParticleSystemShapeMultiModeValue`](../enums/m4m.framework.ParticleSystemShapeMultiModeValue.md)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L28)
 
@@ -155,23 +157,23 @@ The mode used for generating particles around the radius.
 
 在弧线周围产生粒子的模式。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | [`ParticleSystemShapeMultiModeValue`](../enums/m4m.framework.ParticleSystemShapeMultiModeValue.md) |
+| Name | Type                                                                                               |
+| ---- | -------------------------------------------------------------------------------------------------- |
+| `v`  | [`ParticleSystemShapeMultiModeValue`](../enums/m4m.framework.ParticleSystemShapeMultiModeValue.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L33)
 
-___
+***
 
-### radiusSpeed
+#### radiusSpeed
 
 • `get` **radiusSpeed**(): [`MinMaxCurve`](m4m.framework.MinMaxCurve.md)
 
@@ -179,11 +181,11 @@ When using one of the animated modes, how quickly to move the emission position 
 
 当使用一个动画模式时，如何快速移动发射位置周围的弧。
 
-#### Returns
+**Returns**
 
 [`MinMaxCurve`](m4m.framework.MinMaxCurve.md)
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:58](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L58)
 
@@ -193,23 +195,23 @@ When using one of the animated modes, how quickly to move the emission position 
 
 当使用一个动画模式时，如何快速移动发射位置周围的弧。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | [`MinMaxCurve`](m4m.framework.MinMaxCurve.md) |
+| Name | Type                                          |
+| ---- | --------------------------------------------- |
+| `v`  | [`MinMaxCurve`](m4m.framework.MinMaxCurve.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:63](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L63)
 
-___
+***
 
-### radiusSpread
+#### radiusSpread
 
 • `get` **radiusSpread**(): `number`
 
@@ -217,11 +219,11 @@ Control the gap between emission points around the radius.
 
 控制弧线周围发射点之间的间隙。
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:43](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L43)
 
@@ -231,16 +233,16 @@ Control the gap between emission points around the radius.
 
 控制弧线周围发射点之间的间隙。
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/particlesystem/shapes/ParticleSystemShapeEdge.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particlesystem/shapes/ParticleSystemShapeEdge.ts#L48)

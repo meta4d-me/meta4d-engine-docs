@@ -1,178 +1,180 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [event](../modules/m4m.event.md) / inputHtmlNativeEvent
+# m4m.event.inputHtmlNativeEvent
 
-# Class: inputHtmlNativeEvent
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [event](../modules/m4m.event.md) / inputHtmlNativeEvent
+
+## Class: inputHtmlNativeEvent
 
 [m4m](../modules/m4m.md).[event](../modules/m4m.event.md).inputHtmlNativeEvent
 
 输入htmlElement 原生事件
 
-## Hierarchy
+### Hierarchy
 
-- [`AEvent`](m4m.AEvent.md)
+*   [`AEvent`](m4m.AEvent.md)
 
-  ↳ **`inputHtmlNativeEvent`**
+    ↳ **`inputHtmlNativeEvent`**
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Emit](m4m.event.inputHtmlNativeEvent.md#emit)
+* [On](m4m.event.inputHtmlNativeEvent.md#on)
+* [RemoveListener](m4m.event.inputHtmlNativeEvent.md#removelistener)
+* [RemoveListenerAll](m4m.event.inputHtmlNativeEvent.md#removelistenerall)
+* [listenerCount](m4m.event.inputHtmlNativeEvent.md#listenercount)
+
+#### Constructors
+
+* [constructor](m4m.event.inputHtmlNativeEvent.md#constructor)
 
 ### Methods
 
-- [Emit](m4m.event.inputHtmlNativeEvent.md#emit)
-- [On](m4m.event.inputHtmlNativeEvent.md#on)
-- [RemoveListener](m4m.event.inputHtmlNativeEvent.md#removelistener)
-- [RemoveListenerAll](m4m.event.inputHtmlNativeEvent.md#removelistenerall)
-- [listenerCount](m4m.event.inputHtmlNativeEvent.md#listenercount)
+#### Emit
 
-### Constructors
-
-- [constructor](m4m.event.inputHtmlNativeEvent.md#constructor)
-
-## Methods
-
-### Emit
-
-▸ **Emit**<`K`\>(`tagName`, `ev`): `void`
+▸ **Emit**<`K`>(`tagName`, `ev`): `void`
 
 发出事件
 
-#### Type parameters
+**Type parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof [`inputHtmlNativeEventMap`](../interfaces/m4m.event.inputHtmlNativeEventMap.md) |
+| Name | Type                                                                                          |
+| ---- | --------------------------------------------------------------------------------------------- |
+| `K`  | extends keyof [`inputHtmlNativeEventMap`](../interfaces/m4m.event.inputHtmlNativeEventMap.md) |
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `tagName` | `K` |
-| `ev` | `any` |
+| Name      | Type  |
+| --------- | ----- |
+| `tagName` | `K`   |
+| `ev`      | `any` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [AEvent](m4m.AEvent.md).[Emit](m4m.AEvent.md#emit)
 
-#### Defined in
+**Defined in**
 
 [framework/event/InputEvent.ts:52](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/InputEvent.ts#L52)
 
-___
+***
 
-### On
+#### On
 
-▸ **On**<`K`\>(`tagName`, `func`, `thisArg`): `void`
+▸ **On**<`K`>(`tagName`, `func`, `thisArg`): `void`
 
 监听事件添加
 
-#### Type parameters
+**Type parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `K` | extends keyof [`inputHtmlNativeEventMap`](../interfaces/m4m.event.inputHtmlNativeEventMap.md) |
+| Name | Type                                                                                          |
+| ---- | --------------------------------------------------------------------------------------------- |
+| `K`  | extends keyof [`inputHtmlNativeEventMap`](../interfaces/m4m.event.inputHtmlNativeEventMap.md) |
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `tagName` | `K` |
-| `func` | (`ev`: `any`) => `void` |
-| `thisArg` | `any` |
+| Name      | Type                    |
+| --------- | ----------------------- |
+| `tagName` | `K`                     |
+| `func`    | (`ev`: `any`) => `void` |
+| `thisArg` | `any`                   |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Overrides
+**Overrides**
 
 [AEvent](m4m.AEvent.md).[On](m4m.AEvent.md#on)
 
-#### Defined in
+**Defined in**
 
 [framework/event/InputEvent.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/InputEvent.ts#L48)
 
-___
+***
 
-### RemoveListener
+#### RemoveListener
 
 ▸ **RemoveListener**(`event`, `func`, `thisArg`): `void`
 
 移除事件监听者
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `event` | `string` | 事件类型 |
-| `func` | `Function` | 事件触发回调方法 |
-| `thisArg` | `any` | 回调方法执行者 |
+| Name      | Type       | Description |
+| --------- | ---------- | ----------- |
+| `event`   | `string`   | 事件类型        |
+| `func`    | `Function` | 事件触发回调方法    |
+| `thisArg` | `any`      | 回调方法执行者     |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Inherited from
+**Inherited from**
 
 [AEvent](m4m.AEvent.md).[RemoveListener](m4m.AEvent.md#removelistener)
 
-#### Defined in
+**Defined in**
 
 [framework/event/AEvent.ts:58](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/AEvent.ts#L58)
 
-___
+***
 
-### RemoveListenerAll
+#### RemoveListenerAll
 
 ▸ **RemoveListenerAll**(): `void`
 
 移除所有监听者
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Inherited from
+**Inherited from**
 
 [AEvent](m4m.AEvent.md).[RemoveListenerAll](m4m.AEvent.md#removelistenerall)
 
-#### Defined in
+**Defined in**
 
 [framework/event/AEvent.ts:83](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/AEvent.ts#L83)
 
-___
+***
 
-### listenerCount
+#### listenerCount
 
 ▸ **listenerCount**(`event`): `number`
 
 指定事件监听者的数量
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `event` | `string` |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Inherited from
+**Inherited from**
 
 [AEvent](m4m.AEvent.md).[listenerCount](m4m.AEvent.md#listenercount)
 
-#### Defined in
+**Defined in**
 
 [framework/event/AEvent.ts:91](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/event/AEvent.ts#L91)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new inputHtmlNativeEvent**()
 
-#### Inherited from
+**Inherited from**
 
 [AEvent](m4m.AEvent.md).[constructor](m4m.AEvent.md#constructor)

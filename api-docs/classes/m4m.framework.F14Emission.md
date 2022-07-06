@@ -1,422 +1,424 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14Emission
+# m4m.framework.F14Emission
 
-# Class: F14Emission
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14Emission
+
+## Class: F14Emission
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).F14Emission
 
-## Implements
+### Implements
 
-- [`F14Element`](../interfaces/m4m.framework.F14Element.md)
+* [`F14Element`](../interfaces/m4m.framework.F14Element.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [OnEndOnceLoop](m4m.framework.F14Emission.md#onendonceloop)
+* [changeAlpha](m4m.framework.F14Emission.md#changealpha)
+* [changeColor](m4m.framework.F14Emission.md#changecolor)
+* [changeCurrentBaseData](m4m.framework.F14Emission.md#changecurrentbasedata)
+* [dispose](m4m.framework.F14Emission.md#dispose)
+* [getWorldMatrix](m4m.framework.F14Emission.md#getworldmatrix)
+* [getWorldRotation](m4m.framework.F14Emission.md#getworldrotation)
+* [reset](m4m.framework.F14Emission.md#reset)
+* [update](m4m.framework.F14Emission.md#update)
+
+#### Properties
+
+* [baseddata](m4m.framework.F14Emission.md#baseddata)
+* [colorArr](m4m.framework.F14Emission.md#colorarr)
+* [curTime](m4m.framework.F14Emission.md#curtime)
+* [currentData](m4m.framework.F14Emission.md#currentdata)
+* [dataforebo](m4m.framework.F14Emission.md#dataforebo)
+* [dataforvboLen](m4m.framework.F14Emission.md#dataforvbolen)
+* [deadParticles](m4m.framework.F14Emission.md#deadparticles)
+* [drawActive](m4m.framework.F14Emission.md#drawactive)
+* [effect](m4m.framework.F14Emission.md#effect)
+* [layer](m4m.framework.F14Emission.md#layer)
+* [localMatrix](m4m.framework.F14Emission.md#localmatrix)
+* [particlelist](m4m.framework.F14Emission.md#particlelist)
+* [posArr](m4m.framework.F14Emission.md#posarr)
+* [type](m4m.framework.F14Emission.md#type)
+* [uvArr](m4m.framework.F14Emission.md#uvarr)
+* [vertexCount](m4m.framework.F14Emission.md#vertexcount)
+* [vertexLength](m4m.framework.F14Emission.md#vertexlength)
+
+#### Constructors
+
+* [constructor](m4m.framework.F14Emission.md#constructor)
 
 ### Methods
 
-- [OnEndOnceLoop](m4m.framework.F14Emission.md#onendonceloop)
-- [changeAlpha](m4m.framework.F14Emission.md#changealpha)
-- [changeColor](m4m.framework.F14Emission.md#changecolor)
-- [changeCurrentBaseData](m4m.framework.F14Emission.md#changecurrentbasedata)
-- [dispose](m4m.framework.F14Emission.md#dispose)
-- [getWorldMatrix](m4m.framework.F14Emission.md#getworldmatrix)
-- [getWorldRotation](m4m.framework.F14Emission.md#getworldrotation)
-- [reset](m4m.framework.F14Emission.md#reset)
-- [update](m4m.framework.F14Emission.md#update)
-
-### Properties
-
-- [baseddata](m4m.framework.F14Emission.md#baseddata)
-- [colorArr](m4m.framework.F14Emission.md#colorarr)
-- [curTime](m4m.framework.F14Emission.md#curtime)
-- [currentData](m4m.framework.F14Emission.md#currentdata)
-- [dataforebo](m4m.framework.F14Emission.md#dataforebo)
-- [dataforvboLen](m4m.framework.F14Emission.md#dataforvbolen)
-- [deadParticles](m4m.framework.F14Emission.md#deadparticles)
-- [drawActive](m4m.framework.F14Emission.md#drawactive)
-- [effect](m4m.framework.F14Emission.md#effect)
-- [layer](m4m.framework.F14Emission.md#layer)
-- [localMatrix](m4m.framework.F14Emission.md#localmatrix)
-- [particlelist](m4m.framework.F14Emission.md#particlelist)
-- [posArr](m4m.framework.F14Emission.md#posarr)
-- [type](m4m.framework.F14Emission.md#type)
-- [uvArr](m4m.framework.F14Emission.md#uvarr)
-- [vertexCount](m4m.framework.F14Emission.md#vertexcount)
-- [vertexLength](m4m.framework.F14Emission.md#vertexlength)
-
-### Constructors
-
-- [constructor](m4m.framework.F14Emission.md#constructor)
-
-## Methods
-
-### OnEndOnceLoop
+#### OnEndOnceLoop
 
 ▸ **OnEndOnceLoop**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[OnEndOnceLoop](../interfaces/m4m.framework.F14Element.md#onendonceloop)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:237](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L237)
 
-___
+***
 
-### changeAlpha
+#### changeAlpha
 
 ▸ **changeAlpha**(`value`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `value` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[changeAlpha](../interfaces/m4m.framework.F14Element.md#changealpha)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:232](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L232)
 
-___
+***
 
-### changeColor
+#### changeColor
 
 ▸ **changeColor**(`value`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type    |
+| ------- | ------- |
 | `value` | `color` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[changeColor](../interfaces/m4m.framework.F14Element.md#changecolor)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:226](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L226)
 
-___
+***
 
-### changeCurrentBaseData
+#### changeCurrentBaseData
 
 ▸ **changeCurrentBaseData**(`data`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                          |
+| ------ | ------------------------------------------------------------- |
 | `data` | [`F14EmissionBaseData`](m4m.framework.F14EmissionBaseData.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:100](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L100)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[dispose](../interfaces/m4m.framework.F14Element.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:241](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L241)
 
-___
+***
 
-### getWorldMatrix
+#### getWorldMatrix
 
 ▸ **getWorldMatrix**(): `matrix`
 
-#### Returns
+**Returns**
 
 `matrix`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:112](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L112)
 
-___
+***
 
-### getWorldRotation
+#### getWorldRotation
 
 ▸ **getWorldRotation**(): `quaternion`
 
-#### Returns
+**Returns**
 
 `quaternion`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:117](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L117)
 
-___
+***
 
-### reset
+#### reset
 
 ▸ **reset**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[reset](../interfaces/m4m.framework.F14Element.md#reset)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:215](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L215)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`deltaTime`, `frame`, `fps`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| ----------- | -------- |
 | `deltaTime` | `number` |
-| `frame` | `number` |
-| `fps` | `number` |
+| `frame`     | `number` |
+| `fps`       | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[update](../interfaces/m4m.framework.F14Element.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:69](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L69)
 
-## Properties
+### Properties
 
-### baseddata
+#### baseddata
 
 • **baseddata**: [`F14EmissionBaseData`](m4m.framework.F14EmissionBaseData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L8)
 
-___
+***
 
-### colorArr
+#### colorArr
 
-• **colorArr**: `color`[]
+• **colorArr**: `color`\[]
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:36](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L36)
 
-___
+***
 
-### curTime
+#### curTime
 
 • **curTime**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L20)
 
-___
+***
 
-### currentData
+#### currentData
 
 • **currentData**: [`F14EmissionBaseData`](m4m.framework.F14EmissionBaseData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L9)
 
-___
+***
 
-### dataforebo
+#### dataforebo
 
 • **dataforebo**: `Uint16Array`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L34)
 
-___
+***
 
-### dataforvboLen
+#### dataforvboLen
 
 • **dataforvboLen**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L33)
 
-___
+***
 
-### deadParticles
+#### deadParticles
 
-• **deadParticles**: [`F14Particle`](m4m.framework.F14Particle.md)[] = `[]`
+• **deadParticles**: [`F14Particle`](m4m.framework.F14Particle.md)\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L12)
 
-___
+***
 
-### drawActive
+#### drawActive
 
 • **drawActive**: `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[drawActive](../interfaces/m4m.framework.F14Element.md#drawactive)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L5)
 
-___
+***
 
-### effect
+#### effect
 
 • **effect**: [`f14EffectSystem`](m4m.framework.f14EffectSystem.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L6)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`F14Layer`](m4m.framework.F14Layer.md)
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[layer](../interfaces/m4m.framework.F14Element.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:4](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L4)
 
-___
+***
 
-### localMatrix
+#### localMatrix
 
 • **localMatrix**: `matrix`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:26](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L26)
 
-___
+***
 
-### particlelist
+#### particlelist
 
-• **particlelist**: [`F14Particle`](m4m.framework.F14Particle.md)[] = `[]`
+• **particlelist**: [`F14Particle`](m4m.framework.F14Particle.md)\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L11)
 
-___
+***
 
-### posArr
+#### posArr
 
-• **posArr**: `vector3`[]
+• **posArr**: `vector3`\[]
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L35)
 
-___
+***
 
-### type
+#### type
 
 • **type**: [`F14TypeEnum`](../enums/m4m.framework.F14TypeEnum.md)
 
-#### Implementation of
+**Implementation of**
 
 [F14Element](../interfaces/m4m.framework.F14Element.md).[type](../interfaces/m4m.framework.F14Element.md#type)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:3](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L3)
 
-___
+***
 
-### uvArr
+#### uvArr
 
-• **uvArr**: `vector2`[]
+• **uvArr**: `vector2`\[]
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:37](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L37)
 
-___
+***
 
-### vertexCount
+#### vertexCount
 
 • **vertexCount**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:31](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L31)
 
-___
+***
 
-### vertexLength
+#### vertexLength
 
 • **vertexLength**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:32](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L32)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new F14Emission**(`effect`, `layer`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                                  |
+| -------- | ----------------------------------------------------- |
 | `effect` | [`f14EffectSystem`](m4m.framework.f14EffectSystem.md) |
-| `layer` | [`F14Layer`](m4m.framework.F14Layer.md) |
+| `layer`  | [`F14Layer`](m4m.framework.F14Layer.md)               |
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/particles/f14emission.ts:41](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/particles/f14emission.ts#L41)

@@ -1,120 +1,121 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / skinnedMeshRenderer
+# m4m.framework.skinnedMeshRenderer
 
-# Class: skinnedMeshRenderer
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / skinnedMeshRenderer
+
+## Class: skinnedMeshRenderer
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).skinnedMeshRenderer
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-蒙皮网格渲染组件
+**`classdesc`** 蒙皮网格渲染组件
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
+* [`IRenderer`](../interfaces/m4m.framework.IRenderer.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [\_aabb](m4m.framework.skinnedMeshRenderer.md#\_aabb)
+* [\_queue](m4m.framework.skinnedMeshRenderer.md#\_queue)
+* [gameObject](m4m.framework.skinnedMeshRenderer.md#gameobject)
+* [layer](m4m.framework.skinnedMeshRenderer.md#layer)
+* [materials](m4m.framework.skinnedMeshRenderer.md#materials)
+* [maxBoneCount](m4m.framework.skinnedMeshRenderer.md#maxbonecount)
+* [ClassName](m4m.framework.skinnedMeshRenderer.md#classname)
+
+#### Accessors
+
+* [aabb](m4m.framework.skinnedMeshRenderer.md#aabb)
+* [mesh](m4m.framework.skinnedMeshRenderer.md#mesh)
+* [player](m4m.framework.skinnedMeshRenderer.md#player)
+* [queue](m4m.framework.skinnedMeshRenderer.md#queue)
+* [renderLayer](m4m.framework.skinnedMeshRenderer.md#renderlayer)
+
+#### Methods
+
+* [calActualVertexByIndex](m4m.framework.skinnedMeshRenderer.md#calactualvertexbyindex)
+* [intersects](m4m.framework.skinnedMeshRenderer.md#intersects)
+* [onPlay](m4m.framework.skinnedMeshRenderer.md#onplay)
+* [render](m4m.framework.skinnedMeshRenderer.md#render)
+* [start](m4m.framework.skinnedMeshRenderer.md#start)
+* [update](m4m.framework.skinnedMeshRenderer.md#update)
+
+#### Constructors
+
+* [constructor](m4m.framework.skinnedMeshRenderer.md#constructor)
 
 ### Properties
 
-- [\_aabb](m4m.framework.skinnedMeshRenderer.md#_aabb)
-- [\_queue](m4m.framework.skinnedMeshRenderer.md#_queue)
-- [gameObject](m4m.framework.skinnedMeshRenderer.md#gameobject)
-- [layer](m4m.framework.skinnedMeshRenderer.md#layer)
-- [materials](m4m.framework.skinnedMeshRenderer.md#materials)
-- [maxBoneCount](m4m.framework.skinnedMeshRenderer.md#maxbonecount)
-- [ClassName](m4m.framework.skinnedMeshRenderer.md#classname)
-
-### Accessors
-
-- [aabb](m4m.framework.skinnedMeshRenderer.md#aabb)
-- [mesh](m4m.framework.skinnedMeshRenderer.md#mesh)
-- [player](m4m.framework.skinnedMeshRenderer.md#player)
-- [queue](m4m.framework.skinnedMeshRenderer.md#queue)
-- [renderLayer](m4m.framework.skinnedMeshRenderer.md#renderlayer)
-
-### Methods
-
-- [calActualVertexByIndex](m4m.framework.skinnedMeshRenderer.md#calactualvertexbyindex)
-- [intersects](m4m.framework.skinnedMeshRenderer.md#intersects)
-- [onPlay](m4m.framework.skinnedMeshRenderer.md#onplay)
-- [render](m4m.framework.skinnedMeshRenderer.md#render)
-- [start](m4m.framework.skinnedMeshRenderer.md#start)
-- [update](m4m.framework.skinnedMeshRenderer.md#update)
-
-### Constructors
-
-- [constructor](m4m.framework.skinnedMeshRenderer.md#constructor)
-
-## Properties
-
-### \_aabb
+#### \_aabb
 
 • **\_aabb**: [`aabb`](m4m.framework.aabb.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:148](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L148)
 
-___
+***
 
-### \_queue
+#### \_queue
 
 • **\_queue**: `number` = `0`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L54)
 
-___
+***
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](m4m.framework.gameObject.md)
 
 挂载的gameobject
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[gameObject](../interfaces/m4m.framework.IRenderer.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:39](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L39)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md) = `RenderLayerEnum.Common`
 
 场景渲染层级（common、transparent、overlay）
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[layer](../interfaces/m4m.framework.IRenderer.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:43](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L43)
 
-___
+***
 
-### materials
+#### materials
 
-• **materials**: [`material`](m4m.framework.material.md)[]
+• **materials**: [`material`](m4m.framework.material.md)\[]
 
 材质数组
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:74](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L74)
 
-___
+***
 
-### maxBoneCount
+#### maxBoneCount
 
 • **maxBoneCount**: `number` = `55`
 
@@ -122,47 +123,47 @@ ___
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:142](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L142)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"skinnedMeshRenderer"`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L16)
 
-## Accessors
+### Accessors
 
-### aabb
+#### aabb
 
 • `get` **aabb**(): [`aabb`](m4m.framework.aabb.md)
 
-#### Returns
+**Returns**
 
 [`aabb`](m4m.framework.aabb.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:149](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L149)
 
-___
+***
 
-### mesh
+#### mesh
 
 • `get` **mesh**(): [`mesh`](m4m.framework.mesh.md)
 
 返回mesh数据
 
-#### Returns
+**Returns**
 
 [`mesh`](m4m.framework.mesh.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:99](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L99)
 
@@ -170,33 +171,33 @@ ___
 
 设置mesh数据
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                            |
+| ------ | ------------------------------- |
 | `mesh` | [`mesh`](m4m.framework.mesh.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:106](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L106)
 
-___
+***
 
-### player
+#### player
 
 • `get` **player**(): [`aniplayer`](m4m.framework.aniplayer.md)
 
 返回动画播放组件
 
-#### Returns
+**Returns**
 
 [`aniplayer`](m4m.framework.aniplayer.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:82](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L82)
 
@@ -204,37 +205,37 @@ ___
 
 返回动画播放组件
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `p` | [`aniplayer`](m4m.framework.aniplayer.md) |
+| Name | Type                                      |
+| ---- | ----------------------------------------- |
+| `p`  | [`aniplayer`](m4m.framework.aniplayer.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:90](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L90)
 
-___
+***
 
-### queue
+#### queue
 
 • `get` **queue**(): `number`
 
 返回此组件的场景渲染层级排序依据queue大小
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[queue](../interfaces/m4m.framework.IRenderer.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:58](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L58)
 
@@ -242,41 +243,41 @@ ___
 
 设置此组件的场景渲染层级排序number大小
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `value` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[queue](../interfaces/m4m.framework.IRenderer.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:65](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L65)
 
-___
+***
 
-### renderLayer
+#### renderLayer
 
 • `get` **renderLayer**(): `number`
 
 渲染mask层级（和相机相对应）
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L48)
 
@@ -284,165 +285,164 @@ ___
 
 渲染mask层级（和相机相对应）
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `layer` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[renderLayer](../interfaces/m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:49](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L49)
 
-## Methods
+### Methods
 
-### calActualVertexByIndex
+#### calActualVertexByIndex
 
 ▸ **calActualVertexByIndex**(`index`, `t`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `index` | `number` |
-| `t` | `vector3` |
+| Name    | Type      |
+| ------- | --------- |
+| `index` | `number`  |
+| `t`     | `vector3` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:303](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L303)
 
-___
+***
 
-### intersects
+#### intersects
 
 ▸ **intersects**(`ray`, `outInfo`): `boolean`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-射线检测
+**`classdesc`** 射线检测
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `ray` | [`ray`](m4m.framework.ray.md) | 射线 |
-| `outInfo` | `pickinfo` | - |
+| Name      | Type                          | Description |
+| --------- | ----------------------------- | ----------- |
+| `ray`     | [`ray`](m4m.framework.ray.md) | 射线          |
+| `outInfo` | `pickinfo`                    | -           |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:332](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L332)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[onPlay](../interfaces/m4m.framework.IRenderer.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:189](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L189)
 
-___
+***
 
-### render
+#### render
 
 ▸ **render**(`context`, `assetmgr`, `camera`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `renderContext` |
+| Name       | Type                                    |
+| ---------- | --------------------------------------- |
+| `context`  | `renderContext`                         |
 | `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `camera` | [`camera`](m4m.framework.camera.md) |
+| `camera`   | [`camera`](m4m.framework.camera.md)     |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[render](../interfaces/m4m.framework.IRenderer.md#render)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:425](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L425)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[start](../interfaces/m4m.framework.IRenderer.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:185](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L185)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IRenderer](../interfaces/m4m.framework.IRenderer.md).[update](../interfaces/m4m.framework.IRenderer.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:399](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L399)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new skinnedMeshRenderer**()
 
-#### Defined in
+**Defined in**
 
 [framework/component/skinnedmeshrenderer.ts:33](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/skinnedmeshrenderer.ts#L33)

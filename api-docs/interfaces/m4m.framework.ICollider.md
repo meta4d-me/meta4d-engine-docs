@@ -1,78 +1,80 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ICollider
+# m4m.framework.ICollider
 
-# Interface: ICollider
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ICollider
+
+## Interface: ICollider
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ICollider
 
-## Implemented by
+### Implemented by
 
-- [`boxcollider`](../classes/m4m.framework.boxcollider.md)
-- [`canvasRenderer`](../classes/m4m.framework.canvasRenderer.md)
-- [`meshcollider`](../classes/m4m.framework.meshcollider.md)
-- [`spherecollider`](../classes/m4m.framework.spherecollider.md)
+* [`boxcollider`](../classes/m4m.framework.boxcollider.md)
+* [`canvasRenderer`](../classes/m4m.framework.canvasRenderer.md)
+* [`meshcollider`](../classes/m4m.framework.meshcollider.md)
+* [`spherecollider`](../classes/m4m.framework.spherecollider.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [gameObject](m4m.framework.ICollider.md#gameobject)
+* [subTran](m4m.framework.ICollider.md#subtran)
+
+#### Methods
+
+* [getBound](m4m.framework.ICollider.md#getbound)
+* [intersectsTransform](m4m.framework.ICollider.md#intersectstransform)
 
 ### Properties
 
-- [gameObject](m4m.framework.ICollider.md#gameobject)
-- [subTran](m4m.framework.ICollider.md#subtran)
-
-### Methods
-
-- [getBound](m4m.framework.ICollider.md#getbound)
-- [intersectsTransform](m4m.framework.ICollider.md#intersectstransform)
-
-## Properties
-
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](../classes/m4m.framework.gameObject.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/boxcollider.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/boxcollider.ts#L7)
 
-___
+***
 
-### subTran
+#### subTran
 
 • **subTran**: [`transform`](../classes/m4m.framework.transform.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/boxcollider.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/boxcollider.ts#L8)
 
-## Methods
+### Methods
 
-### getBound
+#### getBound
 
 ▸ **getBound**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/component/boxcollider.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/boxcollider.ts#L9)
 
-___
+***
 
-### intersectsTransform
+#### intersectsTransform
 
 ▸ **intersectsTransform**(`tran`): `boolean`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type                                                 |
+| ------ | ---------------------------------------------------- |
 | `tran` | [`transform`](../classes/m4m.framework.transform.md) |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/component/boxcollider.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/boxcollider.ts#L10)

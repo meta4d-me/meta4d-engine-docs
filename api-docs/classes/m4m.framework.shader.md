@@ -1,344 +1,336 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / shader
+# m4m.framework.shader
 
-# Class: shader
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / shader
+
+## Class: shader
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).shader
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-shader资源
+**`classdesc`** shader资源
 
 **`version`** m4m 1.0
 
-## Implements
+### Implements
 
-- [`IAsset`](../interfaces/m4m.framework.IAsset.md)
+* [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [\_parseProperties](m4m.framework.shader.md#\_parseproperties)
+* [caclByteLength](m4m.framework.shader.md#caclbytelength)
+* [dispose](m4m.framework.shader.md#dispose)
+* [fillUnDefUniform](m4m.framework.shader.md#fillundefuniform)
+* [getGUID](m4m.framework.shader.md#getguid)
+* [getName](m4m.framework.shader.md#getname)
+* [parse](m4m.framework.shader.md#parse)
+* [unuse](m4m.framework.shader.md#unuse)
+* [use](m4m.framework.shader.md#use)
+
+#### Constructors
+
+* [constructor](m4m.framework.shader.md#constructor)
+
+#### Properties
+
+* [defaultAsset](m4m.framework.shader.md#defaultasset)
+* [layer](m4m.framework.shader.md#layer)
+* [passes](m4m.framework.shader.md#passes)
+* [ClassName](m4m.framework.shader.md#classname)
 
 ### Methods
 
-- [\_parseProperties](m4m.framework.shader.md#_parseproperties)
-- [caclByteLength](m4m.framework.shader.md#caclbytelength)
-- [dispose](m4m.framework.shader.md#dispose)
-- [fillUnDefUniform](m4m.framework.shader.md#fillundefuniform)
-- [getGUID](m4m.framework.shader.md#getguid)
-- [getName](m4m.framework.shader.md#getname)
-- [parse](m4m.framework.shader.md#parse)
-- [unuse](m4m.framework.shader.md#unuse)
-- [use](m4m.framework.shader.md#use)
+#### \_parseProperties
 
-### Constructors
+▸ **\_parseProperties**(`assetmgr`, `properties`): `void`
 
-- [constructor](m4m.framework.shader.md#constructor)
+**Parameters**
 
-### Properties
+| Name         | Type                                    |
+| ------------ | --------------------------------------- |
+| `assetmgr`   | [`assetMgr`](m4m.framework.assetMgr.md) |
+| `properties` | `any`                                   |
 
-- [defaultAsset](m4m.framework.shader.md#defaultasset)
-- [layer](m4m.framework.shader.md#layer)
-- [passes](m4m.framework.shader.md#passes)
-- [ClassName](m4m.framework.shader.md#classname)
-
-## Methods
-
-### \_parseProperties
-
-▸ **_parseProperties**(`assetmgr`, `properties`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `properties` | `any` |
-
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:190](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L190)
 
-___
+***
 
-### caclByteLength
+#### caclByteLength
 
 ▸ **caclByteLength**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-计算资源字节大小
+**`classdesc`** 计算资源字节大小
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[caclByteLength](../interfaces/m4m.framework.IAsset.md#caclbytelength)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:105](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L105)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-释放资源
+**`classdesc`** 释放资源
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[dispose](../interfaces/m4m.framework.IAsset.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:87](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L87)
 
-___
+***
 
-### fillUnDefUniform
+#### fillUnDefUniform
 
 ▸ **fillUnDefUniform**(`pass`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type         |
+| ------ | ------------ |
 | `pass` | `glDrawPass` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:333](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L333)
 
-___
+***
 
-### getGUID
+#### getGUID
 
 ▸ **getGUID**(): `number`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源唯一id
+**`classdesc`** 获取资源唯一id
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getGUID](../interfaces/m4m.framework.IAsset.md#getguid)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:54](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L54)
 
-___
+***
 
-### getName
+#### getName
 
 ▸ **getName**(): `string`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-获取资源名称
+**`classdesc`** 获取资源名称
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `string`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[getName](../interfaces/m4m.framework.IAsset.md#getname)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:43](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L43)
 
-___
+***
 
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `json`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-解析资源
+**`classdesc`** 解析资源
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                    |
+| ---------- | --------------------------------------- |
 | `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `json` | `any` |
+| `json`     | `any`                                   |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:138](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L138)
 
-___
+***
 
-### unuse
+#### unuse
 
 ▸ **unuse**(`disposeNow?`): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数减一
+**`classdesc`** 引用计数减一
 
 **`version`** m4m 1.0
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `disposeNow` | `boolean` | `false` |
+| Name         | Type      | Default value |
+| ------------ | --------- | ------------- |
+| `disposeNow` | `boolean` | `false`       |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[unuse](../interfaces/m4m.framework.IAsset.md#unuse)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:76](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L76)
 
-___
+***
 
-### use
+#### use
 
 ▸ **use**(): `void`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-引用计数加一
+**`classdesc`** 引用计数加一
 
 **`version`** m4m 1.0
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[use](../interfaces/m4m.framework.IAsset.md#use)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:65](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L65)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new shader**(`assetName?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `assetName` | `string` | `null` |
+| Name        | Type     | Default value |
+| ----------- | -------- | ------------- |
+| `assetName` | `string` | `null`        |
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L28)
 
-## Properties
+### Properties
 
-### defaultAsset
+#### defaultAsset
 
 • **defaultAsset**: `boolean` = `false`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-是否为默认资源
+**`classdesc`** 是否为默认资源
 
 **`version`** m4m 1.0
 
-#### Implementation of
+**Implementation of**
 
 [IAsset](../interfaces/m4m.framework.IAsset.md).[defaultAsset](../interfaces/m4m.framework.IAsset.md#defaultasset)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:27](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L27)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md) = `RenderLayerEnum.Common`
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-设置渲染的层级
+**`classdesc`** 设置渲染的层级
 
 **`version`** m4m 1.0
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:125](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L125)
 
-___
+***
 
-### passes
+#### passes
 
 • **passes**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [id: `string`]: `m4m.render.glDrawPass`[]
+▪ \[id: `string`]: `m4m.render.glDrawPass`\[]
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:110](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L110)
 
-___
+***
 
-### ClassName
+#### ClassName
 
 ▪ `Static` `Readonly` **ClassName**: `string` = `"shader"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/resource/shader.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/resource/shader.ts#L15)

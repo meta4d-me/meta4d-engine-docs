@@ -391,3 +391,7 @@
     * [m4m.math.Iquat](api-docs/interfaces/m4m.math.Iquat.md)
     * [m4m.math.Ivec2](api-docs/interfaces/m4m.math.Ivec2.md)
     * [m4m.math.Ivec3](api-docs/interfaces/m4m.math.Ivec3.md)
+
+## M4M applications
+
+* [Sample games](m4m-applications/sample-games.md)

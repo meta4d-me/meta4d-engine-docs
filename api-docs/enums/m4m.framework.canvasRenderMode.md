@@ -1,50 +1,51 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / canvasRenderMode
+# m4m.framework.canvasRenderMode
 
-# Enumeration: canvasRenderMode
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / canvasRenderMode
+
+## Enumeration: canvasRenderMode
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).canvasRenderMode
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-UI画布容器RenderMode
+**`classdesc`** UI画布容器RenderMode
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [ScreenSpaceCamera](m4m.framework.canvasRenderMode.md#screenspacecamera)
+* [ScreenSpaceOverlay](m4m.framework.canvasRenderMode.md#screenspaceoverlay)
+* [WorldSpace](m4m.framework.canvasRenderMode.md#worldspace)
 
 ### Enumeration Members
 
-- [ScreenSpaceCamera](m4m.framework.canvasRenderMode.md#screenspacecamera)
-- [ScreenSpaceOverlay](m4m.framework.canvasRenderMode.md#screenspaceoverlay)
-- [WorldSpace](m4m.framework.canvasRenderMode.md#worldspace)
-
-## Enumeration Members
-
-### ScreenSpaceCamera
+#### ScreenSpaceCamera
 
 • **ScreenSpaceCamera**
 
-#### Defined in
+**Defined in**
 
 [framework/component/canvascontainer.ts:145](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/canvascontainer.ts#L145)
 
-___
+***
 
-### ScreenSpaceOverlay
+#### ScreenSpaceOverlay
 
 • **ScreenSpaceOverlay**
 
-#### Defined in
+**Defined in**
 
 [framework/component/canvascontainer.ts:144](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/canvascontainer.ts#L144)
 
-___
+***
 
-### WorldSpace
+#### WorldSpace
 
 • **WorldSpace**
 
-#### Defined in
+**Defined in**
 
 [framework/component/canvascontainer.ts:146](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/canvascontainer.ts#L146)

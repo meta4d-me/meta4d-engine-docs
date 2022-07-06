@@ -1,881 +1,883 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / CannonJSPlugin
+# m4m.framework.CannonJSPlugin
 
-# Class: CannonJSPlugin
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / CannonJSPlugin
+
+## Class: CannonJSPlugin
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).CannonJSPlugin
 
-## Implements
+### Implements
 
-- [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md)
+* [`IPhysicsEnginePlugin`](../interfaces/m4m.framework.IPhysicsEnginePlugin.md)
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [BJSCANNON](m4m.framework.CannonJSPlugin.md#bjscannon)
+* [name](m4m.framework.CannonJSPlugin.md#name)
+* [world](m4m.framework.CannonJSPlugin.md#world)
+
+#### Methods
+
+* [applyForce](m4m.framework.CannonJSPlugin.md#applyforce)
+* [applyImpulse](m4m.framework.CannonJSPlugin.md#applyimpulse)
+* [dispose](m4m.framework.CannonJSPlugin.md#dispose)
+* [executeStep](m4m.framework.CannonJSPlugin.md#executestep)
+* [generateJoint](m4m.framework.CannonJSPlugin.md#generatejoint)
+* [generatePhysicsBody](m4m.framework.CannonJSPlugin.md#generatephysicsbody)
+* [getAngularVelocity](m4m.framework.CannonJSPlugin.md#getangularvelocity)
+* [getBodyFriction](m4m.framework.CannonJSPlugin.md#getbodyfriction)
+* [getBodyMass](m4m.framework.CannonJSPlugin.md#getbodymass)
+* [getBodyRestitution](m4m.framework.CannonJSPlugin.md#getbodyrestitution)
+* [getBoxSizeToRef](m4m.framework.CannonJSPlugin.md#getboxsizetoref)
+* [getLinearVelocity](m4m.framework.CannonJSPlugin.md#getlinearvelocity)
+* [getRadius](m4m.framework.CannonJSPlugin.md#getradius)
+* [getTimeStep](m4m.framework.CannonJSPlugin.md#gettimestep)
+* [isSleeping](m4m.framework.CannonJSPlugin.md#issleeping)
+* [isSupported](m4m.framework.CannonJSPlugin.md#issupported)
+* [removeJoint](m4m.framework.CannonJSPlugin.md#removejoint)
+* [removePhysicsBody](m4m.framework.CannonJSPlugin.md#removephysicsbody)
+* [setAngularVelocity](m4m.framework.CannonJSPlugin.md#setangularvelocity)
+* [setBodyFriction](m4m.framework.CannonJSPlugin.md#setbodyfriction)
+* [setBodyMass](m4m.framework.CannonJSPlugin.md#setbodymass)
+* [setBodyRestitution](m4m.framework.CannonJSPlugin.md#setbodyrestitution)
+* [setGravity](m4m.framework.CannonJSPlugin.md#setgravity)
+* [setLimit](m4m.framework.CannonJSPlugin.md#setlimit)
+* [setLinearVelocity](m4m.framework.CannonJSPlugin.md#setlinearvelocity)
+* [setMotor](m4m.framework.CannonJSPlugin.md#setmotor)
+* [setPhysicsBodyTransformation](m4m.framework.CannonJSPlugin.md#setphysicsbodytransformation)
+* [setTimeStep](m4m.framework.CannonJSPlugin.md#settimestep)
+* [setTransformationFromPhysicsBody](m4m.framework.CannonJSPlugin.md#settransformationfromphysicsbody)
+* [sleepBody](m4m.framework.CannonJSPlugin.md#sleepbody)
+* [updateDistanceJoint](m4m.framework.CannonJSPlugin.md#updatedistancejoint)
+* [wakeUpBody](m4m.framework.CannonJSPlugin.md#wakeupbody)
+
+#### Constructors
+
+* [constructor](m4m.framework.CannonJSPlugin.md#constructor)
 
 ### Properties
 
-- [BJSCANNON](m4m.framework.CannonJSPlugin.md#bjscannon)
-- [name](m4m.framework.CannonJSPlugin.md#name)
-- [world](m4m.framework.CannonJSPlugin.md#world)
-
-### Methods
-
-- [applyForce](m4m.framework.CannonJSPlugin.md#applyforce)
-- [applyImpulse](m4m.framework.CannonJSPlugin.md#applyimpulse)
-- [dispose](m4m.framework.CannonJSPlugin.md#dispose)
-- [executeStep](m4m.framework.CannonJSPlugin.md#executestep)
-- [generateJoint](m4m.framework.CannonJSPlugin.md#generatejoint)
-- [generatePhysicsBody](m4m.framework.CannonJSPlugin.md#generatephysicsbody)
-- [getAngularVelocity](m4m.framework.CannonJSPlugin.md#getangularvelocity)
-- [getBodyFriction](m4m.framework.CannonJSPlugin.md#getbodyfriction)
-- [getBodyMass](m4m.framework.CannonJSPlugin.md#getbodymass)
-- [getBodyRestitution](m4m.framework.CannonJSPlugin.md#getbodyrestitution)
-- [getBoxSizeToRef](m4m.framework.CannonJSPlugin.md#getboxsizetoref)
-- [getLinearVelocity](m4m.framework.CannonJSPlugin.md#getlinearvelocity)
-- [getRadius](m4m.framework.CannonJSPlugin.md#getradius)
-- [getTimeStep](m4m.framework.CannonJSPlugin.md#gettimestep)
-- [isSleeping](m4m.framework.CannonJSPlugin.md#issleeping)
-- [isSupported](m4m.framework.CannonJSPlugin.md#issupported)
-- [removeJoint](m4m.framework.CannonJSPlugin.md#removejoint)
-- [removePhysicsBody](m4m.framework.CannonJSPlugin.md#removephysicsbody)
-- [setAngularVelocity](m4m.framework.CannonJSPlugin.md#setangularvelocity)
-- [setBodyFriction](m4m.framework.CannonJSPlugin.md#setbodyfriction)
-- [setBodyMass](m4m.framework.CannonJSPlugin.md#setbodymass)
-- [setBodyRestitution](m4m.framework.CannonJSPlugin.md#setbodyrestitution)
-- [setGravity](m4m.framework.CannonJSPlugin.md#setgravity)
-- [setLimit](m4m.framework.CannonJSPlugin.md#setlimit)
-- [setLinearVelocity](m4m.framework.CannonJSPlugin.md#setlinearvelocity)
-- [setMotor](m4m.framework.CannonJSPlugin.md#setmotor)
-- [setPhysicsBodyTransformation](m4m.framework.CannonJSPlugin.md#setphysicsbodytransformation)
-- [setTimeStep](m4m.framework.CannonJSPlugin.md#settimestep)
-- [setTransformationFromPhysicsBody](m4m.framework.CannonJSPlugin.md#settransformationfromphysicsbody)
-- [sleepBody](m4m.framework.CannonJSPlugin.md#sleepbody)
-- [updateDistanceJoint](m4m.framework.CannonJSPlugin.md#updatedistancejoint)
-- [wakeUpBody](m4m.framework.CannonJSPlugin.md#wakeupbody)
-
-### Constructors
-
-- [constructor](m4m.framework.CannonJSPlugin.md#constructor)
-
-## Properties
-
-### BJSCANNON
+#### BJSCANNON
 
 • **BJSCANNON**: `any`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L9)
 
-___
+***
 
-### name
+#### name
 
 • **name**: `string` = `"CannonJSPlugin"`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[name](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#name)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L11)
 
-___
+***
 
-### world
+#### world
 
 • **world**: `any`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[world](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#world)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L10)
 
-## Methods
+### Methods
 
-### applyForce
+#### applyForce
 
 ▸ **applyForce**(`impostor`, `force`, `contactPoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                  |
+| -------------- | ----------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                             |
+| `contactPoint` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[applyForce](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#applyforce)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:64](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L64)
 
-___
+***
 
-### applyImpulse
+#### applyImpulse
 
 ▸ **applyImpulse**(`impostor`, `force`, `contactPoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                  |
+| -------------- | ----------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                             |
+| `contactPoint` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[applyImpulse](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#applyimpulse)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:56](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L56)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[dispose](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#dispose)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:708](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L708)
 
-___
+***
 
-### executeStep
+#### executeStep
 
 ▸ **executeStep**(`delta`, `impostors`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `delta` | `number` |
-| `impostors` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md)[] |
+| Name        | Type                                                     |
+| ----------- | -------------------------------------------------------- |
+| `delta`     | `number`                                                 |
+| `impostors` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md)\[] |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[executeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#executestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:50](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L50)
 
-___
+***
 
-### generateJoint
+#### generateJoint
 
 ▸ **generateJoint**(`impostorJoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                                                                          |
+| --------------- | ----------------------------------------------------------------------------- |
 | `impostorJoint` | [`PhysicsImpostorJoint`](../interfaces/m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[generateJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#generatejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:180](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L180)
 
-___
+***
 
-### generatePhysicsBody
+#### generatePhysicsBody
 
 ▸ **generatePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[generatePhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#generatephysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:72](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L72)
 
-___
+***
 
-### getAngularVelocity
+#### getAngularVelocity
 
 ▸ **getAngularVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getAngularVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getangularvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:586](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L586)
 
-___
+***
 
-### getBodyFriction
+#### getBodyFriction
 
 ▸ **getBodyFriction**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyFriction](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodyfriction)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:607](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L607)
 
-___
+***
 
-### getBodyMass
+#### getBodyMass
 
 ▸ **getBodyMass**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyMass](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodymass)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:602](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L602)
 
-___
+***
 
-### getBodyRestitution
+#### getBodyRestitution
 
 ▸ **getBodyRestitution**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBodyRestitution](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getbodyrestitution)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:617](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L617)
 
-___
+***
 
-### getBoxSizeToRef
+#### getBoxSizeToRef
 
 ▸ **getBoxSizeToRef**(`impostor`, `result`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `result` | `vector3` |
+| `result`   | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getBoxSizeToRef](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getboxsizetoref)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:700](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L700)
 
-___
+***
 
-### getLinearVelocity
+#### getLinearVelocity
 
 ▸ **getLinearVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getLinearVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getlinearvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:577](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L577)
 
-___
+***
 
-### getRadius
+#### getRadius
 
 ▸ **getRadius**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getRadius](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#getradius)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:694](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L694)
 
-___
+***
 
-### getTimeStep
+#### getTimeStep
 
 ▸ **getTimeStep**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[getTimeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#gettimestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:45](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L45)
 
-___
+***
 
-### isSleeping
+#### isSleeping
 
 ▸ **isSleeping**(`impostor`): `boolean`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[isSleeping](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#issleeping)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:632](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L632)
 
-___
+***
 
-### isSupported
+#### isSupported
 
 ▸ **isSupported**(): `boolean`
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[isSupported](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#issupported)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:562](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L562)
 
-___
+***
 
-### removeJoint
+#### removeJoint
 
 ▸ **removeJoint**(`impostorJoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                                                                          |
+| --------------- | ----------------------------------------------------------------------------- |
 | `impostorJoint` | [`PhysicsImpostorJoint`](../interfaces/m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[removeJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#removejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:243](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L243)
 
-___
+***
 
-### removePhysicsBody
+#### removePhysicsBody
 
 ▸ **removePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[removePhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#removephysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:172](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L172)
 
-___
+***
 
-### setAngularVelocity
+#### setAngularVelocity
 
 ▸ **setAngularVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setAngularVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setangularvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:572](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L572)
 
-___
+***
 
-### setBodyFriction
+#### setBodyFriction
 
 ▸ **setBodyFriction**(`impostor`, `friction`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `friction` | `number` |
+| `friction` | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyFriction](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodyfriction)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:612](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L612)
 
-___
+***
 
-### setBodyMass
+#### setBodyMass
 
 ▸ **setBodyMass**(`impostor`, `mass`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `mass` | `number` |
+| `mass`     | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyMass](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodymass)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:596](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L596)
 
-___
+***
 
-### setBodyRestitution
+#### setBodyRestitution
 
 ▸ **setBodyRestitution**(`impostor`, `restitution`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `restitution` | `number` |
+| Name          | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `restitution` | `number`                                              |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setBodyRestitution](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setbodyrestitution)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:622](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L622)
 
-___
+***
 
-### setGravity
+#### setGravity
 
 ▸ **setGravity**(`gravity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| --------- | --------- |
 | `gravity` | `vector3` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setGravity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setgravity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:35](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L35)
 
-___
+***
 
-### setLimit
+#### setLimit
 
 ▸ **setLimit**(`joint`, `upperLimit`, `lowerLimit?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
-| `upperLimit` | `number` |
-| `lowerLimit?` | `number` |
+| Name          | Type                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
+| `upperLimit`  | `number`                                                                  |
+| `lowerLimit?` | `number`                                                                  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setLimit](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setlimit)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:673](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L673)
 
-___
+***
 
-### setLinearVelocity
+#### setLinearVelocity
 
 ▸ **setLinearVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setLinearVelocity](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setlinearvelocity)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:567](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L567)
 
-___
+***
 
-### setMotor
+#### setMotor
 
 ▸ **setMotor**(`joint`, `speed?`, `maxForce?`, `motorIndex?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
-| `speed?` | `number` |
-| `maxForce?` | `number` |
-| `motorIndex?` | `number` |
+| Name          | Type                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](../interfaces/m4m.framework.IMotorEnabledJoint.md) |
+| `speed?`      | `number`                                                                  |
+| `maxForce?`   | `number`                                                                  |
+| `motorIndex?` | `number`                                                                  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setMotor](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setmotor)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:660](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L660)
 
-___
+***
 
-### setPhysicsBodyTransformation
+#### setPhysicsBodyTransformation
 
 ▸ **setPhysicsBodyTransformation**(`impostor`, `newPosition`, `newRotation`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
-| `newPosition` | `vector3` |
-| `newRotation` | `vector3` |
+| Name          | Type                                                  |
+| ------------- | ----------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
+| `newPosition` | `vector3`                                             |
+| `newRotation` | `vector3`                                             |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setPhysicsBodyTransformation](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#setphysicsbodytransformation)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:556](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L556)
 
-___
+***
 
-### setTimeStep
+#### setTimeStep
 
 ▸ **setTimeStep**(`timeStep`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| ---------- | -------- |
 | `timeStep` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setTimeStep](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#settimestep)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L40)
 
-___
+***
 
-### setTransformationFromPhysicsBody
+#### setTransformationFromPhysicsBody
 
 ▸ **setTransformationFromPhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[setTransformationFromPhysicsBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#settransformationfromphysicsbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:545](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L545)
 
-___
+***
 
-### sleepBody
+#### sleepBody
 
 ▸ **sleepBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[sleepBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#sleepbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:627](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L627)
 
-___
+***
 
-### updateDistanceJoint
+#### updateDistanceJoint
 
 ▸ **updateDistanceJoint**(`joint`, `maxDistance`, `minDistance?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`PhysicsJoint`](m4m.framework.PhysicsJoint.md) |
-| `maxDistance` | `number` |
-| `minDistance?` | `number` |
+| Name           | Type                                            |
+| -------------- | ----------------------------------------------- |
+| `joint`        | [`PhysicsJoint`](m4m.framework.PhysicsJoint.md) |
+| `maxDistance`  | `number`                                        |
+| `minDistance?` | `number`                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[updateDistanceJoint](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#updatedistancejoint)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:643](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L643)
 
-___
+***
 
-### wakeUpBody
+#### wakeUpBody
 
 ▸ **wakeUpBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                  |
+| ---------- | ----------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Implementation of
+**Implementation of**
 
 [IPhysicsEnginePlugin](../interfaces/m4m.framework.IPhysicsEnginePlugin.md).[wakeUpBody](../interfaces/m4m.framework.IPhysicsEnginePlugin.md#wakeupbody)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:638](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L638)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new CannonJSPlugin**(`_useDeltaForWorldStep?`, `iterations?`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `_useDeltaForWorldStep` | `boolean` | `true` |
-| `iterations` | `number` | `10` |
+| Name                    | Type      | Default value |
+| ----------------------- | --------- | ------------- |
+| `_useDeltaForWorldStep` | `boolean` | `true`        |
+| `iterations`            | `number`  | `10`          |
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/cannonJSPlugin.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/cannonJSPlugin.ts#L20)

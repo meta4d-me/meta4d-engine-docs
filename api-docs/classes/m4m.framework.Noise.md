@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / Noise
+# m4m.framework.Noise
 
-# Class: Noise
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / Noise
+
+## Class: Noise
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).Noise
 
@@ -8,119 +10,119 @@
 
 用于生产随机的噪音贴图
 
-**`see`** http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
+**`see`** http://staffwww.itn.liu.se/\~stegu/simplexnoise/simplexnoise.pdf
 
-**`see`** https://mrl.nyu.edu/~perlin/noise/
+**`see`** https://mrl.nyu.edu/\~perlin/noise/
 
-**`see`** https://gitee.com/feng3d_admin/noise
+**`see`** https://gitee.com/feng3d\_admin/noise
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.Noise.md#constructor)
+
+#### Methods
+
+* [perlin1](m4m.framework.Noise.md#perlin1)
+* [perlin2](m4m.framework.Noise.md#perlin2)
+* [perlin3](m4m.framework.Noise.md#perlin3)
+* [perlinN](m4m.framework.Noise.md#perlinn)
+
+#### Accessors
+
+* [seed](m4m.framework.Noise.md#seed)
 
 ### Constructors
 
-- [constructor](m4m.framework.Noise.md#constructor)
-
-### Methods
-
-- [perlin1](m4m.framework.Noise.md#perlin1)
-- [perlin2](m4m.framework.Noise.md#perlin2)
-- [perlin3](m4m.framework.Noise.md#perlin3)
-- [perlinN](m4m.framework.Noise.md#perlinn)
-
-### Accessors
-
-- [seed](m4m.framework.Noise.md#seed)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new Noise**(`seed?`)
 
 构建柏林噪音
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `seed` | `number` | `0` | 随机种子 |
+| Name   | Type     | Default value | Description |
+| ------ | -------- | ------------- | ----------- |
+| `seed` | `number` | `0`           | 随机种子        |
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L24)
 
-## Methods
+### Methods
 
-### perlin1
+#### perlin1
 
 ▸ **perlin1**(`x`): `number`
 
 1D 经典噪音
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | X轴数值 |
+| Name | Type     | Description |
+| ---- | -------- | ----------- |
+| `x`  | `number` | X轴数值        |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:34](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L34)
 
-___
+***
 
-### perlin2
+#### perlin2
 
 ▸ **perlin2**(`x`, `y`): `number`
 
 2D 经典噪音
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | X轴数值 |
-| `y` | `number` | Y轴数值 |
+| Name | Type     | Description |
+| ---- | -------- | ----------- |
+| `x`  | `number` | X轴数值        |
+| `y`  | `number` | Y轴数值        |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:67](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L67)
 
-___
+***
 
-### perlin3
+#### perlin3
 
 ▸ **perlin3**(`x`, `y`, `z`): `number`
 
 3D 经典噪音
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `x` | `number` | X轴数值 |
-| `y` | `number` | Y轴数值 |
-| `z` | `number` | Z轴数值 |
+| Name | Type     | Description |
+| ---- | -------- | ----------- |
+| `x`  | `number` | X轴数值        |
+| `y`  | `number` | Y轴数值        |
+| `z`  | `number` | Z轴数值        |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:112](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L112)
 
-___
+***
 
-### perlinN
+#### perlinN
 
 ▸ **perlinN**(...`ps`): `number`
 
@@ -128,57 +130,52 @@ N阶经典噪音
 
 如果是1D，2D，3D噪音，最好选用对于函数，perlinN中存在for循环因此效率比perlin3等性能差3到5（8）倍！
 
-满足以下运算
-perlinN(x) == perlin1(x)
-perlinN(x,y) == perlin2(x,y)
-perlinN(x,y,z) == perlin3(x,y,z)
+满足以下运算 perlinN(x) == perlin1(x) perlinN(x,y) == perlin2(x,y) perlinN(x,y,z) == perlin3(x,y,z)
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `...ps` | `number`[] | 每个轴的数值 |
+| Name    | Type        | Description |
+| ------- | ----------- | ----------- |
+| `...ps` | `number`\[] | 每个轴的数值      |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:179](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L179)
 
-## Accessors
+### Accessors
 
-### seed
+#### seed
 
 • `get` **seed**(): `number`
 
-This isn't a very good seeding function, but it works ok. It supports 2^16
-different seed values. Write something better if you need more seeds.
+This isn't a very good seeding function, but it works ok. It supports 2^16 different seed values. Write something better if you need more seeds.
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:268](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L268)
 
 • `set` **seed**(`v`): `void`
 
-This isn't a very good seeding function, but it works ok. It supports 2^16
-different seed values. Write something better if you need more seeds.
+This isn't a very good seeding function, but it works ok. It supports 2^16 different seed values. Write something better if you need more seeds.
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `v` | `number` |
+| Name | Type     |
+| ---- | -------- |
+| `v`  | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/math/Noise.ts:272](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/math/Noise.ts#L272)

@@ -1,42 +1,44 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / assetRef
+# m4m.framework.assetRef
 
-# Class: assetRef
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / assetRef
+
+## Class: assetRef
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).assetRef
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [asset](m4m.framework.assetRef.md#asset)
+* [refcount](m4m.framework.assetRef.md#refcount)
+
+#### Constructors
+
+* [constructor](m4m.framework.assetRef.md#constructor)
 
 ### Properties
 
-- [asset](m4m.framework.assetRef.md#asset)
-- [refcount](m4m.framework.assetRef.md#refcount)
-
-### Constructors
-
-- [constructor](m4m.framework.assetRef.md#constructor)
-
-## Properties
-
-### asset
+#### asset
 
 • **asset**: [`IAsset`](../interfaces/m4m.framework.IAsset.md)
 
-#### Defined in
+**Defined in**
 
 [framework/asset/a/define.ts:371](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/a/define.ts#L371)
 
-___
+***
 
-### refcount
+#### refcount
 
 • **refcount**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/a/define.ts:372](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/a/define.ts#L372)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new assetRef**()

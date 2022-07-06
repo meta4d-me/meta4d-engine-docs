@@ -1,199 +1,201 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14Layer
+# m4m.framework.F14Layer
 
-# Class: F14Layer
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / F14Layer
+
+## Class: F14Layer
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).F14Layer
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [Attlines](m4m.framework.F14Layer.md#attlines)
+* [active](m4m.framework.F14Layer.md#active)
+* [batch](m4m.framework.F14Layer.md#batch)
+* [data](m4m.framework.F14Layer.md#data)
+* [effect](m4m.framework.F14Layer.md#effect)
+* [element](m4m.framework.F14Layer.md#element)
+* [frameList](m4m.framework.F14Layer.md#framelist)
+* [frames](m4m.framework.F14Layer.md#frames)
+* [type](m4m.framework.F14Layer.md#type)
+
+#### Methods
+
+* [addFrame](m4m.framework.F14Layer.md#addframe)
+* [dispose](m4m.framework.F14Layer.md#dispose)
+* [removeFrame](m4m.framework.F14Layer.md#removeframe)
+
+#### Constructors
+
+* [constructor](m4m.framework.F14Layer.md#constructor)
 
 ### Properties
 
-- [Attlines](m4m.framework.F14Layer.md#attlines)
-- [active](m4m.framework.F14Layer.md#active)
-- [batch](m4m.framework.F14Layer.md#batch)
-- [data](m4m.framework.F14Layer.md#data)
-- [effect](m4m.framework.F14Layer.md#effect)
-- [element](m4m.framework.F14Layer.md#element)
-- [frameList](m4m.framework.F14Layer.md#framelist)
-- [frames](m4m.framework.F14Layer.md#frames)
-- [type](m4m.framework.F14Layer.md#type)
-
-### Methods
-
-- [addFrame](m4m.framework.F14Layer.md#addframe)
-- [dispose](m4m.framework.F14Layer.md#dispose)
-- [removeFrame](m4m.framework.F14Layer.md#removeframe)
-
-### Constructors
-
-- [constructor](m4m.framework.F14Layer.md#constructor)
-
-## Properties
-
-### Attlines
+#### Attlines
 
 • **Attlines**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [name: `string`]: [`F14AttTimeLine`](m4m.framework.F14AttTimeLine.md)
+▪ \[name: `string`]: [`F14AttTimeLine`](m4m.framework.F14AttTimeLine.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:14](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L14)
 
-___
+***
 
-### active
+#### active
 
 • **active**: `boolean` = `true`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L5)
 
-___
+***
 
-### batch
+#### batch
 
 • **batch**: [`F14Basebatch`](../interfaces/m4m.framework.F14Basebatch.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L17)
 
-___
+***
 
-### data
+#### data
 
 • **data**: [`F14LayerData`](m4m.framework.F14LayerData.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L8)
 
-___
+***
 
-### effect
+#### effect
 
 • **effect**: [`f14EffectSystem`](m4m.framework.f14EffectSystem.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L6)
 
-___
+***
 
-### element
+#### element
 
 • **element**: [`F14Element`](../interfaces/m4m.framework.F14Element.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L16)
 
-___
+***
 
-### frameList
+#### frameList
 
-• **frameList**: `number`[] = `[]`
+• **frameList**: `number`\[] = `[]`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:11](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L11)
 
-___
+***
 
-### frames
+#### frames
 
 • **frames**: `Object` = `{}`
 
-#### Index signature
+**Index signature**
 
-▪ [index: `number`]: [`F14Frame`](m4m.framework.F14Frame.md)
+▪ \[index: `number`]: [`F14Frame`](m4m.framework.F14Frame.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L12)
 
-___
+***
 
-### type
+#### type
 
 • **type**: [`F14TypeEnum`](../enums/m4m.framework.F14TypeEnum.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L9)
 
-## Methods
+### Methods
 
-### addFrame
+#### addFrame
 
 ▸ **addFrame**(`index`, `framedata`): [`F14Frame`](m4m.framework.F14Frame.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `index` | `number` |
+| Name        | Type                                            |
+| ----------- | ----------------------------------------------- |
+| `index`     | `number`                                        |
 | `framedata` | [`F14FrameData`](m4m.framework.F14FrameData.md) |
 
-#### Returns
+**Returns**
 
 [`F14Frame`](m4m.framework.F14Frame.md)
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L40)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:78](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L78)
 
-___
+***
 
-### removeFrame
+#### removeFrame
 
 ▸ **removeFrame**(`frame`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `frame` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:59](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L59)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new F14Layer**(`effect`, `data`)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                                  |
+| -------- | ----------------------------------------------------- |
 | `effect` | [`f14EffectSystem`](m4m.framework.f14EffectSystem.md) |
-| `data` | [`F14LayerData`](m4m.framework.F14LayerData.md) |
+| `data`   | [`F14LayerData`](m4m.framework.F14LayerData.md)       |
 
-#### Defined in
+**Defined in**
 
 [framework/component/f14effectsystem/f14layer.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/component/f14effectsystem/f14layer.ts#L18)

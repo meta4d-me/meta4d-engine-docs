@@ -1,133 +1,135 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [math](../modules/m4m.math.md) / ReuseArray
+# m4m.math.ReuseArray
 
-# Class: ReuseArray<T\>
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [math](../modules/m4m.math.md) / ReuseArray
+
+## Class: ReuseArray\<T>
 
 [m4m](../modules/m4m.md).[math](../modules/m4m.math.md).ReuseArray
 
 复用数组 ，用于频繁重复创建数组容器的场景(减少GC消耗)
 
-## Type parameters
+### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| ---- |
+| `T`  |
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [clear](m4m.math.ReuseArray.md#clear)
+* [get](m4m.math.ReuseArray.md#get)
+* [getArray](m4m.math.ReuseArray.md#getarray)
+* [push](m4m.math.ReuseArray.md#push)
+
+#### Constructors
+
+* [constructor](m4m.math.ReuseArray.md#constructor)
+
+#### Accessors
+
+* [length](m4m.math.ReuseArray.md#length)
 
 ### Methods
 
-- [clear](m4m.math.ReuseArray.md#clear)
-- [get](m4m.math.ReuseArray.md#get)
-- [getArray](m4m.math.ReuseArray.md#getarray)
-- [push](m4m.math.ReuseArray.md#push)
-
-### Constructors
-
-- [constructor](m4m.math.ReuseArray.md#constructor)
-
-### Accessors
-
-- [length](m4m.math.ReuseArray.md#length)
-
-## Methods
-
-### clear
+#### clear
 
 ▸ **clear**(): `void`
 
 数组所有值置为null
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:686](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L686)
 
-___
+***
 
-### get
+#### get
 
 ▸ **get**(`index`): `T`
 
 获取指定索引的值
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `index` | `number` |
 
-#### Returns
+**Returns**
 
 `T`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:680](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L680)
 
-___
+***
 
-### getArray
+#### getArray
 
-▸ **getArray**(): `T`[]
+▸ **getArray**(): `T`\[]
 
 获取 Array 对象
 
-#### Returns
+**Returns**
 
-`T`[]
+`T`\[]
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:666](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L666)
 
-___
+***
 
-### push
+#### push
 
 ▸ **push**(`val`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `val` | `T` |
+| Name  | Type |
+| ----- | ---- |
+| `val` | `T`  |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:674](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L674)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
-• **new ReuseArray**<`T`\>()
+• **new ReuseArray**<`T`>()
 
-#### Type parameters
+**Type parameters**
 
 | Name |
-| :------ |
-| `T` |
+| ---- |
+| `T`  |
 
-## Accessors
+### Accessors
 
-### length
+#### length
 
 • `get` **length**(): `number`
 
 获取当前长度
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:671](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L671)
 
@@ -135,16 +137,16 @@ ___
 
 获取当前长度
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type     |
+| ----- | -------- |
 | `val` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:672](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L672)

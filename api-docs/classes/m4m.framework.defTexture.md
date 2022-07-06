@@ -1,110 +1,112 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / defTexture
+# m4m.framework.defTexture
 
-# Class: defTexture
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / defTexture
+
+## Class: defTexture
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).defTexture
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.defTexture.md#constructor)
+
+#### Properties
+
+* [black](m4m.framework.defTexture.md#black)
+* [gray](m4m.framework.defTexture.md#gray)
+* [grid](m4m.framework.defTexture.md#grid)
+* [normal](m4m.framework.defTexture.md#normal)
+* [particle](m4m.framework.defTexture.md#particle)
+* [white](m4m.framework.defTexture.md#white)
+
+#### Methods
+
+* [initDefaultTexture](m4m.framework.defTexture.md#initdefaulttexture)
 
 ### Constructors
 
-- [constructor](m4m.framework.defTexture.md#constructor)
-
-### Properties
-
-- [black](m4m.framework.defTexture.md#black)
-- [gray](m4m.framework.defTexture.md#gray)
-- [grid](m4m.framework.defTexture.md#grid)
-- [normal](m4m.framework.defTexture.md#normal)
-- [particle](m4m.framework.defTexture.md#particle)
-- [white](m4m.framework.defTexture.md#white)
-
-### Methods
-
-- [initDefaultTexture](m4m.framework.defTexture.md#initdefaulttexture)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new defTexture**()
 
-## Properties
+### Properties
 
-### black
+#### black
 
-▪ `Static` `Readonly` **black**: ``"black"``
+▪ `Static` `Readonly` **black**: `"black"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:6](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L6)
 
-___
+***
 
-### gray
+#### gray
 
-▪ `Static` `Readonly` **gray**: ``"gray"``
+▪ `Static` `Readonly` **gray**: `"gray"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:7](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L7)
 
-___
+***
 
-### grid
+#### grid
 
-▪ `Static` `Readonly` **grid**: ``"grid"``
+▪ `Static` `Readonly` **grid**: `"grid"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L9)
 
-___
+***
 
-### normal
+#### normal
 
-▪ `Static` `Readonly` **normal**: ``"normal"``
+▪ `Static` `Readonly` **normal**: `"normal"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L8)
 
-___
+***
 
-### particle
+#### particle
 
-▪ `Static` `Readonly` **particle**: ``"particle"``
+▪ `Static` `Readonly` **particle**: `"particle"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:10](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L10)
 
-___
+***
 
-### white
+#### white
 
-▪ `Static` `Readonly` **white**: ``"white"``
+▪ `Static` `Readonly` **white**: `"white"`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L5)
 
-## Methods
+### Methods
 
-### initDefaultTexture
+#### initDefaultTexture
 
 ▸ `Static` **initDefaultTexture**(`assetmgr`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                    |
+| ---------- | --------------------------------------- |
 | `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/asset/default/deftexture.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/default/deftexture.ts#L12)

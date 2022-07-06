@@ -1,32 +1,34 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [math](../modules/m4m.math.md) / Ivec2
+# m4m.math.Ivec2
 
-# Interface: Ivec2
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [math](../modules/m4m.math.md) / Ivec2
+
+## Interface: Ivec2
 
 [m4m](../modules/m4m.md).[math](../modules/m4m.math.md).Ivec2
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [x](m4m.math.Ivec2.md#x)
+* [y](m4m.math.Ivec2.md#y)
 
 ### Properties
 
-- [x](m4m.math.Ivec2.md#x)
-- [y](m4m.math.Ivec2.md#y)
-
-## Properties
-
-### x
+#### x
 
 • **x**: `number`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L5)
 
-___
+***
 
-### y
+#### y
 
 • **y**: `number`
 
-#### Defined in
+**Defined in**
 
 [render/struct.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/render/struct.ts#L5)

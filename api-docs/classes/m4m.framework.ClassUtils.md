@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ClassUtils
+# m4m.framework.ClassUtils
 
-# Class: ClassUtils
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / ClassUtils
+
+## Class: ClassUtils
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).ClassUtils
 
@@ -8,135 +10,135 @@
 
 **`author`** feng3d
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.ClassUtils.md#constructor)
+
+#### Methods
+
+* [addClassNameSpace](m4m.framework.ClassUtils.md#addclassnamespace)
+* [getDefaultInstanceByName](m4m.framework.ClassUtils.md#getdefaultinstancebyname)
+* [getDefinitionByName](m4m.framework.ClassUtils.md#getdefinitionbyname)
+* [getInstanceByName](m4m.framework.ClassUtils.md#getinstancebyname)
+* [getQualifiedClassName](m4m.framework.ClassUtils.md#getqualifiedclassname)
 
 ### Constructors
 
-- [constructor](m4m.framework.ClassUtils.md#constructor)
-
-### Methods
-
-- [addClassNameSpace](m4m.framework.ClassUtils.md#addclassnamespace)
-- [getDefaultInstanceByName](m4m.framework.ClassUtils.md#getdefaultinstancebyname)
-- [getDefinitionByName](m4m.framework.ClassUtils.md#getdefinitionbyname)
-- [getInstanceByName](m4m.framework.ClassUtils.md#getinstancebyname)
-- [getQualifiedClassName](m4m.framework.ClassUtils.md#getqualifiedclassname)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new ClassUtils**()
 
-## Methods
+### Methods
 
-### addClassNameSpace
+#### addClassNameSpace
 
 ▸ `Static` **addClassNameSpace**(`namespace`): `void`
 
 新增反射对象所在的命名空间，使得getQualifiedClassName能够得到正确的结果
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type     |
+| ----------- | -------- |
 | `namespace` | `string` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/util/classutils.ts:113](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/classutils.ts#L113)
 
-___
+***
 
-### getDefaultInstanceByName
+#### getDefaultInstanceByName
 
 ▸ `Static` **getDefaultInstanceByName**(`name`): `any`
 
 获取默认实例
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | 类名称 |
+| Name   | Type     | Description |
+| ------ | -------- | ----------- |
+| `name` | `string` | 类名称         |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/util/classutils.ts:82](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/classutils.ts#L82)
 
-___
+***
 
-### getDefinitionByName
+#### getDefinitionByName
 
 ▸ `Static` **getDefinitionByName**(`name`, `readCache?`): `any`
 
 返回 name 参数指定的类的类对象引用。
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | 类的名称。 |
-| `readCache` | `boolean` | `true` | - |
+| Name        | Type      | Default value | Description |
+| ----------- | --------- | ------------- | ----------- |
+| `name`      | `string`  | `undefined`   | 类的名称。       |
+| `readCache` | `boolean` | `true`        | -           |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/util/classutils.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/classutils.ts#L48)
 
-___
+***
 
-### getInstanceByName
+#### getInstanceByName
 
 ▸ `Static` **getInstanceByName**(`name`): `any`
 
 获取实例
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `name` | `string` | 类名称 |
+| Name   | Type     | Description |
+| ------ | -------- | ----------- |
+| `name` | `string` | 类名称         |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Defined in
+**Defined in**
 
 [framework/util/classutils.ts:103](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/classutils.ts#L103)
 
-___
+***
 
-### getQualifiedClassName
+#### getQualifiedClassName
 
 ▸ `Static` **getQualifiedClassName**(`value`): `string`
 
 返回对象的完全限定类名。
 
-#### Parameters
+**Parameters**
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type  | Description                                                                         |
+| ------- | ----- | ----------------------------------------------------------------------------------- |
 | `value` | `any` | 需要完全限定类名称的对象，可以将任何 JavaScript 值传递给此方法，包括所有可用的 JavaScript 类型、对象实例、原始类型 （如number)和类对象 |
 
-#### Returns
+**Returns**
 
 `string`
 
 包含完全限定类名称的字符串。
 
-#### Defined in
+**Defined in**
 
 [framework/util/classutils.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/classutils.ts#L18)

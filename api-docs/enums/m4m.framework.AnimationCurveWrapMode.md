@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AnimationCurveWrapMode
+# m4m.framework.AnimationCurveWrapMode
 
-# Enumeration: AnimationCurveWrapMode
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AnimationCurveWrapMode
+
+## Enumeration: AnimationCurveWrapMode
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AnimationCurveWrapMode
 
@@ -8,46 +10,46 @@
 
 **`author`** feng3d
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [Clamp](m4m.framework.AnimationCurveWrapMode.md#clamp)
+* [Loop](m4m.framework.AnimationCurveWrapMode.md#loop)
+* [PingPong](m4m.framework.AnimationCurveWrapMode.md#pingpong)
 
 ### Enumeration Members
 
-- [Clamp](m4m.framework.AnimationCurveWrapMode.md#clamp)
-- [Loop](m4m.framework.AnimationCurveWrapMode.md#loop)
-- [PingPong](m4m.framework.AnimationCurveWrapMode.md#pingpong)
-
-## Enumeration Members
-
-### Clamp
+#### Clamp
 
 • **Clamp**
 
 夹紧; 0>-<1
 
-#### Defined in
+**Defined in**
 
 [framework/util/curve/AnimationCurveWrapMode.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/curve/AnimationCurveWrapMode.ts#L13)
 
-___
+***
 
-### Loop
+#### Loop
 
 • **Loop**
 
 循环; 0->1,0->1
 
-#### Defined in
+**Defined in**
 
 [framework/util/curve/AnimationCurveWrapMode.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/curve/AnimationCurveWrapMode.ts#L17)
 
-___
+***
 
-### PingPong
+#### PingPong
 
 • **PingPong**
 
 来回循环; 0->1,1->0
 
-#### Defined in
+**Defined in**
 
 [framework/util/curve/AnimationCurveWrapMode.ts:21](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/curve/AnimationCurveWrapMode.ts#L21)

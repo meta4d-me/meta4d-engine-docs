@@ -1,41 +1,43 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / textureutil
+# m4m.framework.textureutil
 
-# Class: textureutil
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / textureutil
+
+## Class: textureutil
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).textureutil
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.textureutil.md#constructor)
+
+#### Methods
+
+* [loadUtil](m4m.framework.textureutil.md#loadutil)
 
 ### Constructors
 
-- [constructor](m4m.framework.textureutil.md#constructor)
-
-### Methods
-
-- [loadUtil](m4m.framework.textureutil.md#loadutil)
-
-## Constructors
-
-### constructor
+#### constructor
 
 • **new textureutil**()
 
-## Methods
+### Methods
 
-### loadUtil
+#### loadUtil
 
 ▸ `Static` **loadUtil**(`path`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type     |
+| ------ | -------- |
 | `path` | `string` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/util/textureutil.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/textureutil.ts#L5)

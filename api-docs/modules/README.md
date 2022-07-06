@@ -1,9 +1,11 @@
-[@meta4d/engine](README.md) / Exports
+# Modules
 
-# @meta4d/engine
+[@meta4d/engine](../) / Exports
 
-## Table of contents
+## @meta4d/engine
 
-### Namespaces
+### Table of contents
 
-- [m4m](modules/m4m.md)
+#### Namespaces
+
+* [m4m](m4m.md)

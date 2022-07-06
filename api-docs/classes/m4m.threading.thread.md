@@ -1,100 +1,102 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [threading](../modules/m4m.threading.md) / thread
+# m4m.threading.thread
 
-# Class: thread
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [threading](../modules/m4m.threading.md) / thread
+
+## Class: thread
 
 [m4m](../modules/m4m.md).[threading](../modules/m4m.threading.md).thread
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [Call](m4m.threading.thread.md#call)
+* [OnMessage](m4m.threading.thread.md#onmessage)
+
+#### Constructors
+
+* [constructor](m4m.threading.thread.md#constructor)
+
+#### Accessors
+
+* [Instance](m4m.threading.thread.md#instance)
+
+#### Properties
+
+* [workerInstance](m4m.threading.thread.md#workerinstance)
 
 ### Methods
 
-- [Call](m4m.threading.thread.md#call)
-- [OnMessage](m4m.threading.thread.md#onmessage)
-
-### Constructors
-
-- [constructor](m4m.threading.thread.md#constructor)
-
-### Accessors
-
-- [Instance](m4m.threading.thread.md#instance)
-
-### Properties
-
-- [workerInstance](m4m.threading.thread.md#workerinstance)
-
-## Methods
-
-### Call
+#### Call
 
 ▸ **Call**(`name`, `data`, `callback`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `name` | `string` |
-| `data` | `any` |
+| Name       | Type                        |
+| ---------- | --------------------------- |
+| `name`     | `string`                    |
+| `data`     | `any`                       |
 | `callback` | (`result`: `any`) => `void` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/threading/thread.ts:48](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/threading/thread.ts#L48)
 
-___
+***
 
-### OnMessage
+#### OnMessage
 
 ▸ **OnMessage**(`e`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `e` | `MessageEvent`<`any`\> |
+| Name | Type                  |
+| ---- | --------------------- |
+| `e`  | `MessageEvent`<`any`> |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/threading/thread.ts:40](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/threading/thread.ts#L40)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new thread**()
 
-#### Defined in
+**Defined in**
 
 [framework/threading/thread.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/threading/thread.ts#L19)
 
-## Accessors
+### Accessors
 
-### Instance
+#### Instance
 
 • `Static` `get` **Instance**(): [`thread`](m4m.threading.thread.md)
 
-#### Returns
+**Returns**
 
 [`thread`](m4m.threading.thread.md)
 
-#### Defined in
+**Defined in**
 
 [framework/threading/thread.ts:9](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/threading/thread.ts#L9)
 
-## Properties
+### Properties
 
-### workerInstance
+#### workerInstance
 
 ▪ `Static` **workerInstance**: `Worker`
 
-#### Defined in
+**Defined in**
 
 [framework/threading/thread.ts:5](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/threading/thread.ts#L5)

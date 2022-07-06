@@ -1,62 +1,64 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / UVRoll
+# m4m.framework.UVRoll
 
-# Class: UVRoll
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / UVRoll
+
+## Class: UVRoll
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).UVRoll
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [clone](m4m.framework.UVRoll.md#clone)
+
+#### Constructors
+
+* [constructor](m4m.framework.UVRoll.md#constructor)
+
+#### Properties
+
+* [uvSpeed](m4m.framework.UVRoll.md#uvspeed)
+* [uvSpeedNodes](m4m.framework.UVRoll.md#uvspeednodes)
 
 ### Methods
 
-- [clone](m4m.framework.UVRoll.md#clone)
-
-### Constructors
-
-- [constructor](m4m.framework.UVRoll.md#constructor)
-
-### Properties
-
-- [uvSpeed](m4m.framework.UVRoll.md#uvspeed)
-- [uvSpeedNodes](m4m.framework.UVRoll.md#uvspeednodes)
-
-## Methods
-
-### clone
+#### clone
 
 ▸ **clone**(): [`UVRoll`](m4m.framework.UVRoll.md)
 
-#### Returns
+**Returns**
 
 [`UVRoll`](m4m.framework.UVRoll.md)
 
-#### Defined in
+**Defined in**
 
 [framework/particle/data/particlealldata.ts:276](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/data/particlealldata.ts#L276)
 
-## Constructors
+### Constructors
 
-### constructor
+#### constructor
 
 • **new UVRoll**()
 
-## Properties
+### Properties
 
-### uvSpeed
+#### uvSpeed
 
 • **uvSpeed**: `UVSpeedNode`
 
 uv滚动
 
-#### Defined in
+**Defined in**
 
 [framework/particle/data/particlealldata.ts:274](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/data/particlealldata.ts#L274)
 
-___
+***
 
-### uvSpeedNodes
+#### uvSpeedNodes
 
-• **uvSpeedNodes**: `UVSpeedNode`[]
+• **uvSpeedNodes**: `UVSpeedNode`\[]
 
-#### Defined in
+**Defined in**
 
 [framework/particle/data/particlealldata.ts:275](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/particle/data/particlealldata.ts#L275)

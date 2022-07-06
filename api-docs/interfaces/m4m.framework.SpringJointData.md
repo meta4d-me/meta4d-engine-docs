@@ -1,153 +1,155 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / SpringJointData
+# m4m.framework.SpringJointData
 
-# Interface: SpringJointData
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / SpringJointData
+
+## Interface: SpringJointData
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).SpringJointData
 
 Joint data from a spring joint
 
-## Hierarchy
+### Hierarchy
 
-- [`PhysicsJointData`](m4m.framework.PhysicsJointData.md)
+*   [`PhysicsJointData`](m4m.framework.PhysicsJointData.md)
 
-  ↳ **`SpringJointData`**
+    ↳ **`SpringJointData`**
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [collision](m4m.framework.SpringJointData.md#collision)
+* [connectedAxis](m4m.framework.SpringJointData.md#connectedaxis)
+* [connectedPivot](m4m.framework.SpringJointData.md#connectedpivot)
+* [damping](m4m.framework.SpringJointData.md#damping)
+* [length](m4m.framework.SpringJointData.md#length)
+* [mainAxis](m4m.framework.SpringJointData.md#mainaxis)
+* [mainPivot](m4m.framework.SpringJointData.md#mainpivot)
+* [nativeParams](m4m.framework.SpringJointData.md#nativeparams)
+* [stiffness](m4m.framework.SpringJointData.md#stiffness)
 
 ### Properties
 
-- [collision](m4m.framework.SpringJointData.md#collision)
-- [connectedAxis](m4m.framework.SpringJointData.md#connectedaxis)
-- [connectedPivot](m4m.framework.SpringJointData.md#connectedpivot)
-- [damping](m4m.framework.SpringJointData.md#damping)
-- [length](m4m.framework.SpringJointData.md#length)
-- [mainAxis](m4m.framework.SpringJointData.md#mainaxis)
-- [mainPivot](m4m.framework.SpringJointData.md#mainpivot)
-- [nativeParams](m4m.framework.SpringJointData.md#nativeparams)
-- [stiffness](m4m.framework.SpringJointData.md#stiffness)
-
-## Properties
-
-### collision
+#### collision
 
 • `Optional` **collision**: `boolean`
 
 The collision of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[collision](m4m.framework.PhysicsJointData.md#collision)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:24](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L24)
 
-___
+***
 
-### connectedAxis
+#### connectedAxis
 
 • `Optional` **connectedAxis**: `vector3`
 
 The connected axis of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[connectedAxis](m4m.framework.PhysicsJointData.md#connectedaxis)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L20)
 
-___
+***
 
-### connectedPivot
+#### connectedPivot
 
 • `Optional` **connectedPivot**: `vector3`
 
 The connected pivot of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[connectedPivot](m4m.framework.PhysicsJointData.md#connectedpivot)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:12](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L12)
 
-___
+***
 
-### damping
+#### damping
 
 • **damping**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:251](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L251)
 
-___
+***
 
-### length
+#### length
 
 • **length**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:249](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L249)
 
-___
+***
 
-### mainAxis
+#### mainAxis
 
 • `Optional` **mainAxis**: `vector3`
 
 The main axis of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[mainAxis](m4m.framework.PhysicsJointData.md#mainaxis)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L16)
 
-___
+***
 
-### mainPivot
+#### mainPivot
 
 • `Optional` **mainPivot**: `vector3`
 
 The main pivot of the joint
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[mainPivot](m4m.framework.PhysicsJointData.md#mainpivot)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:8](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L8)
 
-___
+***
 
-### nativeParams
+#### nativeParams
 
 • `Optional` **nativeParams**: `any`
 
 Native Oimo/Cannon/Energy data
 
-#### Inherited from
+**Inherited from**
 
 [PhysicsJointData](m4m.framework.PhysicsJointData.md).[nativeParams](m4m.framework.PhysicsJointData.md#nativeparams)
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:28](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L28)
 
-___
+***
 
-### stiffness
+#### stiffness
 
 • **stiffness**: `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicJoint.ts:250](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicJoint.ts#L250)

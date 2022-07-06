@@ -1,12 +1,14 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](m4m.md) / threading
+# m4m.threading
 
-# Namespace: threading
+[@meta4d/engine](../) / [Exports](./) / [m4m](m4m.md) / threading
+
+## Namespace: threading
 
 [m4m](m4m.md).threading
 
-## Table of contents
+### Table of contents
 
-### Classes
+#### Classes
 
-- [gdPromise](../classes/m4m.threading.gdPromise.md)
-- [thread](../classes/m4m.threading.thread.md)
+* [gdPromise](../classes/m4m.threading.gdPromise.md)
+* [thread](../classes/m4m.threading.thread.md)

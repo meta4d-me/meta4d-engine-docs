@@ -1,715 +1,717 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IPhysicsEnginePlugin
+# m4m.framework.IPhysicsEnginePlugin
 
-# Interface: IPhysicsEnginePlugin
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IPhysicsEnginePlugin
+
+## Interface: IPhysicsEnginePlugin
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IPhysicsEnginePlugin
 
-## Implemented by
+### Implemented by
 
-- [`CannonJSPlugin`](../classes/m4m.framework.CannonJSPlugin.md)
-- [`OimoJSPlugin`](../classes/m4m.framework.OimoJSPlugin.md)
+* [`CannonJSPlugin`](../classes/m4m.framework.CannonJSPlugin.md)
+* [`OimoJSPlugin`](../classes/m4m.framework.OimoJSPlugin.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [applyForce](m4m.framework.IPhysicsEnginePlugin.md#applyforce)
+* [applyImpulse](m4m.framework.IPhysicsEnginePlugin.md#applyimpulse)
+* [dispose](m4m.framework.IPhysicsEnginePlugin.md#dispose)
+* [executeStep](m4m.framework.IPhysicsEnginePlugin.md#executestep)
+* [generateJoint](m4m.framework.IPhysicsEnginePlugin.md#generatejoint)
+* [generatePhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#generatephysicsbody)
+* [getAngularVelocity](m4m.framework.IPhysicsEnginePlugin.md#getangularvelocity)
+* [getBodyFriction](m4m.framework.IPhysicsEnginePlugin.md#getbodyfriction)
+* [getBodyMass](m4m.framework.IPhysicsEnginePlugin.md#getbodymass)
+* [getBodyRestitution](m4m.framework.IPhysicsEnginePlugin.md#getbodyrestitution)
+* [getBoxSizeToRef](m4m.framework.IPhysicsEnginePlugin.md#getboxsizetoref)
+* [getLinearVelocity](m4m.framework.IPhysicsEnginePlugin.md#getlinearvelocity)
+* [getRadius](m4m.framework.IPhysicsEnginePlugin.md#getradius)
+* [getTimeStep](m4m.framework.IPhysicsEnginePlugin.md#gettimestep)
+* [isSleeping](m4m.framework.IPhysicsEnginePlugin.md#issleeping)
+* [isSupported](m4m.framework.IPhysicsEnginePlugin.md#issupported)
+* [removeJoint](m4m.framework.IPhysicsEnginePlugin.md#removejoint)
+* [removePhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#removephysicsbody)
+* [setAngularVelocity](m4m.framework.IPhysicsEnginePlugin.md#setangularvelocity)
+* [setBodyFriction](m4m.framework.IPhysicsEnginePlugin.md#setbodyfriction)
+* [setBodyMass](m4m.framework.IPhysicsEnginePlugin.md#setbodymass)
+* [setBodyRestitution](m4m.framework.IPhysicsEnginePlugin.md#setbodyrestitution)
+* [setGravity](m4m.framework.IPhysicsEnginePlugin.md#setgravity)
+* [setLimit](m4m.framework.IPhysicsEnginePlugin.md#setlimit)
+* [setLinearVelocity](m4m.framework.IPhysicsEnginePlugin.md#setlinearvelocity)
+* [setMotor](m4m.framework.IPhysicsEnginePlugin.md#setmotor)
+* [setPhysicsBodyTransformation](m4m.framework.IPhysicsEnginePlugin.md#setphysicsbodytransformation)
+* [setTimeStep](m4m.framework.IPhysicsEnginePlugin.md#settimestep)
+* [setTransformationFromPhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#settransformationfromphysicsbody)
+* [sleepBody](m4m.framework.IPhysicsEnginePlugin.md#sleepbody)
+* [updateDistanceJoint](m4m.framework.IPhysicsEnginePlugin.md#updatedistancejoint)
+* [wakeUpBody](m4m.framework.IPhysicsEnginePlugin.md#wakeupbody)
+
+#### Properties
+
+* [name](m4m.framework.IPhysicsEnginePlugin.md#name)
+* [world](m4m.framework.IPhysicsEnginePlugin.md#world)
 
 ### Methods
 
-- [applyForce](m4m.framework.IPhysicsEnginePlugin.md#applyforce)
-- [applyImpulse](m4m.framework.IPhysicsEnginePlugin.md#applyimpulse)
-- [dispose](m4m.framework.IPhysicsEnginePlugin.md#dispose)
-- [executeStep](m4m.framework.IPhysicsEnginePlugin.md#executestep)
-- [generateJoint](m4m.framework.IPhysicsEnginePlugin.md#generatejoint)
-- [generatePhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#generatephysicsbody)
-- [getAngularVelocity](m4m.framework.IPhysicsEnginePlugin.md#getangularvelocity)
-- [getBodyFriction](m4m.framework.IPhysicsEnginePlugin.md#getbodyfriction)
-- [getBodyMass](m4m.framework.IPhysicsEnginePlugin.md#getbodymass)
-- [getBodyRestitution](m4m.framework.IPhysicsEnginePlugin.md#getbodyrestitution)
-- [getBoxSizeToRef](m4m.framework.IPhysicsEnginePlugin.md#getboxsizetoref)
-- [getLinearVelocity](m4m.framework.IPhysicsEnginePlugin.md#getlinearvelocity)
-- [getRadius](m4m.framework.IPhysicsEnginePlugin.md#getradius)
-- [getTimeStep](m4m.framework.IPhysicsEnginePlugin.md#gettimestep)
-- [isSleeping](m4m.framework.IPhysicsEnginePlugin.md#issleeping)
-- [isSupported](m4m.framework.IPhysicsEnginePlugin.md#issupported)
-- [removeJoint](m4m.framework.IPhysicsEnginePlugin.md#removejoint)
-- [removePhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#removephysicsbody)
-- [setAngularVelocity](m4m.framework.IPhysicsEnginePlugin.md#setangularvelocity)
-- [setBodyFriction](m4m.framework.IPhysicsEnginePlugin.md#setbodyfriction)
-- [setBodyMass](m4m.framework.IPhysicsEnginePlugin.md#setbodymass)
-- [setBodyRestitution](m4m.framework.IPhysicsEnginePlugin.md#setbodyrestitution)
-- [setGravity](m4m.framework.IPhysicsEnginePlugin.md#setgravity)
-- [setLimit](m4m.framework.IPhysicsEnginePlugin.md#setlimit)
-- [setLinearVelocity](m4m.framework.IPhysicsEnginePlugin.md#setlinearvelocity)
-- [setMotor](m4m.framework.IPhysicsEnginePlugin.md#setmotor)
-- [setPhysicsBodyTransformation](m4m.framework.IPhysicsEnginePlugin.md#setphysicsbodytransformation)
-- [setTimeStep](m4m.framework.IPhysicsEnginePlugin.md#settimestep)
-- [setTransformationFromPhysicsBody](m4m.framework.IPhysicsEnginePlugin.md#settransformationfromphysicsbody)
-- [sleepBody](m4m.framework.IPhysicsEnginePlugin.md#sleepbody)
-- [updateDistanceJoint](m4m.framework.IPhysicsEnginePlugin.md#updatedistancejoint)
-- [wakeUpBody](m4m.framework.IPhysicsEnginePlugin.md#wakeupbody)
-
-### Properties
-
-- [name](m4m.framework.IPhysicsEnginePlugin.md#name)
-- [world](m4m.framework.IPhysicsEnginePlugin.md#world)
-
-## Methods
-
-### applyForce
+#### applyForce
 
 ▸ **applyForce**(`impostor`, `force`, `contactPoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                             |
+| -------------- | ---------------------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                                        |
+| `contactPoint` | `vector3`                                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:229](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L229)
 
-___
+***
 
-### applyImpulse
+#### applyImpulse
 
 ▸ **applyImpulse**(`impostor`, `force`, `contactPoint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `force` | `vector3` |
-| `contactPoint` | `vector3` |
+| Name           | Type                                                             |
+| -------------- | ---------------------------------------------------------------- |
+| `impostor`     | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
+| `force`        | `vector3`                                                        |
+| `contactPoint` | `vector3`                                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:228](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L228)
 
-___
+***
 
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:257](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L257)
 
-___
+***
 
-### executeStep
+#### executeStep
 
 ▸ **executeStep**(`delta`, `impostors`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `delta` | `number` |
-| `impostors` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md)[] |
+| Name        | Type                                                                |
+| ----------- | ------------------------------------------------------------------- |
+| `delta`     | `number`                                                            |
+| `impostors` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md)\[] |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:227](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L227)
 
-___
+***
 
-### generateJoint
+#### generateJoint
 
 ▸ **generateJoint**(`joint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                                            |
+| ------- | --------------------------------------------------------------- |
 | `joint` | [`PhysicsImpostorJoint`](m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:232](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L232)
 
-___
+***
 
-### generatePhysicsBody
+#### generatePhysicsBody
 
 ▸ **generatePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:230](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L230)
 
-___
+***
 
-### getAngularVelocity
+#### getAngularVelocity
 
 ▸ **getAngularVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:240](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L240)
 
-___
+***
 
-### getBodyFriction
+#### getBodyFriction
 
 ▸ **getBodyFriction**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:243](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L243)
 
-___
+***
 
-### getBodyMass
+#### getBodyMass
 
 ▸ **getBodyMass**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:242](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L242)
 
-___
+***
 
-### getBodyRestitution
+#### getBodyRestitution
 
 ▸ **getBodyRestitution**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:245](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L245)
 
-___
+***
 
-### getBoxSizeToRef
+#### getBoxSizeToRef
 
 ▸ **getBoxSizeToRef**(`impostor`, `result`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `result` | `vector3` |
+| `result`   | `vector3`                                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:255](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L255)
 
-___
+***
 
-### getLinearVelocity
+#### getLinearVelocity
 
 ▸ **getLinearVelocity**(`impostor`): `vector3`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `vector3`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:239](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L239)
 
-___
+***
 
-### getRadius
+#### getRadius
 
 ▸ **getRadius**(`impostor`): `number`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:254](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L254)
 
-___
+***
 
-### getTimeStep
+#### getTimeStep
 
 ▸ **getTimeStep**(): `number`
 
-#### Returns
+**Returns**
 
 `number`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:226](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L226)
 
-___
+***
 
-### isSleeping
+#### isSleeping
 
 ▸ **isSleeping**(`impostor`): `boolean`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:248](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L248)
 
-___
+***
 
-### isSupported
+#### isSupported
 
 ▸ **isSupported**(): `boolean`
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:234](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L234)
 
-___
+***
 
-### removeJoint
+#### removeJoint
 
 ▸ **removeJoint**(`joint`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type                                                            |
+| ------- | --------------------------------------------------------------- |
 | `joint` | [`PhysicsImpostorJoint`](m4m.framework.PhysicsImpostorJoint.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:233](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L233)
 
-___
+***
 
-### removePhysicsBody
+#### removePhysicsBody
 
 ▸ **removePhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:231](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L231)
 
-___
+***
 
-### setAngularVelocity
+#### setAngularVelocity
 
 ▸ **setAngularVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:238](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L238)
 
-___
+***
 
-### setBodyFriction
+#### setBodyFriction
 
 ▸ **setBodyFriction**(`impostor`, `friction`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `friction` | `number` |
+| `friction` | `number`                                                         |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:244](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L244)
 
-___
+***
 
-### setBodyMass
+#### setBodyMass
 
 ▸ **setBodyMass**(`impostor`, `mass`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `mass` | `number` |
+| `mass`     | `number`                                                         |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:241](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L241)
 
-___
+***
 
-### setBodyRestitution
+#### setBodyRestitution
 
 ▸ **setBodyRestitution**(`impostor`, `restitution`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `restitution` | `number` |
+| Name          | Type                                                             |
+| ------------- | ---------------------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
+| `restitution` | `number`                                                         |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:246](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L246)
 
-___
+***
 
-### setGravity
+#### setGravity
 
 ▸ **setGravity**(`gravity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type      |
+| --------- | --------- |
 | `gravity` | `vector3` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:224](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L224)
 
-___
+***
 
-### setLimit
+#### setLimit
 
 ▸ **setLimit**(`joint`, `upperLimit`, `lowerLimit?`, `motorIndex?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](m4m.framework.IMotorEnabledJoint.md) |
-| `upperLimit` | `number` |
-| `lowerLimit?` | `number` |
-| `motorIndex?` | `number` |
+| Name          | Type                                                        |
+| ------------- | ----------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](m4m.framework.IMotorEnabledJoint.md) |
+| `upperLimit`  | `number`                                                    |
+| `lowerLimit?` | `number`                                                    |
+| `motorIndex?` | `number`                                                    |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:253](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L253)
 
-___
+***
 
-### setLinearVelocity
+#### setLinearVelocity
 
 ▸ **setLinearVelocity**(`impostor`, `velocity`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `velocity` | `vector3` |
+| `velocity` | `vector3`                                                        |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:237](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L237)
 
-___
+***
 
-### setMotor
+#### setMotor
 
 ▸ **setMotor**(`joint`, `speed`, `maxForce?`, `motorIndex?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`IMotorEnabledJoint`](m4m.framework.IMotorEnabledJoint.md) |
-| `speed` | `number` |
-| `maxForce?` | `number` |
-| `motorIndex?` | `number` |
+| Name          | Type                                                        |
+| ------------- | ----------------------------------------------------------- |
+| `joint`       | [`IMotorEnabledJoint`](m4m.framework.IMotorEnabledJoint.md) |
+| `speed`       | `number`                                                    |
+| `maxForce?`   | `number`                                                    |
+| `motorIndex?` | `number`                                                    |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:252](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L252)
 
-___
+***
 
-### setPhysicsBodyTransformation
+#### setPhysicsBodyTransformation
 
 ▸ **setPhysicsBodyTransformation**(`impostor`, `newPosition`, `newRotation`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
-| `newPosition` | `vector3` |
-| `newRotation` | `quaternion` |
+| Name          | Type                                                             |
+| ------------- | ---------------------------------------------------------------- |
+| `impostor`    | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
+| `newPosition` | `vector3`                                                        |
+| `newRotation` | `quaternion`                                                     |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:236](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L236)
 
-___
+***
 
-### setTimeStep
+#### setTimeStep
 
 ▸ **setTimeStep**(`timeStep`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| ---------- | -------- |
 | `timeStep` | `number` |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:225](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L225)
 
-___
+***
 
-### setTransformationFromPhysicsBody
+#### setTransformationFromPhysicsBody
 
 ▸ **setTransformationFromPhysicsBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:235](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L235)
 
-___
+***
 
-### sleepBody
+#### sleepBody
 
 ▸ **sleepBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:247](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L247)
 
-___
+***
 
-### updateDistanceJoint
+#### updateDistanceJoint
 
 ▸ **updateDistanceJoint**(`joint`, `maxDistance`, `minDistance?`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `joint` | [`PhysicsJoint`](../classes/m4m.framework.PhysicsJoint.md) |
-| `maxDistance` | `number` |
-| `minDistance?` | `number` |
+| Name           | Type                                                       |
+| -------------- | ---------------------------------------------------------- |
+| `joint`        | [`PhysicsJoint`](../classes/m4m.framework.PhysicsJoint.md) |
+| `maxDistance`  | `number`                                                   |
+| `minDistance?` | `number`                                                   |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:251](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L251)
 
-___
+***
 
-### wakeUpBody
+#### wakeUpBody
 
 ▸ **wakeUpBody**(`impostor`): `void`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                                                             |
+| ---------- | ---------------------------------------------------------------- |
 | `impostor` | [`PhysicsImpostor`](../classes/m4m.framework.PhysicsImpostor.md) |
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:249](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L249)
 
-## Properties
+### Properties
 
-### name
+#### name
 
 • **name**: `string`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:223](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L223)
 
-___
+***
 
-### world
+#### world
 
 • **world**: `any`
 
-#### Defined in
+**Defined in**
 
 [framework/physics3d/physicEngine.ts:222](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/physics3d/physicEngine.ts#L222)

@@ -1,6 +1,8 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / GradientColorKey
+# m4m.framework.GradientColorKey
 
-# Interface: GradientColorKey
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / GradientColorKey
+
+## Interface: GradientColorKey
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).GradientColorKey
 
@@ -8,33 +10,33 @@
 
 **`author`** feng3d
 
-## Table of contents
+### Table of contents
+
+#### Properties
+
+* [color](m4m.framework.GradientColorKey.md#color)
+* [time](m4m.framework.GradientColorKey.md#time)
 
 ### Properties
 
-- [color](m4m.framework.GradientColorKey.md#color)
-- [time](m4m.framework.GradientColorKey.md#time)
-
-## Properties
-
-### color
+#### color
 
 • **color**: `color`
 
 颜色值
 
-#### Defined in
+**Defined in**
 
 [framework/util/gradient/GradientColorKey.ts:13](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/gradient/GradientColorKey.ts#L13)
 
-___
+***
 
-### time
+#### time
 
 • **time**: `number`
 
 时间
 
-#### Defined in
+**Defined in**
 
 [framework/util/gradient/GradientColorKey.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/gradient/GradientColorKey.ts#L18)

@@ -1,228 +1,230 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRendererGpuIns
+# m4m.framework.IRendererGpuIns
 
-# Interface: IRendererGpuIns
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IRendererGpuIns
+
+## Interface: IRendererGpuIns
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IRendererGpuIns
 
-## Hierarchy
+### Hierarchy
 
-- [`IRenderer`](m4m.framework.IRenderer.md)
+*   [`IRenderer`](m4m.framework.IRenderer.md)
 
-  ↳ **`IRendererGpuIns`**
+    ↳ **`IRendererGpuIns`**
 
-## Implemented by
+### Implemented by
 
-- [`meshRenderer`](../classes/m4m.framework.meshRenderer.md)
+* [`meshRenderer`](../classes/m4m.framework.meshRenderer.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [clone](m4m.framework.IRendererGpuIns.md#clone)
+* [isGpuInstancing](m4m.framework.IRendererGpuIns.md#isgpuinstancing)
+* [onPlay](m4m.framework.IRendererGpuIns.md#onplay)
+* [remove](m4m.framework.IRendererGpuIns.md#remove)
+* [render](m4m.framework.IRendererGpuIns.md#render)
+* [start](m4m.framework.IRendererGpuIns.md#start)
+* [update](m4m.framework.IRendererGpuIns.md#update)
+
+#### Properties
+
+* [gameObject](m4m.framework.IRendererGpuIns.md#gameobject)
+* [layer](m4m.framework.IRendererGpuIns.md#layer)
+* [queue](m4m.framework.IRendererGpuIns.md#queue)
+* [renderLayer](m4m.framework.IRendererGpuIns.md#renderlayer)
 
 ### Methods
 
-- [clone](m4m.framework.IRendererGpuIns.md#clone)
-- [isGpuInstancing](m4m.framework.IRendererGpuIns.md#isgpuinstancing)
-- [onPlay](m4m.framework.IRendererGpuIns.md#onplay)
-- [remove](m4m.framework.IRendererGpuIns.md#remove)
-- [render](m4m.framework.IRendererGpuIns.md#render)
-- [start](m4m.framework.IRendererGpuIns.md#start)
-- [update](m4m.framework.IRendererGpuIns.md#update)
-
-### Properties
-
-- [gameObject](m4m.framework.IRendererGpuIns.md#gameobject)
-- [layer](m4m.framework.IRendererGpuIns.md#layer)
-- [queue](m4m.framework.IRendererGpuIns.md#queue)
-- [renderLayer](m4m.framework.IRendererGpuIns.md#renderlayer)
-
-## Methods
-
-### clone
+#### clone
 
 ▸ **clone**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[clone](m4m.framework.IRenderer.md#clone)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:20](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L20)
 
-___
+***
 
-### isGpuInstancing
+#### isGpuInstancing
 
 ▸ **isGpuInstancing**(): `boolean`
 
 是否开启 GPU Instancing 绘制
 
-#### Returns
+**Returns**
 
 `boolean`
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:96](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L96)
 
-___
+***
 
-### onPlay
+#### onPlay
 
 ▸ **onPlay**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[onPlay](m4m.framework.IRenderer.md#onplay)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:15](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L15)
 
-___
+***
 
-### remove
+#### remove
 
 ▸ **remove**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[remove](m4m.framework.IRenderer.md#remove)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:19](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L19)
 
-___
+***
 
-### render
+#### render
 
 ▸ **render**(`context`, `assetmgr`, `camera`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `context` | `renderContext` |
+| Name       | Type                                               |
+| ---------- | -------------------------------------------------- |
+| `context`  | `renderContext`                                    |
 | `assetmgr` | [`assetMgr`](../classes/m4m.framework.assetMgr.md) |
-| `camera` | [`camera`](../classes/m4m.framework.camera.md) |
+| `camera`   | [`camera`](../classes/m4m.framework.camera.md)     |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[render](m4m.framework.IRenderer.md#render)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:81](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L81)
 
-___
+***
 
-### start
+#### start
 
 ▸ **start**(): `any`
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[start](m4m.framework.IRenderer.md#start)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:16](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L16)
 
-___
+***
 
-### update
+#### update
 
 ▸ **update**(`delta`): `any`
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
+| Name    | Type     |
+| ------- | -------- |
 | `delta` | `number` |
 
-#### Returns
+**Returns**
 
 `any`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[update](m4m.framework.IRenderer.md#update)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:17](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L17)
 
-## Properties
+### Properties
 
-### gameObject
+#### gameObject
 
 • **gameObject**: [`gameObject`](../classes/m4m.framework.gameObject.md)
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[gameObject](m4m.framework.IRenderer.md#gameobject)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:18](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L18)
 
-___
+***
 
-### layer
+#### layer
 
 • **layer**: [`RenderLayerEnum`](../enums/m4m.framework.RenderLayerEnum.md)
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[layer](m4m.framework.IRenderer.md#layer)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:77](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L77)
 
-___
+***
 
-### queue
+#### queue
 
 • **queue**: `number`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[queue](m4m.framework.IRenderer.md#queue)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:79](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L79)
 
-___
+***
 
-### renderLayer
+#### renderLayer
 
 • **renderLayer**: `number`
 
-#### Inherited from
+**Inherited from**
 
 [IRenderer](m4m.framework.IRenderer.md).[renderLayer](m4m.framework.IRenderer.md#renderlayer)
 
-#### Defined in
+**Defined in**
 
 [framework/interfaces.ts:78](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/interfaces.ts#L78)

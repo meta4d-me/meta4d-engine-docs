@@ -1,50 +1,51 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / VerticalType
+# m4m.framework.VerticalType
 
-# Enumeration: VerticalType
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / VerticalType
+
+## Enumeration: VerticalType
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).VerticalType
 
-**`language`** zh_CN
+**`language`** zh\_CN
 
-**`classdesc`**
-纵向显示方式
+**`classdesc`** 纵向显示方式
 
 **`version`** m4m 1.0
 
-## Table of contents
+### Table of contents
+
+#### Enumeration Members
+
+* [Boom](m4m.framework.VerticalType.md#boom)
+* [Center](m4m.framework.VerticalType.md#center)
+* [Top](m4m.framework.VerticalType.md#top)
 
 ### Enumeration Members
 
-- [Boom](m4m.framework.VerticalType.md#boom)
-- [Center](m4m.framework.VerticalType.md#center)
-- [Top](m4m.framework.VerticalType.md#top)
-
-## Enumeration Members
-
-### Boom
+#### Boom
 
 • **Boom**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/label.ts:1295](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/label.ts#L1295)
 
-___
+***
 
-### Center
+#### Center
 
 • **Center**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/label.ts:1293](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/label.ts#L1293)
 
-___
+***
 
-### Top
+#### Top
 
 • **Top**
 
-#### Defined in
+**Defined in**
 
 [framework/2d/component/label.ts:1294](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/2d/component/label.ts#L1294)

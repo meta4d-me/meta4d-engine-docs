@@ -1,53 +1,55 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Texture
+# m4m.framework.AssetFactory\_Texture
 
-# Class: AssetFactory\_Texture
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / AssetFactory\_Texture
 
-[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory_Texture
+## Class: AssetFactory\_Texture
 
-## Implements
+[m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).AssetFactory\_Texture
 
-- [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+### Implements
 
-## Table of contents
+* [`IAssetFactory`](../interfaces/m4m.framework.IAssetFactory.md)
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](m4m.framework.AssetFactory\_Texture.md#constructor)
+
+#### Methods
+
+* [parse](m4m.framework.AssetFactory\_Texture.md#parse)
 
 ### Constructors
 
-- [constructor](m4m.framework.AssetFactory_Texture.md#constructor)
+#### constructor
+
+• **new AssetFactory\_Texture**()
 
 ### Methods
 
-- [parse](m4m.framework.AssetFactory_Texture.md#parse)
-
-## Constructors
-
-### constructor
-
-• **new AssetFactory_Texture**()
-
-## Methods
-
-### parse
+#### parse
 
 ▸ **parse**(`assetmgr`, `bundle`, `filename`, `txt`, `dwguid`): [`texture`](m4m.framework.texture.md)
 
-#### Parameters
+**Parameters**
 
-| Name | Type |
-| :------ | :------ |
-| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md) |
-| `bundle` | [`assetBundle`](m4m.framework.assetBundle.md) |
-| `filename` | `string` |
-| `txt` | `string` |
-| `dwguid` | `number` |
+| Name       | Type                                          |
+| ---------- | --------------------------------------------- |
+| `assetmgr` | [`assetMgr`](m4m.framework.assetMgr.md)       |
+| `bundle`   | [`assetBundle`](m4m.framework.assetBundle.md) |
+| `filename` | `string`                                      |
+| `txt`      | `string`                                      |
+| `dwguid`   | `number`                                      |
 
-#### Returns
+**Returns**
 
 [`texture`](m4m.framework.texture.md)
 
-#### Implementation of
+**Implementation of**
 
 [IAssetFactory](../interfaces/m4m.framework.IAssetFactory.md).[parse](../interfaces/m4m.framework.IAssetFactory.md#parse)
 
-#### Defined in
+**Defined in**
 
-[framework/asset/factorys/assetfactory_texture.ts:53](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory_texture.ts#L53)
+[framework/asset/factorys/assetfactory\_texture.ts:53](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/asset/factorys/assetfactory\_texture.ts#L53)

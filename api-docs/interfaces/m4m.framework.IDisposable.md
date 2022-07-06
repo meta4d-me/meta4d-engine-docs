@@ -1,49 +1,51 @@
-[@meta4d/engine](../README.md) / [Exports](../modules.md) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IDisposable
+# m4m.framework.IDisposable
 
-# Interface: IDisposable
+[@meta4d/engine](../) / [Exports](../modules/) / [m4m](../modules/m4m.md) / [framework](../modules/m4m.framework.md) / IDisposable
+
+## Interface: IDisposable
 
 [m4m](../modules/m4m.md).[framework](../modules/m4m.framework.md).IDisposable
 
 可销毁对象
 
-## Implemented by
+### Implemented by
 
-- [`overlay2D`](../classes/m4m.framework.overlay2D.md)
+* [`overlay2D`](../classes/m4m.framework.overlay2D.md)
 
-## Table of contents
+### Table of contents
+
+#### Methods
+
+* [dispose](m4m.framework.IDisposable.md#dispose)
+
+#### Properties
+
+* [disposed](m4m.framework.IDisposable.md#disposed)
 
 ### Methods
 
-- [dispose](m4m.framework.IDisposable.md#dispose)
-
-### Properties
-
-- [disposed](m4m.framework.IDisposable.md#disposed)
-
-## Methods
-
-### dispose
+#### dispose
 
 ▸ **dispose**(): `void`
 
 销毁
 
-#### Returns
+**Returns**
 
 `void`
 
-#### Defined in
+**Defined in**
 
 [framework/util/types.ts:36](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/types.ts#L36)
 
-## Properties
+### Properties
 
-### disposed
+#### disposed
 
 • `Readonly` **disposed**: `boolean`
 
 是否已销毁
 
-#### Defined in
+**Defined in**
 
 [framework/util/types.ts:31](https://github.com/meta4d-me/meta4d-engine/blob/cf6bfe6/src/framework/util/types.ts#L31)
