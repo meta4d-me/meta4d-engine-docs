@@ -1,6 +1,6 @@
 # Home
 
-**Meta4D.Me (M4M) engine** is part of [M4M project](https://docs.meta4d.me/n3aRZyTVBZbh3tNUbNSq/).&#x20;
+**Meta4D.Me (M4M) engine** is part of [M4M project](https://docs.meta4d.me/).&#x20;
 
 M4M project is an open source project for digital twins' presentation cross extended reality (XR) systems or metaverses, from time to time.
 
